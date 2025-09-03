@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Modules/Scenario/Editor/UIToolkit/Styles/NodeEditor.uss?fileID=7433441132597879392&amp;guid=4df8c5ace42e83e4d969009b89e6dd5f&amp;type=3#NodeEditor" />
+    <ui:Label tabindex="-1" text="Components" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title" style="margin-left: 2px; padding-right: 2px; padding-left: 2px; margin-right: 2px; padding-top: 3px; padding-bottom: 3px;" />
+    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="components" />
+    <ui:Button text="Add" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-component" />
+</ui:UXML>

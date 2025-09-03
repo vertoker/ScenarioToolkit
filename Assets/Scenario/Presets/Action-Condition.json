@@ -1,0 +1,122 @@
+{
+  "$type": "Scenario.Core.Model.ScenarioModelV6, Scenario",
+  "Context": {
+    "$type": "Scenario.Core.Model.ScenarioContextV6, Scenario",
+    "Variables": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Scenario.Core.Model.ObjectTyped, Scenario]], mscorlib"
+    },
+    "NodeOverrides": []
+  },
+  "Graph": {
+    "$type": "Scenario.Core.Model.ScenarioGraphV6, Scenario",
+    "Nodes": [
+      {
+        "Key": -2060883546,
+        "Value": {
+          "$id": "1",
+          "$type": "Scenario.Core.Model.ActionNodeV6, Scenario",
+          "Components": [],
+          "ActivationType": 1,
+          "IncomingLinks": [],
+          "OutcomingLinks": [
+            -1366230064
+          ],
+          "Name": "",
+          "Hash": -2060883546
+        }
+      },
+      {
+        "Key": -1921475256,
+        "Value": {
+          "$id": "2",
+          "$type": "Scenario.Core.Model.ConditionNodeV6, Scenario",
+          "Components": [],
+          "ActivationType": 1,
+          "IncomingLinks": [
+            -1366230064
+          ],
+          "OutcomingLinks": [],
+          "Name": "",
+          "Hash": -1921475256
+        }
+      }
+    ],
+    "Links": [
+      {
+        "Key": -1366230064,
+        "Value": {
+          "$id": "3",
+          "$type": "Scenario.Core.Model.ScenarioLinkFlowV6, Scenario",
+          "From": {
+            "$ref": "1"
+          },
+          "To": {
+            "$ref": "2"
+          },
+          "Hash": -1366230064
+        }
+      }
+    ]
+  },
+  "EditorGraph": {
+    "$type": "Scenario.Core.Model.EditorGraphV6, Scenario",
+    "Nodes": [
+      {
+        "Key": -2060883546,
+        "Value": {
+          "$id": "4",
+          "$type": "Scenario.Core.Model.EditorNodeV6, Scenario",
+          "Node": {
+            "$ref": "1"
+          },
+          "Position": {
+            "x": -183.0,
+            "y": -56.0
+          },
+          "Hash": -2060883546,
+          "IncomingLinks": [],
+          "OutcomingLinks": [
+            -1590552679
+          ],
+          "Groups": []
+        }
+      },
+      {
+        "Key": -1921475256,
+        "Value": {
+          "$id": "5",
+          "$type": "Scenario.Core.Model.EditorNodeV6, Scenario",
+          "Node": {
+            "$ref": "2"
+          },
+          "Position": {
+            "x": 62.0,
+            "y": -56.0
+          },
+          "Hash": -1921475256,
+          "IncomingLinks": [
+            -1590552679
+          ],
+          "OutcomingLinks": [],
+          "Groups": []
+        }
+      }
+    ],
+    "Links": [
+      {
+        "Key": -1590552679,
+        "Value": {
+          "$type": "Scenario.Core.Model.EditorLinkV6, Scenario",
+          "From": {
+            "$ref": "4"
+          },
+          "To": {
+            "$ref": "5"
+          },
+          "Hash": -1590552679
+        }
+      }
+    ],
+    "Groups": []
+  }
+}

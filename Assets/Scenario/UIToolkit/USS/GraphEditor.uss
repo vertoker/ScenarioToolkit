@@ -1,0 +1,67 @@
+GridBackground {
+    --grid-background-color: #111111;
+    --line-color: #161616;
+    --thick-line-color: #222222;
+    --spacing: 64;
+}
+
+.expand-node > #node-border {
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+
+.scenario-node > #node-border {
+    background-color: #333333;    
+}
+.active-node > #node-border {
+    border-color: #ffff00;
+}
+.completed-node > #node-border {
+    border-color: #00ff00;
+}
+.selected-node > #node-border {
+    border-color: #00ffff;
+}
+.linked-node > #node-border {
+    border-color: #00ffff;
+}
+
+.completed-condition {
+    color: #00FF00;
+}
+.start#title {
+    background-color: #004835;
+}
+.end#title {
+    background-color: #004835;
+}
+
+.condition#title {
+    background-color: #002044;
+}
+.action#title {
+    background-color: #440000;
+}
+.subgraph#title {
+    background-color: #1c7575;
+}
+
+.note#title {
+    background-color: #fad56d;
+    color: #000000;
+}
+.port#title {
+    background-color: #397000;
+}
+
+.null#title {
+    background-color: #ff00ff;
+}
+
+#titleLabel {
+    -unity-text-align: middle-left;
+    padding: 3px;
+    font-size: 14px;
+}

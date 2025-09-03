@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Modules/Scenario/Editor/UIToolkit/Styles/NodeEditor.uss?fileID=7433441132597879392&amp;guid=4df8c5ace42e83e4d969009b89e6dd5f&amp;type=3#NodeEditor" />
+    <ui:VisualElement name="root" class="row" style="flex-direction: column;">
+        <ui:VisualElement name="row" style="flex-grow: 1; flex-direction: row; width: 100%;">
+            <ui:EnumField name="value-type" style="width: 80px;" />
+            <ui:VisualElement name="variable-value" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

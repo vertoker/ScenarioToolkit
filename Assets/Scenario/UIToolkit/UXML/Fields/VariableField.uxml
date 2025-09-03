@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Modules/Scenario/Editor/UIToolkit/Styles/NodeEditor.uss?fileID=7433441132597879392&amp;guid=4df8c5ace42e83e4d969009b89e6dd5f&amp;type=3#NodeEditor" />
+    <ui:VisualElement name="root" class="row" style="flex-direction: column;">
+        <ui:VisualElement name="row-1" style="flex-grow: 1; flex-direction: row; width: 100%;">
+            <ui:TextField picking-mode="Ignore" name="variable-key" style="margin-right: 0; margin-left: 0; padding-right: 50px; padding-left: 2px; width: 100%;" />
+            <ui:VisualElement name="variable-functions" style="flex-direction: row-reverse; align-self: flex-end; width: 50px;">
+                <ui:Button name="remove" text="X" style="height: 16px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 16px; font-size: 10px; -unity-font-style: bold; align-self: flex-end;" />
+                <ui:Button name="up" text="↑" style="height: 16px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 16px; font-size: 10px; -unity-font-style: bold; align-self: flex-end;" />
+                <ui:Button name="down" text="↓" style="height: 16px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 16px; font-size: 10px; -unity-font-style: bold; align-self: flex-end;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="row-2" style="flex-grow: 1; flex-direction: row; width: 100%;">
+            <ui:EnumField name="value-type" style="width: 80px;" />
+            <ui:VisualElement name="variable-value" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

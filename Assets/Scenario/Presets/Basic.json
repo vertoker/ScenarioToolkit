@@ -1,0 +1,121 @@
+{
+  "$type": "Scenario.Core.Model.ScenarioModelV6, Scenario",
+  "Context": {
+    "$type": "Scenario.Core.Model.ScenarioContextV6, Scenario",
+    "Variables": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Scenario.Core.Model.ObjectTyped, Scenario]], mscorlib"
+    },
+    "NodeOverrides": []
+  },
+  "Graph": {
+    "$type": "Scenario.Core.Model.ScenarioGraphV6, Scenario",
+    "Nodes": [
+      {
+        "Key": -1200919216,
+        "Value": {
+          "$id": "1",
+          "$type": "Scenario.Core.Model.StartNodeV6, Scenario",
+          "ActivationType": 1,
+          "IncomingLinks": [],
+          "OutcomingLinks": [
+            936113848
+          ],
+          "Name": "",
+          "Hash": -1200919216
+        }
+      },
+      {
+        "Key": -1083322496,
+        "Value": {
+          "$id": "2",
+          "$type": "Scenario.Core.Model.EndNodeV6, Scenario",
+          "InstantEnd": false,
+          "ActivationType": 1,
+          "IncomingLinks": [
+            936113848
+          ],
+          "OutcomingLinks": [],
+          "Name": "",
+          "Hash": -1083322496
+        }
+      }
+    ],
+    "Links": [
+      {
+        "Key": 936113848,
+        "Value": {
+          "$id": "3",
+          "$type": "Scenario.Core.Model.ScenarioLinkFlowV6, Scenario",
+          "From": {
+            "$ref": "1"
+          },
+          "To": {
+            "$ref": "2"
+          },
+          "Hash": 936113848
+        }
+      }
+    ]
+  },
+  "EditorGraph": {
+    "$type": "Scenario.Core.Model.EditorGraphV6, Scenario",
+    "Nodes": [
+      {
+        "Key": -1200919216,
+        "Value": {
+          "$id": "4",
+          "$type": "Scenario.Core.Model.EditorNodeV6, Scenario",
+          "Node": {
+            "$ref": "1"
+          },
+          "Position": {
+            "x": -130.0,
+            "y": -50.0
+          },
+          "Hash": -1200919216,
+          "IncomingLinks": [],
+          "OutcomingLinks": [
+            -1423915671
+          ],
+          "Groups": []
+        }
+      },
+      {
+        "Key": -1083322496,
+        "Value": {
+          "$id": "5",
+          "$type": "Scenario.Core.Model.EditorNodeV6, Scenario",
+          "Node": {
+            "$ref": "2"
+          },
+          "Position": {
+            "x": 50.0,
+            "y": -50.0
+          },
+          "Hash": -1083322496,
+          "IncomingLinks": [
+            -1423915671
+          ],
+          "OutcomingLinks": [],
+          "Groups": []
+        }
+      }
+    ],
+    "Links": [
+      {
+        "Key": -1423915671,
+        "Value": {
+          "$type": "Scenario.Core.Model.EditorLinkV6, Scenario",
+          "From": {
+            "$ref": "4"
+          },
+          "To": {
+            "$ref": "5"
+          },
+          "Hash": -1423915671
+        }
+      }
+    ],
+    "Groups": []
+  }
+}

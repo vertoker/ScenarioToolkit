@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="graph-container" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
+    <ui:VisualElement name="top" style="flex-direction: row; align-self: flex-start; position: absolute;">
+        <ui:Foldout text="File" name="file-menu">
+            <ui:Button text="New" parse-escape-sequences="true" display-tooltip-when-elided="true" name="new" />
+            <ui:Button text="Open..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="open" />
+            <ui:Button text="Save" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save" />
+            <ui:Button text="Save as..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-as" />
+        </ui:Foldout>
+        <ui:Foldout text="Graph" name="graph-menu">
+            <ui:Button text="Search" parse-escape-sequences="true" display-tooltip-when-elided="true" name="search" />
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:Button text="Player" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ping-player" />
+                <ui:Button text="Source" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ping-source" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-shrink: 0; flex-direction: row;">
+                <ui:Button text="Elem" parse-escape-sequences="true" display-tooltip-when-elided="true" name="element-editor" />
+                <ui:Button text="Context" parse-escape-sequences="true" display-tooltip-when-elided="true" name="context-editor" />
+            </ui:VisualElement>
+            <ui:Button text="Reflex Functions" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reflex-functions" />
+        </ui:Foldout>
+        <ui:Foldout text="Functions" name="functions-menu">
+            <ui:Button text="Reload" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reload" />
+            <ui:Button text="Center Graph" parse-escape-sequences="true" display-tooltip-when-elided="true" name="center-graph" />
+            <ui:Button text="Detect Loop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="detect-loop" />
+        </ui:Foldout>
+        <ui:Foldout text="Play Menu" name="play-menu">
+            <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="play" />
+            <ui:Toggle label="UseNetwork" value="false" name="use-network" />
+            <ui:Toggle label="UseLog" value="false" name="use-log" focusable="false" />
+        </ui:Foldout>
+    </ui:VisualElement>
+    <ui:VisualElement name="subgraph-stack" style="position: absolute; flex-direction: row; justify-content: flex-start; align-self: flex-start; align-items: flex-end; flex-wrap: nowrap; top: 100%; bottom: 0; height: 45px; transform-origin: bottom; translate: 0 -45px;" />
+</ui:UXML>
