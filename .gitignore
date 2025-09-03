@@ -12,9 +12,6 @@
 /[Uu]ser[Ss]ettings/
 *.log
 
-# Ignore in Assets/ folder
-/[Aa]ssets/[Pp]ackages
-
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
 *.blend1.meta
