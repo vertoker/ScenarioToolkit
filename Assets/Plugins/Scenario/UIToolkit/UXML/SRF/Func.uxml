@@ -1,8 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="root" style="flex-grow: 1;">
-        <ui:Foldout name="foldout" />
-        <ui:VisualElement name="group-buttons" style="flex-grow: 1; flex-direction: row-reverse; position: absolute; align-self: flex-end;">
-            <ui:Button name="info" text="?" style="height: 16px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 16px; font-size: 10px; -unity-font-style: bold;" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-</ui:UXML>

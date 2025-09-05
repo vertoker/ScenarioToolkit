@@ -1,8 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/Modules/Scenario/Editor/UIToolkit/Styles/NodeEditor.uss?fileID=7433441132597879392&amp;guid=4df8c5ace42e83e4d969009b89e6dd5f&amp;type=3#NodeEditor" />
-    <ui:VisualElement name="row-1" class="row">
-        <ui:Button text="Find &amp; add" parse-escape-sequences="true" display-tooltip-when-elided="true" name="find-add" style="width: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 20px;" />
-        <ui:Button text="Open" parse-escape-sequences="true" display-tooltip-when-elided="true" name="open" style="width: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 20px;" />
-    </ui:VisualElement>
-    <ui:VisualElement name="row-2" class="row" style="justify-content: flex-start;" />
-</ui:UXML>

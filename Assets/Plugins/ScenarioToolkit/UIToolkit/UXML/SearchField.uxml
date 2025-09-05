@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Modules/Scenario/Editor/UIToolkit/Styles/NodeEditor.uss?fileID=7433441132597879392&amp;guid=4df8c5ace42e83e4d969009b89e6dd5f&amp;type=3#NodeEditor" />
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: row;">
+        <ui:Label tabindex="-1" text="test&#10;hjkhjk" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" enable-rich-text="true" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 5px; padding-right: 50px; padding-bottom: 5px; padding-left: 5px; -unity-text-align: upper-left; font-size: 10px; white-space: nowrap; text-overflow: ellipsis; width: 100%;" />
+        <ui:Button text="Show" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" name="Button" style="align-self: center; margin-right: 0; padding-right: 2px; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-left: 2px; padding-top: 0; padding-bottom: 0; width: 45px; right: 45px; height: 100%;" />
+    </ui:VisualElement>
+</ui:UXML>

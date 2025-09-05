@@ -1,0 +1,19 @@
+{
+  "name": "com.novatrans.scenario",
+  "displayName": "Scenario Framework",
+  "author": "Konstantin Churakov (vertoker), Dmitriy Efremov (MrVbnz), Vladimir Naumov (Vladisov)",
+  "description": "Фреймворк для гибкого создания сценариев и их выполнения",
+  
+  "version": "5.0.0",
+  "keywords": [ "scenario", "zenject", "graph" ],
+  "category": "scenario",
+  
+  "dependencies": {
+    "com.novatrans.external.zenject": "http://gitlab.novatrans.local/unity-packages/external/zenject.git?path=/Assets/Zenject",
+    "com.novatrans.external.naughty-attributes": "http://gitlab.novatrans.local/unity-packages/external/naughty-attributes.git?path=/Assets/NaughtyAttributes",
+    "com.novatrans.external.ui-shapes-kit": "http://gitlab.novatrans.local/unity-packages/external/ui-shapes-kit.git?path=/Assets/UIShapesKit",
+    "com.novatrans.external.unitask": "http://gitlab.novatrans.local/unity-packages/external/unitask.git?path=/Assets/UniTask",
+    
+    "com.unity.textmeshpro": "3.0.8"
+  }
+}

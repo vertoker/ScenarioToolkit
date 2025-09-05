@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label tabindex="-1" text="Variables" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title" style="margin-left: 2px; padding-right: 2px; padding-left: 2px; margin-right: 2px; padding-top: 3px; padding-bottom: 3px;" />
+    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="variables" style="flex-grow: 1;" />
+    <ui:VisualElement name="buttons" style="flex-grow: 1; position: absolute; align-self: flex-end; flex-direction: row-reverse;">
+        <ui:Button name="add-variable" text="+" style="font-size: 20px; -unity-font-style: bold; width: 20px; margin-left: 0; margin-right: 0; padding-right: 0; padding-left: 0; height: 20px; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;" />
+        <ui:Button name="import-variables" text="Import Variables" style="font-size: 12px; -unity-font-style: normal; margin-left: 0; margin-right: 0; padding-right: 5px; padding-left: 5px; height: 20px; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>
