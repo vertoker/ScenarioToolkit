@@ -19,7 +19,7 @@ namespace Scenario
 #endif
             var defines = new HashSet<string>(currentDefines.Split(';'))
             {
-                "SCENARIO_FRAMEWORK",
+                "SCENARIO_TOOLKIT",
             };
             
             var newDefines = string.Join(";", defines);

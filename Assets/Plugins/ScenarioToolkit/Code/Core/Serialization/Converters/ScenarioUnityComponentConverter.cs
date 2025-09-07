@@ -1,7 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
 using Scenario.Core.Model;
-using Scenario.Utilities;
 using ScenarioToolkit.Core.Serialization.Converters.Base;
 using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;

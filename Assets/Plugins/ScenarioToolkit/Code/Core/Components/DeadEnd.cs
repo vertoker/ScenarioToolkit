@@ -1,5 +1,4 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
 using ScenarioToolkit.Shared;
 using ScenarioToolkit.Shared.Attributes;
 

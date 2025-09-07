@@ -1,5 +1,4 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
 
 // Previous: ActionNode
 //  Current: ActionNodeV1

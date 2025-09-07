@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Newtonsoft.Json;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
 using ScenarioToolkit.Core.Player;
 using ScenarioToolkit.Shared;
 using ScenarioToolkit.Shared.Extensions;

@@ -1,6 +1,5 @@
 ﻿using System;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
 using ScenarioToolkit.Core.Player;
 using ScenarioToolkit.Shared;
 using Zenject;

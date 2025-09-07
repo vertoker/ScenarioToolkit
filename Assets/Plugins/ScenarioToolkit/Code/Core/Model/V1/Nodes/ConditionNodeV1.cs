@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Newtonsoft.Json;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
 
 // Previous: ConditionNode
 //  Current: ConditionNodeV1

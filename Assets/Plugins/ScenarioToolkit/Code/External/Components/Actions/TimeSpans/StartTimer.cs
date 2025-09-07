@@ -6,7 +6,7 @@ using ScenarioToolkit.Shared.Attributes;
 // ReSharper disable once CheckNamespace
 namespace VRF.Scenario.Components.Actions
 {
-    [ScenarioMeta("Начинает таймер по ID", typeof(StopTimer), typeof(TimerSystem), typeof(StartDelayTrigger))]
+    [ScenarioMeta("Начинает таймер по ID", typeof(StopTimer), typeof(TimerSystem))]
     public struct StartTimer : IScenarioAction, IComponentDefaultValues
     {
         [ScenarioMeta("Идентификатор таймера, должен быть уникальным в рамках промежутках проигрывания")]

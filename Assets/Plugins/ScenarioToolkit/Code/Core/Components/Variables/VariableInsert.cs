@@ -1,7 +1,6 @@
 ﻿using Scenario.Base.Components.Conditions;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
 using ScenarioToolkit.Core.Player;
 using ScenarioToolkit.Shared;
 using ScenarioToolkit.Shared.Attributes;
