@@ -2,7 +2,6 @@
 using NaughtyAttributes;
 using Scenario.Core.DataSource;
 using UnityEngine;
-using VRF.DataSources.Scriptables;
 using VRF.Identities;
 using VRF.Identities.Core;
 using VRF.Players.Scriptables;
@@ -10,7 +9,7 @@ using VRF.Players.Scriptables;
 namespace Scenario.Core.Scriptables
 {
     [CreateAssetMenu(fileName = nameof(ScenarioLaunchConfig), menuName = "Scenario/" + nameof(ScenarioLaunchConfig))]
-    public class ScenarioLaunchConfig : ScriptableObject, IScriptableModel, IGetScenarioLaunch
+    public class ScenarioLaunchConfig : ScriptableObject, IGetScenarioLaunch
     {
         [SerializeField, Expandable] private ScenarioModule module;
         [SerializeField] private bool useNetwork = true;

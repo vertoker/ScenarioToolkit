@@ -4,10 +4,6 @@ using Scenario.Core.Scriptables;
 using Scenario.Core.Services;
 using Scenario.Core.World;
 using UnityEngine;
-using VRF.DataSources;
-using VRF.DataSources.CommandLine;
-using VRF.DataSources.Disposing;
-using VRF.DataSources.Scriptables;
 using Zenject;
 
 namespace Scenario.Core.Installers
@@ -19,9 +15,9 @@ namespace Scenario.Core.Installers
         // ReSharper disable once InconsistentNaming
         [SerializeField] private string ID;
         
-        [Space]
-        [SerializeField] private DataSourceType[] sourcesEditor = DataSourceStatic.DefaultEditor;
-        [SerializeField] private DataSourceType[] sourcesRuntime = DataSourceStatic.DefaultRuntime;
+        // [Space]
+        // [SerializeField] private DataSourceType[] sourcesEditor = DataSourceStatic.DefaultEditor;
+        // [SerializeField] private DataSourceType[] sourcesRuntime = DataSourceStatic.DefaultRuntime;
         [Space]
         [SerializeField, Expandable] private ScenarioLaunchConfig launchConfig;
         [SerializeField] private bool bindDefaultCommandLineParser = true;
@@ -36,7 +32,7 @@ namespace Scenario.Core.Installers
         
         public override void InstallBindings()
         {
-            var commandLineSource = Container.Resolve<CommandLineDataSource>();
+            /*var commandLineSource = Container.Resolve<CommandLineDataSource>();
             var scriptableSource = Container.Resolve<ScriptableDataSource>();
             var disposeService = Container.Resolve<DataSourceDisposeService>();
 
@@ -52,9 +48,9 @@ namespace Scenario.Core.Installers
                 disposeService.Add(scriptableSource.GetRemovePromise(launchConfig));
             }
             
-            var sources = DataSourceStatic.GetSources(sourcesEditor, sourcesRuntime);
+            var sources = DataSourceStatic.GetSources(sourcesEditor, sourcesRuntime);*/
             Container.BindInterfacesAndSelfTo<ScenarioLauncherService>().AsSingle()
-                .WithArguments(sources, playOnInitialize, launchConfig);
+                .WithArguments(playOnInitialize, launchConfig);
             
             Container.BindInterfacesAndSelfTo<DynamicScenarioService>().AsSingle();
         }

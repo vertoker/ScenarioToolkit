@@ -5,7 +5,6 @@ using Scenario.Core.Player;
 using Scenario.Core.Scriptables;
 using Scenario.Core.Serialization;
 using UnityEngine;
-using VRF.DataSources;
 using Zenject;
 
 namespace Scenario.Core.Services
@@ -15,24 +14,22 @@ namespace Scenario.Core.Services
     /// </summary>
     public class ScenarioLauncherService : IInitializable
     {
-        private readonly ContainerDataSource dataSource;
+        // private readonly ContainerDataSource dataSource;
         private readonly ScenarioModules modules;
         
         private readonly bool playOnInitialize;
         private readonly ScenarioLaunchConfig launchConfig;
         
-        private readonly DataSourceType[] scenarioSourcesOrder;
+        // private readonly DataSourceType[] scenarioSourcesOrder;
         private readonly ScenarioLoadService loadService;
         private readonly ScenarioPlayer scenarioPlayer;
 
-        public ScenarioLauncherService(ContainerDataSource dataSource, ScenarioModules modules,
+        public ScenarioLauncherService(ScenarioModules modules,
             ScenarioLoadService loadService, ScenarioPlayer scenarioPlayer,
-            DataSourceType[] scenarioSourcesOrder, bool playOnInitialize, [InjectOptional] ScenarioLaunchConfig launchConfig)
+            bool playOnInitialize, [InjectOptional] ScenarioLaunchConfig launchConfig)
         {
-            this.dataSource = dataSource;
             this.modules = modules;
             
-            this.scenarioSourcesOrder = scenarioSourcesOrder;
             this.loadService = loadService;
             this.scenarioPlayer = scenarioPlayer;
 
@@ -53,15 +50,15 @@ namespace Scenario.Core.Services
         }
         private ScenarioLaunchModel InitializeModel()
         {
-            var launchModel = dataSource.Load<ScenarioLaunchModel>(scenarioSourcesOrder);
+            // var launchModel = dataSource.Load<ScenarioLaunchModel>(scenarioSourcesOrder);
 
-            if (launchModel == null)
+            /*if (launchModel == null)
             {
                 Debug.LogWarning($"Empty <b>{nameof(ScenarioLaunchModel)}</b>, abort initialization");
                 return null;
-            }
+            }*/
             
-            return launchModel;
+            return new();
         }
 
         public void PlayModule(ScenarioLaunchModel parameters)

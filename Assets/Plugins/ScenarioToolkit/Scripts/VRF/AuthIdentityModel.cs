@@ -4,7 +4,6 @@ using NaughtyAttributes;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using UnityEngine;
-using VRF.Networking.Messages;
 
 namespace VRF.Identities.Models
 {
@@ -70,27 +69,10 @@ namespace VRF.Identities.Models
         #endregion
 
         #region Messages
-        public AuthNickname_RequestMessage GetNickname() => new() { Nickname = IdentityName };
-        public AuthNicknamePassword_RequestMessage GetNicknamePassword() => new() { Nickname = IdentityName, Password = Password };
-        public AuthIDRequest_Message GetID() => new() { ID = IdentityID };
-
         public bool Compare<TAuthMessage>(TAuthMessage msg) where TAuthMessage : struct, NetworkMessage
         {
             switch (AuthMode)
             {
-                case IdentityAuthMode.Nickname:
-                    if (msg is AuthNickname_RequestMessage nickname)
-                        return nickname.Nickname == IdentityName;
-                    return false;
-                case IdentityAuthMode.NicknamePassword:
-                    if (msg is AuthNicknamePassword_RequestMessage nicknamePassword)
-                        return nicknamePassword.Nickname == IdentityName 
-                               && nicknamePassword.Password == Password;
-                    return false;
-                case IdentityAuthMode.ID:
-                    if (msg is AuthIDRequest_Message id)
-                        return id.ID == IdentityID;
-                    return false;
                 default:
                     throw new ArgumentOutOfRangeException();
             }

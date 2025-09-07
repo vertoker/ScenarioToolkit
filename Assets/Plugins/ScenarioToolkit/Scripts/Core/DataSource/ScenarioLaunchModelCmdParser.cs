@@ -1,14 +1,13 @@
 ﻿using System;
-using VRF.DataSources.CommandLine;
 
 namespace Scenario.Core.DataSource
 {
-    public class ScenarioLaunchModelCmdParser : IModelCmdParser
+    public class ScenarioLaunchModelCmdParser// : IModelCmdParser
     {
         public ScenarioMode ScenarioMode { get; private set; }
         public string Scenario { get; private set; }
         
-        public bool CanParseModel(CommandLineParser parser)
+        /*public bool CanParseModel(CommandLineParser parser)
         {
             return parser.ContainsAny("--scenario", "-s");
         }
@@ -30,7 +29,7 @@ namespace Scenario.Core.DataSource
                     config.IdentityHash = identityHash;
             
             return config;
-        }
+        }*/
 
         public Type GetModelType() => typeof(ScenarioLaunchModel);
     }

@@ -15,13 +15,13 @@ namespace Scenario.Core.Installers
             Container.BindInterfacesAndSelfTo<ScenarioStateContainer>().AsSingle();
             
             // Server/Host
-            Container.BindInterfacesAndSelfTo<ScenarioNetServer>().AsSingle();
-            Container.BindInterfacesAndSelfTo<ScenarioNetServerNodes>().AsSingle();
-            Container.BindInterfacesAndSelfTo<ScenarioNetServerMsgBuffer>().AsSingle();
-            Container.BindInterfacesAndSelfTo<ScenarioNetClientDummy>().AsSingle();
+            // Container.BindInterfacesAndSelfTo<ScenarioNetServer>().AsSingle();
+            // Container.BindInterfacesAndSelfTo<ScenarioNetServerNodes>().AsSingle();
+            // Container.BindInterfacesAndSelfTo<ScenarioNetServerMsgBuffer>().AsSingle();
+            // Container.BindInterfacesAndSelfTo<ScenarioNetClientDummy>().AsSingle();
             
             // Client
-            Container.BindInterfacesAndSelfTo<ScenarioNetClient>().AsSingle();
+            // Container.BindInterfacesAndSelfTo<ScenarioNetClient>().AsSingle();
         }
     }
 }

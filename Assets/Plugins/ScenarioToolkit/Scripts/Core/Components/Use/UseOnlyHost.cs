@@ -6,7 +6,7 @@ using Scenario.Utilities.Attributes;
 namespace Scenario.Core.Model
 {
     [ScenarioMeta("Запрещает исполнение ноды (на которой находится) везде кроме хоста", 
-        typeof(ScenarioNetServerNodes), typeof(IScenarioOnlyHost))]
+        typeof(IScenarioOnlyHost))]
     public struct UseOnlyHost : IMetaComponent
     {
         public static readonly IMetaComponent Self = new UseOnlyHost();

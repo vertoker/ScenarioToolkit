@@ -4,7 +4,6 @@ using System.Linq;
 using JetBrains.Annotations;
 using Mirror;
 using Scenario.Core.Serialization;
-using VRF.Networking.Core;
 using VRF.Players.Scriptables;
 using Zenject;
 
@@ -12,14 +11,15 @@ namespace Scenario.Core.Systems.States
 {
     public class ScenarioStateContainer : IInitializable, IDisposable
     {
-        [CanBeNull] private readonly VRFNetworkManager networkManager;
+        // [CanBeNull] private readonly VRFNetworkManager networkManager;
         private readonly ScenarioSerializationService serializationService;
         private readonly Dictionary<Type, IScenarioStateProvider> providers = new();
         
-        public ScenarioStateContainer([InjectOptional] VRFNetworkManager networkManager, 
+        public ScenarioStateContainer(
+            // [InjectOptional] VRFNetworkManager networkManager, 
             IEnumerable<IScenarioStateProvider> providersInstances, ScenarioSerializationService serializationService)
         {
-            this.networkManager = networkManager;
+            // this.networkManager = networkManager;
             this.serializationService = serializationService;
 
             foreach (var scenarioStateProvider in providersInstances)
@@ -27,15 +27,15 @@ namespace Scenario.Core.Systems.States
         }
         public void Initialize()
         {
-            if (!networkManager) return;
-            networkManager.RegisterClientMessage<StatesMessage>(StatesMessageReceived);
-            networkManager.OnServerClientAuthorized += NetworkManager_OnServerClientAuthorized;
+            // if (!networkManager) return;
+            // networkManager.RegisterClientMessage<StatesMessage>(StatesMessageReceived);
+            // networkManager.OnServerClientAuthorized += NetworkManager_OnServerClientAuthorized;
         }
         public void Dispose()
         {
-            if (!networkManager) return;
-            networkManager.UnregisterClientMessage<StatesMessage>();
-            networkManager.OnServerClientAuthorized -= NetworkManager_OnServerClientAuthorized;
+            // if (!networkManager) return;
+            // networkManager.UnregisterClientMessage<StatesMessage>();
+            // networkManager.OnServerClientAuthorized -= NetworkManager_OnServerClientAuthorized;
         }
 
         private void StatesMessageReceived(StatesMessage message)

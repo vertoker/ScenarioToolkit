@@ -38,7 +38,6 @@ namespace VRF.Players.Scriptables
         private void CreateAppearance()
         {
             appearance = VrfHashCodeExtensions.CreateOrLoadPreset<PlayerAppearanceConfig>(this.GetPath());
-            appearance.OnValidate();
         }
     }
 }

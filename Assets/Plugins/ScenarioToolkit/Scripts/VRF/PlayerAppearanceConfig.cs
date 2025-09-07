@@ -2,11 +2,7 @@
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Serialization;
-using VRF.Components.Players.Views.NetPlayer;
-using VRF.Components.Players.Views.Player;
-using VRF.Players.Controllers.Scriptables;
 using VRF.Players.Models;
-using VRF.Players.Models.Player;
 using VRF.Utilities;
 using VRF.Utils.Identifying;
 
@@ -17,7 +13,7 @@ namespace VRF.Players.Scriptables
     /// Есть возможность её динамически изменять у всех сетевых игроков
     /// </summary>
     [CreateAssetMenu(fileName = nameof(PlayerAppearanceConfig), menuName = "VRF/Identities/" + nameof(PlayerAppearanceConfig))]
-    public class PlayerAppearanceConfig : IdentifiedScriptableObject, IControlSchemeModes
+    public class PlayerAppearanceConfig : IdentifiedScriptableObject
     {
         [FormerlySerializedAs("controlSchemeModes")] // Не трогать, старое название
         [SerializeField, EnumFlags] private PlayerControlModes controlModes =
@@ -25,17 +21,18 @@ namespace VRF.Players.Scriptables
         
         // VR основной и самый проработанный режим управления игрока
         // Зачастую для него и создана и заточена под него большая часть кода фреймворка
-        [ShowIf(nameof(IsVR))]
-        [SerializeField] private PlayerSpawnConfiguration configurationVR = new();
+        // [ShowIf(nameof(IsVR))]
+        // [SerializeField] private PlayerSpawnConfiguration configurationVR = new();
         
         // WASD это обделённый режим управления, хотя имеет не меньшее удобство управления, чем VR
         // Тоже используется и активно дорабатывается для различных задач
-        [ShowIf(nameof(IsWASD))]
-        [SerializeField] private PlayerSpawnConfiguration configurationWASD = new();
+        // [ShowIf(nameof(IsWASD))]
+        // [SerializeField] private PlayerSpawnConfiguration configurationWASD = new();
         
-        public bool IsVR => controlModes.ContainsFlag(PlayerControlModes.VR);
-        public bool IsWASD => controlModes.ContainsFlag(PlayerControlModes.WASD);
-        public PlayerSpawnConfiguration ConfigurationVR => configurationVR;
+        // public bool IsVR => controlModes.ContainsFlag(PlayerControlModes.VR);
+        // public bool IsWASD => controlModes.ContainsFlag(PlayerControlModes.WASD);
+        
+        /*public PlayerSpawnConfiguration ConfigurationVR => configurationVR;
         public PlayerSpawnConfiguration ConfigurationWASD => configurationWASD;
 
         public PlayerSpawnConfiguration GetConfiguration(PlayerModel model)
@@ -78,6 +75,6 @@ namespace VRF.Players.Scriptables
             if (IsVR) return PlayerControlModes.VR;
             if (IsWASD) return PlayerControlModes.WASD;
             throw new NotImplementedException($"You doesn't select {controlModes}");
-        }
+        }*/
     }
 }

@@ -5,7 +5,6 @@ using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
 using Scenario.Core.Network;
 using UnityEngine;
-using VRF.Networking.Core;
 using VRF.Players.Scriptables;
 using VRF.Utils.Pool;
 using Zenject;
