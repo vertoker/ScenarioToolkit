@@ -29,7 +29,6 @@ namespace ScenarioToolkit.Core.Player
     [Il2CppSetOption (Option.ArrayBoundsChecks, false)]
 #endif
     /// <summary> Ядро, которое проигрывает сценарии </summary>
-    // ReSharper disable once ClassNeverInstantiated.Global
     public class ScenarioPlayer
     {
         public event Action<ScenarioLaunchModel> ScenarioStarted;

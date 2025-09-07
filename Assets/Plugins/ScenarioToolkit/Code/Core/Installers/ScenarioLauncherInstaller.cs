@@ -1,5 +1,4 @@
-﻿using NaughtyAttributes;
-using ScenarioToolkit.Core.Scriptables;
+﻿using ScenarioToolkit.Core.Scriptables;
 using ScenarioToolkit.Core.Services;
 using ScenarioToolkit.Core.World;
 using UnityEngine;
@@ -18,8 +17,7 @@ namespace ScenarioToolkit.Core.Installers
         // [SerializeField] private DataSourceType[] sourcesEditor = DataSourceStatic.DefaultEditor;
         // [SerializeField] private DataSourceType[] sourcesRuntime = DataSourceStatic.DefaultRuntime;
         [Space]
-        [SerializeField, Expandable] private ScenarioLaunchConfig launchConfig;
-        [SerializeField] private bool bindDefaultCommandLineParser = true;
+        [SerializeField] private ScenarioLaunchConfig launchConfig;
 
         public ScenarioLaunchConfig LaunchConfig
         {

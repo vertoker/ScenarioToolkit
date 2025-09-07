@@ -1,5 +1,4 @@
-﻿using NaughtyAttributes;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace ScenarioToolkit.Shared.VRF
 {
@@ -8,7 +7,7 @@ namespace ScenarioToolkit.Shared.VRF
     /// </summary>
     public abstract class IdentifiedScriptableObject : ScriptableObject
     {
-        [SerializeField, ReadOnly] private int assetHashCode;
+        [SerializeField] private int assetHashCode;
 
         public int AssetHashCode => assetHashCode;
         public int RuntimeHashCode => GetHashCode();

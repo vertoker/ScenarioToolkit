@@ -1,5 +1,4 @@
-﻿using NaughtyAttributes;
-using ScenarioToolkit.Core.Installers.Systems;
+﻿using ScenarioToolkit.Core.Installers.Systems;
 using UnityEngine;
 using Zenject;
 
@@ -14,8 +13,7 @@ namespace ScenarioToolkit.Core.Installers.Resolver
             Resolver = new SystemResolver(Container);
             Container.BindInterfacesAndSelfTo<SystemResolver>().FromInstance(Resolver).AsSingle();
         }
-
-        [Button]
+        
         public void UpdateSystemsInstaller()
         {
             var systemInstallers = FindObjectsByType<BaseSystemInstaller>(FindObjectsSortMode.None);

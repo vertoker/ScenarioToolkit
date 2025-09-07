@@ -1,0 +1,16 @@
+{
+    "name": "ScenarioToolkit.Bus",
+    "rootNamespace": "",
+    "references": [
+        "GUID:70127caa4a5b26848b7d63c03f81d2aa"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using ScenarioToolkit.Core.DataSource;
 using ScenarioToolkit.Core.Scriptables;
 using ScenarioToolkit.Editor.Utilities;
 using ScenarioToolkit.Editor.Utilities.Providers;
@@ -52,10 +51,9 @@ namespace ScenarioToolkit.Editor.Tools.Files
                 module = ValidateModule(modulesPath);
                 cache?.Add(jsonPath, module);
             }
-            var mode = DetectMode(savePath);
             
-            //var json = File.ReadAllText(savePath);
-            //var assetPath = AssetDatabase.GetAssetPath(assetScenario);
+            // var json = File.ReadAllText(savePath);
+            // var assetPath = AssetDatabase.GetAssetPath(assetScenario);
 
             var assetScenario = module.ScenarioAsset;
             if (!assetScenario)
@@ -63,7 +61,6 @@ namespace ScenarioToolkit.Editor.Tools.Files
                 assetScenario = AssetDatabase.LoadAssetAtPath<TextAsset>(jsonPath);
                 module.SetScenario(assetScenario);
                 module.SetIdentifier(identifier);
-                module.SetMode(mode);
                 EditorUtility.SetDirty(module);
             }
         }
@@ -93,26 +90,6 @@ namespace ScenarioToolkit.Editor.Tools.Files
             }
 
             return module;
-        }
-
-        private static readonly Dictionary<ScenarioMode, string[]> ModeBinds = new()
-        {
-            {ScenarioMode.Exam, new [] { "exam" }},
-        };
-        private static ScenarioMode DetectMode(string modulesPath)
-        {
-            var lowerPath = modulesPath.ToLower();
-
-            foreach (var bind in ModeBinds)
-            {
-                foreach (var item in bind.Value)
-                {
-                    if (lowerPath.Contains(item)) return bind.Key;
-                    //if (lowerJson.Contains(item)) return bind.Key;
-                }
-            }
-            
-            return ScenarioMode.Study;
         }
     }
 }

@@ -4,7 +4,6 @@ using Cysharp.Threading.Tasks;
 using Scenario.Base.Components.Actions;
 using Scenario.Base.Components.Conditions;
 using ScenarioToolkit.Core.Systems;
-using ScenarioToolkit.Library.States;
 using ScenarioToolkit.Shared;
 using UnityEngine;
 using Zenject;
@@ -18,7 +17,7 @@ namespace ScenarioToolkit.Library.Systems
     /// <summary>
     /// State-timer система для запуска аудио в AudioSource (по умолчанию перезаписывает играющее аудио)
     /// </summary>
-    public class AudioSystem : BaseScenarioAsyncStateSystem<AudioPlayState>
+    public class AudioSystem : BaseScenarioSystem
     {
         private readonly Dictionary<AudioSource, CancellationTokenSource> tokenSources = new();
         
@@ -28,23 +27,13 @@ namespace ScenarioToolkit.Library.Systems
             bus.Subscribe<PlayAudioSource>(PlayAudioSource);
             bus.Subscribe<StopAudio>(StopAudio);
         }
-
-        protected override void ApplyState(AudioPlayState state)
-        {
-            foreach (var (audioSource, data) in state.Audios)
-                PlayAudio(audioSource, data.Clip, (float)data.GetPassedTime() % data.Seconds);
-        }
+        
         private CancellationTokenSource UpdateToken(AudioSource source)
         {
             if (tokenSources.TryGetValue(source, out var tokenSource)) tokenSource.Cancel();
             var newToken = new CancellationTokenSource();
             tokenSources[source] = newToken;
             return newToken;
-        }
-        private void UpdateState(AudioSource source, AudioClip clip)
-        {
-            if (State.Audios.ContainsKey(source)) Bus.Fire(new StopAudio { AudioSource = source });
-            State.Audios.Add(source, new AudioPlayState.NetworkClipData(clip));
         }
 
         private void PlayAudio(PlayAudio component)
@@ -68,7 +57,6 @@ namespace ScenarioToolkit.Library.Systems
             
             Bus.Fire(new StopAudio { AudioSource = source });
             
-            UpdateState(source, clip);
             var newToken = UpdateToken(source);
             
             source.clip = clip;
@@ -90,7 +78,6 @@ namespace ScenarioToolkit.Library.Systems
             
             Bus.Fire(new StopAudio { AudioSource = source });
             
-            UpdateState(source, source.clip);
             var newToken = UpdateToken(source);
 
             source.time = startTime;
@@ -137,7 +124,6 @@ namespace ScenarioToolkit.Library.Systems
             }
             
             audioSource.Stop();
-            State.Audios.Remove(audioSource);
             tokenSources.Remove(audioSource);
             
             Bus.Fire(new AudioEnded

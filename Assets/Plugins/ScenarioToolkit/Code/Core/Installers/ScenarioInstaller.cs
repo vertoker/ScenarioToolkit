@@ -1,5 +1,4 @@
-﻿using NaughtyAttributes;
-using ScenarioToolkit.Core.Player;
+﻿using ScenarioToolkit.Core.Player;
 using ScenarioToolkit.Core.Player.Roles;
 using ScenarioToolkit.Core.Scriptables;
 using ScenarioToolkit.Core.Serialization;
@@ -17,15 +16,6 @@ namespace ScenarioToolkit.Core.Installers
         [SerializeField] private ScenarioSceneProvider sceneProvider;
         [SerializeField] private ScenarioSerializationSettings serializationSettings;
         
-        #region Preset Editor
-        private bool PresetIsNull => !modulesConfig;
-        [Button, ShowIf(nameof(PresetIsNull))]
-        private void CreateScenarioModules()
-        {
-            ScriptableTools.CreatePresetEditor(ref modulesConfig, "Assets/Configs/Scenario/", "ScenarioModules");
-            UnityEditor.EditorUtility.SetDirty(this);
-        }
-        #endregion
 
         public override void InstallBindings()
         {

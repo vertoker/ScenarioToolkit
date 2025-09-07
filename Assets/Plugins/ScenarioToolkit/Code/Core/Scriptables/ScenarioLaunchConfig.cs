@@ -1,5 +1,4 @@
 ﻿using System;
-using NaughtyAttributes;
 using Scenario.Core.DataSource;
 using ScenarioToolkit.Shared.VRF;
 using UnityEngine;
@@ -9,7 +8,7 @@ namespace ScenarioToolkit.Core.Scriptables
     [CreateAssetMenu(fileName = nameof(ScenarioLaunchConfig), menuName = "Scenario/" + nameof(ScenarioLaunchConfig))]
     public class ScenarioLaunchConfig : ScriptableObject, IGetScenarioLaunch
     {
-        [SerializeField, Expandable] private ScenarioModule module;
+        [SerializeField] private ScenarioModule module;
         [SerializeField] private bool useNetwork = true;
         [SerializeField] private bool useLog = false;
         [SerializeField] private PlayerIdentityConfig identity;

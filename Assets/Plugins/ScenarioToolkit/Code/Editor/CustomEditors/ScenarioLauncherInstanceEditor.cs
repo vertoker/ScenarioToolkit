@@ -22,10 +22,10 @@ namespace ScenarioToolkit.Editor.CustomEditors
                 GraphEditorWindow.OpenWindow(module.ScenarioAsset, instance);
 
             // Нужно для невозможности запуска на Client если мультиплеер работает
-            var netValid = !instance.GetNetValid();
+            // var netValid = !instance.GetNetValid();
             
-            if (instance.CanPlay && netValid && GUILayout.Button("Play")) instance.Play();
-            if (instance.CanStop && netValid && GUILayout.Button("Stop")) instance.Stop();
+            if (instance.CanPlay && GUILayout.Button("Play")) instance.Play();
+            if (instance.CanStop && GUILayout.Button("Stop")) instance.Stop();
         }
     }
 }

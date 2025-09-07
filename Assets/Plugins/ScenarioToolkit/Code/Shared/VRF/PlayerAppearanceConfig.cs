@@ -1,5 +1,4 @@
-﻿using NaughtyAttributes;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace ScenarioToolkit.Shared.VRF
@@ -11,10 +10,6 @@ namespace ScenarioToolkit.Shared.VRF
     [CreateAssetMenu(fileName = nameof(PlayerAppearanceConfig), menuName = "VRF/Identities/" + nameof(PlayerAppearanceConfig))]
     public class PlayerAppearanceConfig : IdentifiedScriptableObject
     {
-        [FormerlySerializedAs("controlSchemeModes")] // Не трогать, старое название
-        [SerializeField, EnumFlags] private PlayerControlModes controlModes =
-            PlayerControlModes.VR & PlayerControlModes.WASD;
-        
         // VR основной и самый проработанный режим управления игрока
         // Зачастую для него и создана и заточена под него большая часть кода фреймворка
         // [ShowIf(nameof(IsVR))]

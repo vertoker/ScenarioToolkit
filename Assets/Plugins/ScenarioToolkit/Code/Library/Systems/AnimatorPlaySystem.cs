@@ -4,7 +4,6 @@ using Scenario.Base.Components.Actions;
 using Scenario.Base.Components.Conditions;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Library.Components.Actions.Unity;
-using ScenarioToolkit.Library.States;
 using ScenarioToolkit.Shared;
 using UnityEngine;
 using Zenject;
@@ -18,7 +17,7 @@ namespace ScenarioToolkit.Library.Systems
     /// <summary>
     /// State-timer система для запуска анимация в Animator
     /// </summary>
-    public class AnimatorPlaySystem : BaseScenarioAsyncStateSystem<AnimatorPlayState>
+    public class AnimatorPlaySystem : BaseScenarioSystem
     {
         public AnimatorPlaySystem(SignalBus listener) : base(listener)
         {
@@ -26,22 +25,6 @@ namespace ScenarioToolkit.Library.Systems
             listener.Subscribe<StopAnimation>(StopAnimation);
             listener.Subscribe<SetAnimatorParameter>(SetAnimatorParameter);
             listener.Subscribe<SetAnimatorLayerWeight>(SetAnimatorLayerWeight);
-        }
-
-        protected override void ApplyState(AnimatorPlayState state)
-        {
-            foreach (var (animator, data) in state.Animators)
-            {
-                var playAnimation = new PlayAnimation
-                {
-                    Animator = animator,
-                    AnimationStateName = data.StateName,
-                    AnimationLayer = data.Layer,
-                };
-                var normalizedTime = Mathf.Min(1, (float)(data.GetPassedTime() / data.Seconds));
-                
-                PlayAnimationImpl(playAnimation, normalizedTime, false);
-            }
         }
 
         private void PlayAnimation(PlayAnimation component)
@@ -61,24 +44,17 @@ namespace ScenarioToolkit.Library.Systems
                 AnimationStateName = component.AnimationStateName,
             });
         }
-        private void PlayAnimationImpl(PlayAnimation component, float normalizedTime = 0, bool saveState = true)
+        private void PlayAnimationImpl(PlayAnimation component, float normalizedTime = 0)
         {
             component.Animator.Play(component.AnimationStateName, component.AnimationLayer, component.AnimationLayer);
-            if (!component.Loop) WaitAnimation(component, normalizedTime, saveState);
+            if (!component.Loop) WaitAnimation(component, normalizedTime);
         }
 
-        private async void WaitAnimation(PlayAnimation component, float normalizedTime = 0, bool saveState = true)
+        private async void WaitAnimation(PlayAnimation component, float normalizedTime = 0)
         {
             await UniTask.Yield(PlayerLoopTiming.PostLateUpdate); // TODO не обновляется в том же кадре
             
             var state = component.Animator.GetCurrentAnimatorStateInfo(component.AnimationLayer);
-            if (saveState)
-            {
-                // TODO изменить модель для работы с разными слоями
-                var newData = new AnimatorPlayState.Data(component.AnimationStateName, state.length);
-                if (State.Animators.TryAdd(component.Animator, newData))
-                    State.Animators[component.Animator] = newData;
-            }
 
             var waitTime = TimeSpan.FromSeconds(state.length * (1 - normalizedTime) - Time.deltaTime);
             await UniTask.Delay(waitTime);
@@ -94,10 +70,7 @@ namespace ScenarioToolkit.Library.Systems
         {
             if (AssertLog.NotNull<StopAnimation>(component.Animator, nameof(component.Animator))) return;
             if (AssertLog.NotEmpty<StopAnimation>(component.AnimationStateName, nameof(component.AnimationStateName))) return;
-
-            State.Animators.Remove(component.Animator);
-            component.Animator.enabled = false;
-
+            
             Bus.Fire(new AnimationEnded
             {
                 Animator = component.Animator,

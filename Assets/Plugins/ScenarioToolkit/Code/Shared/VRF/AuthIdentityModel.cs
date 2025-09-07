@@ -1,6 +1,4 @@
 ﻿using System;
-using Mirror;
-using NaughtyAttributes;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using UnityEngine;
@@ -28,16 +26,8 @@ namespace ScenarioToolkit.Shared.VRF
         [JsonConverter(typeof(StringEnumConverter))]
         [field:SerializeField] public IdentityAuthMode AuthMode { get; set; }
         
-        
-        [field:AllowNesting, HideIf(nameof(ByID))]
         [field:SerializeField] public string IdentityName { get; set; }
-        
-        
-        [field:AllowNesting, ShowIf(nameof(ByNicknameAndPassword))]
         [field:SerializeField] public string Password { get; set; }
-        
-        
-        [field:AllowNesting, ShowIf(nameof(ByID))]
         [field:SerializeField] public int IdentityID { get; set; }
         
         [JsonIgnore] public bool ByNickname => AuthMode == IdentityAuthMode.Nickname;
@@ -69,14 +59,6 @@ namespace ScenarioToolkit.Shared.VRF
         #endregion
 
         #region Messages
-        public bool Compare<TAuthMessage>(TAuthMessage msg) where TAuthMessage : struct, NetworkMessage
-        {
-            switch (AuthMode)
-            {
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
         public bool Compare(AuthIdentityModel model)
         {
             if (AuthMode != model.AuthMode) return false;

@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Mirror;
-using NaughtyAttributes;
 using UnityEngine;
 
 namespace ScenarioToolkit.Shared.VRF
@@ -12,16 +10,15 @@ namespace ScenarioToolkit.Shared.VRF
     [CreateAssetMenu(fileName = nameof(IdentitiesConfig), menuName = "VRF/Identities/" + nameof(IdentitiesConfig))]
     public class IdentitiesConfig : ScriptableObject
     {
-        [Header("Identities"), Expandable]
+        [Header("Identities")]
         [SerializeField] private PlayerIdentityConfig[] configs;
         
         // Если игрок не может авторизоваться, то ему отправляется анонимная роль, иначе просто отключает
         [SerializeField] private bool allowAnonymousIdentities = true;
         
-        [ShowIf(nameof(allowAnonymousIdentities)), Expandable, Required]
         [SerializeField] private PlayerIdentityConfig defaultConfig;
         
-        [Header("Register"), Expandable]
+        [Header("Register")]
         [SerializeField] private PlayerAppearanceConfig[] appearances;
 
         #region Identities
@@ -38,27 +35,6 @@ namespace ScenarioToolkit.Shared.VRF
 
             Debug.LogError("Can't find any identity, use null, but it must not be like this");
             return null;
-        }
-        public bool TryFindIdentity<TAuthMessage>(TAuthMessage msg, out PlayerIdentityConfig identity) 
-            where TAuthMessage : struct, NetworkMessage
-        {
-            var result = configs
-                .FirstOrDefault(config => config.AuthIdentityModel.Compare(msg));
-
-            if (result != null)
-            {
-                identity = result;
-                return true;
-            }
-            
-            if (allowAnonymousIdentities)
-            {
-                identity = defaultConfig;
-                return true;
-            }
-
-            identity = null;
-            return false;
         }
         #endregion
         

@@ -1,5 +1,4 @@
-﻿using NaughtyAttributes;
-using ScenarioToolkit.Shared.VRF.Utilities.Extensions;
+﻿using ScenarioToolkit.Shared.VRF.Utilities.Extensions;
 using UnityEngine;
 
 namespace ScenarioToolkit.Shared.VRF
@@ -13,7 +12,6 @@ namespace ScenarioToolkit.Shared.VRF
         [SerializeField] private string roleName;
         [SerializeField] private bool hasLimit;
 
-        [ShowIf(nameof(hasLimit))]
         [SerializeField] private int limitCount = 1;
 
         public string RoleName => roleName;
@@ -25,14 +23,12 @@ namespace ScenarioToolkit.Shared.VRF
         [SerializeField] private AuthIdentityModel authIdentityModel = new(string.Empty);
         public AuthIdentityModel AuthIdentityModel => authIdentityModel;
 
-        [Space] [Expandable]
+        [Space]
         [SerializeField] private PlayerAppearanceConfig appearance;
         public PlayerAppearanceConfig Appearance => appearance;
 
         private bool HasAppearance => appearance != null;
-
-        [HideIf(nameof(HasAppearance))]
-        [Button]
+        
         private void CreateAppearance()
         {
             appearance = VrfHashCodeExtensions.CreateOrLoadPreset<PlayerAppearanceConfig>(this.GetPath());

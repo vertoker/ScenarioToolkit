@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-using NaughtyAttributes;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Serialization;

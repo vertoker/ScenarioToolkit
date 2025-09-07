@@ -1,6 +1,4 @@
 ﻿using ScenarioToolkit.Core.Systems;
-using ScenarioToolkit.Core.Systems.States;
-using ScenarioToolkit.Library.States;
 using ScenarioToolkit.Shared;
 using VRF.Scenario.Components.Actions;
 using Zenject;
@@ -14,26 +12,16 @@ namespace ScenarioToolkit.Library.Systems
     /// <summary>
     /// State система для контроля активности MonoBehaviour скриптов
     /// </summary>
-    public class MonoBehaviourActivitySystem : BaseScenarioStateSystem<MonoBehaviourActivityState>
+    public class MonoBehaviourActivitySystem : BaseScenarioSystem
     {
         public MonoBehaviourActivitySystem(SignalBus listener) : base(listener)
         {
             Bus.Subscribe<SetMonoBehaviourActivity>(SetMonoBehaviourActivity);
         }
 
-        protected override void ApplyState(MonoBehaviourActivityState state)
-        {
-            foreach (var (key, value) in state.MonoBehaviours)
-            {
-                key.enabled = value;
-            }
-        }
-
         private void SetMonoBehaviourActivity(SetMonoBehaviourActivity component)
         {
             if (AssertLog.NotNull<SetMonoBehaviourActivity>(component.MonoBehaviour, nameof(component.MonoBehaviour))) return;
-            
-            State.MonoBehaviours.SetStateActivity(component.MonoBehaviour, component.MonoBehaviour.enabled, component.IsActive);
             
             component.MonoBehaviour.enabled = component.IsActive;
         }

@@ -36,7 +36,6 @@ namespace ScenarioToolkit.Core.World
         
         public ScenarioModule GetModule() => module;
         public bool GetUseNetwork() => useNetwork;
-        public bool GetNetValid() => useNetwork && NetworkServer.active;
         public bool GetUseLog() => useLog;
         public int GetIdentityHash()
         {

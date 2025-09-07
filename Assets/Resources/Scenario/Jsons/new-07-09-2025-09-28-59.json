@@ -1,0 +1,67 @@
+{
+  "$type": "Scenario.Core.Model.ScenarioModelV6, ScenarioToolkit.Core",
+  "Context": {
+    "$type": "Scenario.Core.Model.ScenarioContextV6, ScenarioToolkit.Core",
+    "Variables": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Scenario.Core.Model.ObjectTyped, ScenarioToolkit.Core]], mscorlib"
+    },
+    "NodeOverrides": []
+  },
+  "Graph": {
+    "$type": "Scenario.Core.Model.ScenarioGraphV6, ScenarioToolkit.Core",
+    "Nodes": [
+      {
+        "Key": -530094812,
+        "Value": {
+          "$id": "1",
+          "$type": "Scenario.Core.Model.ActionNodeV6, ScenarioToolkit.Core",
+          "Components": [],
+          "ComponentsAVE": {
+            "$type": "ZLinq.ValueEnumerable`2[[ZLinq.Linq.FromList`1[[Scenario.Core.Model.Interfaces.IScenarioAction, ScenarioToolkit.Core]], ZLinq],[Scenario.Core.Model.Interfaces.IScenarioAction, ScenarioToolkit.Core]], ZLinq",
+            "Enumerator": {
+              "$type": "ZLinq.Linq.FromList`1[[Scenario.Core.Model.Interfaces.IScenarioAction, ScenarioToolkit.Core]], ZLinq"
+            }
+          },
+          "ComponentsEnumerableAVE": {
+            "$type": "ZLinq.ValueEnumerable`2[[ZLinq.Linq.FromEnumerable`1[[Scenario.Core.Model.Interfaces.IScenarioAction, ScenarioToolkit.Core]], ZLinq],[Scenario.Core.Model.Interfaces.IScenarioAction, ScenarioToolkit.Core]], ZLinq",
+            "Enumerator": {
+              "$type": "ZLinq.Linq.FromEnumerable`1[[Scenario.Core.Model.Interfaces.IScenarioAction, ScenarioToolkit.Core]], ZLinq"
+            }
+          },
+          "Count": 0,
+          "ActivationType": 1,
+          "IncomingLinks": [],
+          "OutcomingLinks": [],
+          "Name": "",
+          "Hash": -530094812
+        }
+      }
+    ],
+    "Links": []
+  },
+  "EditorGraph": {
+    "$type": "Scenario.Core.Model.EditorGraphV6, ScenarioToolkit.Core",
+    "Nodes": [
+      {
+        "Key": -530094812,
+        "Value": {
+          "$id": "2",
+          "$type": "Scenario.Core.Model.EditorNodeV6, ScenarioToolkit.Core",
+          "Node": {
+            "$ref": "1"
+          },
+          "Position": {
+            "x": -60.0,
+            "y": -39.0
+          },
+          "Hash": -530094812,
+          "IncomingLinks": [],
+          "OutcomingLinks": [],
+          "Groups": []
+        }
+      }
+    ],
+    "Links": [],
+    "Groups": []
+  }
+}

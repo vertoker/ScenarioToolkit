@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using AYellowpaper.SerializedCollections;
-using NaughtyAttributes;
 using UnityEngine;
 
 namespace ScenarioToolkit.Core.World
@@ -14,13 +13,12 @@ namespace ScenarioToolkit.Core.World
         // - Точно сломает instance для мультиплеера
         // - Возможно сломает сериализацию текущих сценариев
         
-        [SerializeField, ReadOnly] private SerializedDictionary<string, GameObject> behaviours = new();
-        [SerializeField, ReadOnly] private SerializedDictionary<string, ScenarioLauncherInstance> instances = new();
+        [SerializeField] private SerializedDictionary<string, GameObject> behaviours = new();
+        [SerializeField] private SerializedDictionary<string, ScenarioLauncherInstance> instances = new();
 
         public IDictionary<string, GameObject> Behaviours => behaviours;
         public IDictionary<string, ScenarioLauncherInstance> ScenarioInstances => instances;
-
-        [Button]
+        
         [ContextMenu(nameof(CacheScene))]
         public void CacheScene()
         {
