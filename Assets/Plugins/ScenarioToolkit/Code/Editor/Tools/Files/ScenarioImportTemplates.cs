@@ -1,7 +1,7 @@
-﻿using UnityEditor;
-using VRF.Utilities;
+﻿using ScenarioToolkit.Shared.VRF.Utilities.VRF;
+using UnityEditor;
 
-namespace Scenario.Editor.Tools.Files
+namespace ScenarioToolkit.Editor.Tools.Files
 {
     public static class ScenarioImportTemplates
     {

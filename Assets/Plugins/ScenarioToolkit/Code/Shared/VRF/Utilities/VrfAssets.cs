@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
-using VRF.Utilities.Extensions;
-using Object = UnityEngine.Object;
 using System.Linq;
+using ScenarioToolkit.Shared.VRF.Utilities.Extensions;
+using UnityEditor;
+using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
-using UnityEditor;
+
 #else
 using VRF.Utilities.Exceptions;
 #endif
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     /// <summary>
     /// Класс, предоставляющий методы по работе с ассетами

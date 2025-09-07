@@ -3,29 +3,29 @@ using System.IO;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
-using Scenario.Core.Player;
-using Scenario.Core.Scriptables;
-using Scenario.Core.Serialization;
-using Scenario.Core.Services;
-using Scenario.Core.World;
 using Scenario.Editor.Model;
-using Scenario.Editor.Tools.Files.Update;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Editor.Windows.ContextEditor;
-using Scenario.Editor.Windows.ElementEditor;
-using Scenario.Editor.Windows.GraphEditor.Behaviours;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using Scenario.Editor.Windows.Search;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Core.Scriptables;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Core.Services;
+using ScenarioToolkit.Core.World;
+using ScenarioToolkit.Editor.Tools.Files.Update;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Editor.Windows.ContextEditor;
+using ScenarioToolkit.Editor.Windows.ElementEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.Behaviours;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Editor.Windows.Search;
+using ScenarioToolkit.Shared.VRF;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
-using VRF.Identities.Core;
 using Zenject;
 
-namespace Scenario.Editor.Windows.GraphEditor
+namespace ScenarioToolkit.Editor.Windows.GraphEditor
 {
     /// <summary>
     /// Ядро редактора сценария. Является главным окном в сценарии, администрирует также другие окна,

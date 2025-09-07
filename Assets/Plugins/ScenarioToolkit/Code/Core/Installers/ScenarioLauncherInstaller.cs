@@ -1,12 +1,11 @@
 ﻿using NaughtyAttributes;
-using Scenario.Core.DataSource;
-using Scenario.Core.Scriptables;
-using Scenario.Core.Services;
-using Scenario.Core.World;
+using ScenarioToolkit.Core.Scriptables;
+using ScenarioToolkit.Core.Services;
+using ScenarioToolkit.Core.World;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Core.Installers
+namespace ScenarioToolkit.Core.Installers
 {
     public class ScenarioLauncherInstaller : MonoInstaller, IScenarioWorldID
     {

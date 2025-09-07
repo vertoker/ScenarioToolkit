@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Scenario.Editor.Content.Fields.Experimental.Lists
+namespace ScenarioToolkit.Editor.Content.Fields.Experimental.Lists
 {
     /// <summary>
     /// Незаконченная система для отрисовки массива полей

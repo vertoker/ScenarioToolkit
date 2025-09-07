@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace VRF.Utilities.Extensions
+namespace ScenarioToolkit.Shared.VRF.Utilities.Extensions
 {
     /// <summary>
     /// Расширения для приведения параметров Transform (позиция, вращение, скейл) от одного объекта к другому

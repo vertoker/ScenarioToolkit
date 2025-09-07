@@ -1,9 +1,9 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.ElementEditor.NodeElements
+namespace ScenarioToolkit.Editor.Windows.ElementEditor.NodeElements
 {
     public class NoteNodeElement : BaseNodeElement
     {

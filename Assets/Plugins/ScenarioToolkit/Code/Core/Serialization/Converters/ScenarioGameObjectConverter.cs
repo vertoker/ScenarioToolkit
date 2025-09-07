@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Linq;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
-using Scenario.Core.Serialization.Converters.Base;
-using Scenario.Core.World;
-using Scenario.Utilities;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Serialization.Converters.Base;
+using ScenarioToolkit.Core.World;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Scenario.Core.Serialization.Converters
+namespace ScenarioToolkit.Core.Serialization.Converters
 {
     public class ScenarioGameObjectConverter : BaseScenarioJsonConverter<GameObject>
     {

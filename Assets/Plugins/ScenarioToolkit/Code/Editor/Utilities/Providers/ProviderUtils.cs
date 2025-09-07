@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using ScenarioToolkit.Shared.VRF.Utilities;
 using UnityEditor;
-using VRF.Utilities;
 
-namespace Scenario.Editor.Utilities.Providers
+namespace ScenarioToolkit.Editor.Utilities.Providers
 {
     public static class ProviderUtils
     {

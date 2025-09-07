@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Scenario.Utilities.Extensions
+namespace ScenarioToolkit.Shared.Extensions
 {
     public static class CloneExtensions
     {

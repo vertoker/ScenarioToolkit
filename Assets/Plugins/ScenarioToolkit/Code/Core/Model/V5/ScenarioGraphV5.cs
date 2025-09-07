@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Scenario.Core.Model.Interfaces;
 using UnityEngine;
-using VRF.Utilities.Extensions;
 
 // Previous: ScenarioGraphV1
 //  Current: ScenarioGraphV5

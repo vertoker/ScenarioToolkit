@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
-using Scenario.Core.Serialization;
 using Scenario.Editor.Model;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using Scenario.Utilities;
-using Scenario.Utilities.Collections;
+using ScenarioToolkit.Core.Nodes;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Shared;
+using ScenarioToolkit.Shared.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 using ZLinq;
 
-namespace Scenario.Editor.Windows.GraphEditor
+namespace ScenarioToolkit.Editor.Windows.GraphEditor
 {
     /// <summary>
     /// Контроллер модели, отвечает за хранение актуальной модели графа,

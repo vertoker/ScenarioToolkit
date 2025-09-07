@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
+using ScenarioToolkit.Shared;
 
-namespace Scenario.Editor.Utilities
+namespace ScenarioToolkit.Editor.Utilities
 {
     public static class VariablesReflection
     {

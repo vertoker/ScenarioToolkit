@@ -1,7 +1,8 @@
 ﻿using System;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
 using Scenario.Utilities;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Shared;
 using Zenject;
 using ZLinq;
 

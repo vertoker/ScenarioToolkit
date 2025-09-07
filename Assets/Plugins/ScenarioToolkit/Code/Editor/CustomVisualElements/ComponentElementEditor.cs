@@ -4,13 +4,13 @@ using System.Linq;
 using System.Reflection;
 using ModestTree;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.Content.Fields;
-using Scenario.Editor.Content.UXML;
-using Scenario.Utilities;
-using Scenario.Utilities.Attributes;
+using ScenarioToolkit.Editor.Content.Fields;
+using ScenarioToolkit.Editor.Content.UXML;
+using ScenarioToolkit.Shared;
+using ScenarioToolkit.Shared.Attributes;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.CustomVisualElements
+namespace ScenarioToolkit.Editor.CustomVisualElements
 {
     /// <summary>
     /// Редактор для любого IScenarioComponent, также поддерживает override переменных и мета аттрибуты

@@ -1,4 +1,4 @@
-namespace VRF.Players.Controllers.Models.Enums
+namespace ScenarioToolkit.Shared.VRF.Utilities.VRF
 {
     public enum ButtonPressMode
     {

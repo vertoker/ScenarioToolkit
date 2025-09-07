@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Scenario.Editor.Utilities;
+using ScenarioToolkit.Editor.Utilities;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.GraphEditor.Behaviours
+namespace ScenarioToolkit.Editor.Windows.GraphEditor.Behaviours
 {
     public class SubGraphStackBehaviour
     {

@@ -1,9 +1,9 @@
-﻿using Scenario.Editor.Utilities.Providers;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
+﻿using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.ElementEditor.VisualElements
+namespace ScenarioToolkit.Editor.Windows.ElementEditor.VisualElements
 {
     public class LinkElement : BaseScenarioElementEditor
     {

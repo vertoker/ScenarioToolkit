@@ -1,7 +1,7 @@
 ﻿using Scenario.Core.Model.Interfaces;
 using UnityEngine;
 
-namespace Modules.Scenario.Components.Actions
+namespace ScenarioToolkit.External.Components.Actions.PathDrawer
 {
     public struct SetPathTarget : IScenarioAction
     {

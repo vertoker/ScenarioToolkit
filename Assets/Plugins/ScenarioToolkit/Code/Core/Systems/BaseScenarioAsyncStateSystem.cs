@@ -1,9 +1,9 @@
 ﻿using Cysharp.Threading.Tasks;
 using Mirror;
-using Scenario.Core.Systems.States;
+using ScenarioToolkit.Core.Systems.States;
 using Zenject;
 
-namespace Scenario.Core.Systems
+namespace ScenarioToolkit.Core.Systems
 {
     /// <summary>
     /// Расширение базовой системы, которое предоставляет функционал для его синхронизации по сети

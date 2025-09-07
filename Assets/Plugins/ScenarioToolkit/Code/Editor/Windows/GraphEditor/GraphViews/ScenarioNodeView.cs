@@ -3,15 +3,15 @@ using JetBrains.Annotations;
 using ModestTree;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
-using Scenario.Utilities;
-using Scenario.Utilities.Attributes;
+using ScenarioToolkit.Core.Nodes;
+using ScenarioToolkit.Shared;
+using ScenarioToolkit.Shared.Attributes;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
 
-namespace Scenario.Editor.Windows.GraphEditor.GraphViews
+namespace ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews
 {
     public class ScenarioNodeView : Node, IScenarioGraphElement
     {

@@ -1,6 +1,7 @@
 ﻿using Scenario.Core.Model.Interfaces;
 using Scenario.Utilities;
-using Scenario.Utilities.Attributes;
+using ScenarioToolkit.Shared;
+using ScenarioToolkit.Shared.Attributes;
 
 // ReSharper disable once CheckNamespace
 namespace Scenario.Core.Model

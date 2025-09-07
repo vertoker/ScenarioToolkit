@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace VRF.Utilities.Attributes
+namespace ScenarioToolkit.Shared.VRF.Utilities.Attributes
 {
     [CustomPropertyDrawer(typeof(EnumFlagsAttribute))]
     public class EnumFlagsAttributeDrawer : PropertyDrawer

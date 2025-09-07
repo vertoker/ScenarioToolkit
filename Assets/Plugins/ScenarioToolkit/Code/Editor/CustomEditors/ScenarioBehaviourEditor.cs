@@ -1,10 +1,9 @@
-﻿using Scenario.Core;
-using Scenario.Core.World;
+﻿using ScenarioToolkit.Core.World;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.CustomEditors
+namespace ScenarioToolkit.Editor.CustomEditors
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(ScenarioBehaviour))]

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using Scenario.Utilities;
+using ScenarioToolkit.Shared;
 
-namespace Scenario.Editor.SRF
+namespace ScenarioToolkit.Editor.SRF
 {
     public static class SRFUtils
     {

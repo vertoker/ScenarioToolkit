@@ -2,7 +2,7 @@
 using JetBrains.Annotations;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Base
+namespace ScenarioToolkit.Editor.Content.Fields.Base
 {
     /// <summary>
     /// Интерфейс для создания экземпляров полей в редакторе

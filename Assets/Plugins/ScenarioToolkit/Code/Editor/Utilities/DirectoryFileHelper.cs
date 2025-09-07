@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using VRF.Utilities;
+using ScenarioToolkit.Shared.VRF.Utilities;
 
-namespace Scenario.Editor.Utilities
+namespace ScenarioToolkit.Editor.Utilities
 {
     public static class DirectoryFileHelper
     {

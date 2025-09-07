@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Scenario.Base.Components.Actions;
-using Scenario.Core.Systems.States;
+using ScenarioToolkit.Core.Systems.States;
 using UnityEngine;
 
-namespace Scenario.States
+namespace ScenarioToolkit.Library.States
 {
     public class SetTransformState : IState
     {

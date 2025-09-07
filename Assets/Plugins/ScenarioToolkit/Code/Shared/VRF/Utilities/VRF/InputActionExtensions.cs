@@ -1,8 +1,7 @@
 using System;
 using UnityEngine.InputSystem;
-using VRF.Players.Controllers.Models.Enums;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities.VRF
 {
     /// <summary>
     /// Расширения для удобной подписки и отписки на события InputAction

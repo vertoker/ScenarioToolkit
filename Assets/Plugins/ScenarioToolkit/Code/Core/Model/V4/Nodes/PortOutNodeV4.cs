@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
 
 // Previous: 
 //  Current: PortOutNodeV4

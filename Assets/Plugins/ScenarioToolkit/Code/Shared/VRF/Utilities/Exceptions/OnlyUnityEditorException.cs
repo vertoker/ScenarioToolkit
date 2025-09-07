@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VRF.Utilities.Exceptions
+namespace ScenarioToolkit.Shared.VRF.Utilities.Exceptions
 {
     /// <summary>
     /// Сокращение для частного вида ошибки NotImplementedException, что объект работает только в Unity Editor

@@ -1,10 +1,8 @@
 ﻿using NaughtyAttributes;
+using ScenarioToolkit.Shared.VRF.Utilities.Extensions;
 using UnityEngine;
-using VRF.Identities.Models;
-using VRF.Utilities.Extensions;
-using VRF.Utils.Identifying;
 
-namespace VRF.Players.Scriptables
+namespace ScenarioToolkit.Shared.VRF
 {
     /// <summary>
     /// Главный конфиг для идентификации игрока, используется даже если Identities система не инициализирована

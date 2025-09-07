@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-namespace VRF.Utilities.Extensions
+namespace ScenarioToolkit.Shared.VRF.Utilities.Extensions
 {
     /// <summary>
     /// Расширения для работы с компонентами

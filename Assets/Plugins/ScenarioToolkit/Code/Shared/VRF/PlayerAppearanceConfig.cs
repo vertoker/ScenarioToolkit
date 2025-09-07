@@ -1,12 +1,8 @@
-﻿using System;
-using NaughtyAttributes;
+﻿using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Serialization;
-using VRF.Players.Models;
-using VRF.Utilities;
-using VRF.Utils.Identifying;
 
-namespace VRF.Players.Scriptables
+namespace ScenarioToolkit.Shared.VRF
 {
     /// <summary>
     /// Внешний вид игрока для всех возможных конфигураций.

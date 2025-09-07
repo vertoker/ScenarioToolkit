@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Scenario.Core.Player;
+using ScenarioToolkit.Core.Player;
 
 // ReSharper disable once CheckNamespace
 namespace Scenario.Core.Model.Interfaces

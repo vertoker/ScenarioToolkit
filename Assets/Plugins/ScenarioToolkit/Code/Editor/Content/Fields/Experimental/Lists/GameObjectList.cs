@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Scenario.Editor.Content.Fields.Experimental.Lists
+namespace ScenarioToolkit.Editor.Content.Fields.Experimental.Lists
 {
     public class GameObjectList : BaseListScriptableObject
     {

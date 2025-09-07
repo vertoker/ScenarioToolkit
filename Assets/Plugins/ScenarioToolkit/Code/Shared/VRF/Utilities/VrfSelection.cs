@@ -11,7 +11,7 @@ using Object = UnityEngine.Object;
 using VRF.Utilities.Exceptions;
 #endif
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     /// <summary>
     /// Класс с функционалом по работе с выбранными объектами в эдиторе (получение объектов и их компонентов)

@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Newtonsoft.Json;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 
 // Previous: SubgraphNodeV5

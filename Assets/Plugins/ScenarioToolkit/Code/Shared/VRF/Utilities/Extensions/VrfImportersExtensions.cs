@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace VRF.Utilities.Extensions
+namespace ScenarioToolkit.Shared.VRF.Utilities.Extensions
 {
     /// <summary>
     /// Расширения для работы с импортерами

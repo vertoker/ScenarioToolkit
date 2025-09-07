@@ -3,7 +3,7 @@ using System.Globalization;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Scenario.Utilities.Extensions
+namespace ScenarioToolkit.Shared.Extensions
 {
     // Inspired by https://github.com/applejag/Newtonsoft.Json-for-Unity.Converters/blob/master/Packages/Newtonsoft.Json-for-Unity.Converters/UnityConverters/Helpers/JsonHelperExtensions.cs
     

@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Scenario.Editor.Utilities.Providers
+namespace ScenarioToolkit.Editor.Utilities.Providers
 {
     public static class PresetProvider
     {

@@ -1,6 +1,5 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities.Attributes;
-using VRF.Scenario.Systems;
+using ScenarioToolkit.Shared.Attributes;
 
 // ReSharper disable once CheckNamespace
 namespace VRF.Scenario.Components.Conditions

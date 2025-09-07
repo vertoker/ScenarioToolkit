@@ -1,8 +1,7 @@
-﻿using Scenario.Core.Network;
-using Scenario.Core.Systems.States;
+﻿using ScenarioToolkit.Core.Systems.States;
 using Zenject;
 
-namespace Scenario.Core.Installers
+namespace ScenarioToolkit.Core.Network
 {
     /// <summary>
     /// Опциональное дополнение в существующему сетевому модулю VRF, полностью опционален

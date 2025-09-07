@@ -1,11 +1,11 @@
 ﻿using System;
 using Scenario.Core.Model;
-using Scenario.Editor.Content.Fields.Base;
-using Scenario.Editor.Windows;
+using ScenarioToolkit.Editor.Content.Fields.Base;
+using ScenarioToolkit.Editor.Windows;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Types.Custom
+namespace ScenarioToolkit.Editor.Content.Fields.Types.Custom
 {
     public class NodeLinkFieldCreator : ITypeFieldCreator
     {

@@ -2,6 +2,7 @@
 using ModestTree;
 using Newtonsoft.Json;
 using Scenario.Utilities;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 
 // ReSharper disable once CheckNamespace

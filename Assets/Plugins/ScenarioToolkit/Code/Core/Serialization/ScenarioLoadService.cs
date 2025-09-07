@@ -2,11 +2,11 @@
 using System.IO;
 using Newtonsoft.Json;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Core.Serialization
+namespace ScenarioToolkit.Core.Serialization
 {
     /// <summary>
     /// Сервис сохранения/загрузки JSON сценария для runtime модели

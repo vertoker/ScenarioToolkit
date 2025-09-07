@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Experimental.Elements
+namespace ScenarioToolkit.Editor.Content.Fields.Experimental.Elements
 {
     [Obsolete]
     public class TextAssetField

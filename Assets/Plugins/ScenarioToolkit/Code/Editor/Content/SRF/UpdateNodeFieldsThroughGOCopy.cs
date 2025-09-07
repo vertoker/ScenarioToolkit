@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework;
+﻿using System.Collections.Generic;
 using Scenario.Core.Model;
-using Scenario.Core.Model.Interfaces;
-using Scenario.Core.World;
 using Scenario.Editor.Model;
-using Scenario.Editor.SRF;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Windows;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.World;
+using ScenarioToolkit.Editor.SRF;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Windows;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using ZLinq;
 using Object = UnityEngine.Object;
 
-namespace Scenario.Editor.Content.SRF
+namespace ScenarioToolkit.Editor.Content.SRF
 {
     public class UpdateNodeFieldsThroughGOCopy : IScenarioReflexFunction
     {

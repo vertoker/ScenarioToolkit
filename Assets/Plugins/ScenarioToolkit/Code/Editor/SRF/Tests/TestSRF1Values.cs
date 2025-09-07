@@ -1,7 +1,7 @@
 ﻿using Scenario.Core.Model;
 using UnityEngine;
 
-namespace Scenario.Editor.SRF.Tests
+namespace ScenarioToolkit.Editor.SRF.Tests
 {
     public class TestSRF1Values : IScenarioReflexFunction
     {

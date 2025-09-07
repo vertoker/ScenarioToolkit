@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
+using ScenarioToolkit.Core.Player;
 using UnityEngine;
 
 // ReSharper disable once CheckNamespace

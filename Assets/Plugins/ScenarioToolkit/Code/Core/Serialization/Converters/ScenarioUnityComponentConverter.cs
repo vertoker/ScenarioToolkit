@@ -1,9 +1,9 @@
 ﻿using System;
 using Newtonsoft.Json;
 using Scenario.Core.Model;
-using Scenario.Core.Serialization.Converters.Base;
 using Scenario.Utilities;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Serialization.Converters.Base;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 
 // ReSharper disable once CheckNamespace

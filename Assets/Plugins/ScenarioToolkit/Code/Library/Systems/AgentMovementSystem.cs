@@ -1,13 +1,13 @@
 using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using Scenario.Components.Actions.Unity;
 using Scenario.Components.Conditions;
-using Scenario.Core.Systems;
+using ScenarioToolkit.Core.Systems;
+using ScenarioToolkit.Library.Components.Actions.Unity;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Systems
+namespace ScenarioToolkit.Library.Systems
 {
     public class AgentMovementSystem : BaseScenarioSystem
     {

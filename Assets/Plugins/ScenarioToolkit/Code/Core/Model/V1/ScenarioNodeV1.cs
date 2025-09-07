@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
+using ScenarioToolkit.Core.Player;
 using UnityEngine;
 
 // Previous: ScenarioNode

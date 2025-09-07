@@ -2,11 +2,11 @@ using System;
 using System.Linq;
 using Newtonsoft.Json;
 using Scenario.Core.Model;
-using Scenario.Core.Serialization.Converters.Base;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Serialization.Converters.Base;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 
-namespace Scenario.Core.Serialization.Converters
+namespace ScenarioToolkit.Core.Serialization.Converters
 {
     public class ScenarioResourceObjectConverter : BaseScenarioJsonConverter
     {

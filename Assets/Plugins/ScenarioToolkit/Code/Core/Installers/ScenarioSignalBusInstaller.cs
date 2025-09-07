@@ -1,7 +1,7 @@
-﻿using Scenario.Utilities;
+﻿using ScenarioToolkit.Shared;
 using Zenject;
 
-namespace Scenario.Core.Installers
+namespace ScenarioToolkit.Core.Installers
 {
     public class ScenarioSignalBusInstaller : MonoInstaller
     {

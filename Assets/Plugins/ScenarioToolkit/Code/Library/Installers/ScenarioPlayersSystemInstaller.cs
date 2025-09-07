@@ -1,7 +1,7 @@
-﻿using Scenario.Core.Installers.Systems;
-using Scenario.Systems;
+﻿using ScenarioToolkit.Core.Installers.Systems;
+using ScenarioToolkit.Library.Systems;
 
-namespace Scenario.Installers
+namespace ScenarioToolkit.Library.Installers
 {
     public class ScenarioPlayersSystemInstaller : BaseSystemInstallerGeneric<ScenarioPlayersSystem>
     {

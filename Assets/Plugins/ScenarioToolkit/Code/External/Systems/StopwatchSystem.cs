@@ -1,13 +1,12 @@
 using System;
 using System.Diagnostics;
-using Scenario.Core;
-using Scenario.Core.Installers.Systems;
-using Scenario.Core.Systems;
+using ScenarioToolkit.Core.Installers.Systems;
+using ScenarioToolkit.Core.Systems;
 using VRF.Scenario.Components.Actions;
 using Zenject;
 using Debug = UnityEngine.Debug;
 
-namespace VRF.Scenario.Systems
+namespace ScenarioToolkit.External.Systems
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]

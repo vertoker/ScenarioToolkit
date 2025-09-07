@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     public enum LogMessageType
     {

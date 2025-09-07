@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using Zenject;
-
-namespace Scenario.Core.Serialization.Converters.Base
+﻿namespace ScenarioToolkit.Core.Serialization.Converters.Base
 {
     public interface IScenarioJsonConverter
     {

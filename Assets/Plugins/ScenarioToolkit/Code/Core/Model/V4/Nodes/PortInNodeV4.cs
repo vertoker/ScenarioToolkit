@@ -2,7 +2,6 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
 
 // Previous: 
 //  Current: PortInNodeV4

@@ -1,8 +1,8 @@
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.Search.General;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.Search.General;
 using UnityEditor.Searcher;
 
-namespace Scenario.Editor.Windows.Search
+namespace ScenarioToolkit.Editor.Windows.Search
 {
     public class ComponentSearchWindow : BaseSearchWindow
     {

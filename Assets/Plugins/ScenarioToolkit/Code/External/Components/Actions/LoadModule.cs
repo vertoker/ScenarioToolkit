@@ -1,7 +1,7 @@
 ﻿using Scenario.Core.DataSource;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Scriptables;
-using Scenario.Utilities.Attributes;
+using ScenarioToolkit.Core.Scriptables;
+using ScenarioToolkit.Shared.Attributes;
 
 // ReSharper disable once CheckNamespace
 namespace VRF.Scenario.Components.Actions

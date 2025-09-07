@@ -2,7 +2,7 @@ using Scenario.Core.Model.Interfaces;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Scenario.Components.Actions.Unity
+namespace ScenarioToolkit.Library.Components.Actions.Unity
 {
     public struct SetAgentDestination : IScenarioAction, IComponentDefaultValues
     {

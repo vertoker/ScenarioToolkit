@@ -1,4 +1,4 @@
-﻿namespace Scenario.Editor.Content.Fields
+﻿namespace ScenarioToolkit.Editor.Content.Fields
 {
     /// <summary>
     /// Все доступные поля для отрисовки в Unity, в основном это всё unity поля

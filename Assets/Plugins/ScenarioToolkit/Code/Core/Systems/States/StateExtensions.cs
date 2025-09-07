@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Scenario.Core.Systems.States
+namespace ScenarioToolkit.Core.Systems.States
 {
     public static class StateExtensions
     {

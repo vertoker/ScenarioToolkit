@@ -1,6 +1,6 @@
 using System;
 
-namespace VRF.Players.Models
+namespace ScenarioToolkit.Shared.VRF
 {
     /// <summary>
     /// Все возможные методы управления. Скорее всего

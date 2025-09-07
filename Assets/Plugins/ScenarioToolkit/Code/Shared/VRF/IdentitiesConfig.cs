@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Mirror;
 using NaughtyAttributes;
 using UnityEngine;
-using VRF.Identities.Models;
-using VRF.Players.Scriptables;
 
-namespace VRF.Identities
+namespace ScenarioToolkit.Shared.VRF
 {
     /// <summary>
     /// Все данные ролей игроков, сильно связан с сетью. У всех сетевых игроков есть его локальная копия

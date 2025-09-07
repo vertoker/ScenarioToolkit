@@ -1,11 +1,11 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Serialization;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Windows.ContextEditor;
-using Scenario.Editor.Windows.ElementEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Windows.ContextEditor;
+using ScenarioToolkit.Editor.Windows.ElementEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
 
-namespace Scenario.Editor.Windows.GraphEditor
+namespace ScenarioToolkit.Editor.Windows.GraphEditor
 {
     /// <summary>
     /// Контроллер модели, отвечает за хранение актуальной модели,

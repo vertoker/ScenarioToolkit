@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Data;
 using Newtonsoft.Json;
-using Scenario.Core.Model;
-using Scenario.Core.Serialization.Converters.Base;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Serialization.Converters.Base;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 
-namespace Scenario.Core.Serialization.Converters
+namespace ScenarioToolkit.Core.Serialization.Converters
 {
     /* Workaround for strange Newtonsoft behaviour, also helps to convert types on the fly
         https://discuss.hangfire.io/t/could-not-cast-or-convert-from-system-string-to-system-type/4240/5

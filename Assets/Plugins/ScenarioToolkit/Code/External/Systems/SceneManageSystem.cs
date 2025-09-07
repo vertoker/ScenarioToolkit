@@ -1,11 +1,10 @@
-﻿using Scenario.Core;
-using Scenario.Core.Systems;
-using Scenario.Utilities;
+﻿using ScenarioToolkit.Core.Systems;
+using ScenarioToolkit.Shared;
 using UnityEngine.SceneManagement;
 using VRF.Scenario.Components.Actions;
 using Zenject;
 
-namespace VRF.Scenario.Systems
+namespace ScenarioToolkit.External.Systems
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]

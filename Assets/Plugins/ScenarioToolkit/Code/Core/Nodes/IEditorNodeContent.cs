@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Scenario.Core.Model.Interfaces;
 
-namespace Scenario.Core.Nodes
+namespace ScenarioToolkit.Core.Nodes
 {
     /// <summary>
     /// Интерфейс для статического контента для EditorNode. Содержит

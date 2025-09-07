@@ -1,15 +1,15 @@
 ﻿using NaughtyAttributes;
-using Scenario.Core.Player;
-using Scenario.Core.Player.Roles;
-using Scenario.Core.Scriptables;
-using Scenario.Core.Serialization;
-using Scenario.Core.Services;
-using Scenario.Core.World;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Core.Player.Roles;
+using ScenarioToolkit.Core.Scriptables;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Core.Services;
+using ScenarioToolkit.Core.World;
+using ScenarioToolkit.Shared.VRF.Utilities.VRF;
 using UnityEngine;
-using VRF.Utilities;
 using Zenject;
 
-namespace Scenario.Core.Installers
+namespace ScenarioToolkit.Core.Installers
 {
     public class ScenarioInstaller : MonoInstaller
     {

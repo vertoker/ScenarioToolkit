@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Scenario.Core.Installers.Systems
+namespace ScenarioToolkit.Core.Installers.Systems
 {
     public class ScenarioSystemsSearch : MonoBehaviour
     {

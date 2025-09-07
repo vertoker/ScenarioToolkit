@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Scenario.Core.Player;
+using ScenarioToolkit.Core.Player;
 
 // ReSharper disable once CheckNamespace
 namespace Scenario.Core.Model.Interfaces

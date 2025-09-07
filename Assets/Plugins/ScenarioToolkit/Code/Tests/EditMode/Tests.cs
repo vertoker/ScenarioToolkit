@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace Scenario.Tests.EditMode
+namespace ScenarioToolkit.Tests.EditMode
 {
     /// <summary>
     /// Проверка всех Scriptable объектов во всём проекте на правильность использования

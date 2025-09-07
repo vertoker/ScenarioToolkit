@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace VRF.Utilities.Extensions
+namespace ScenarioToolkit.Shared.VRF.Utilities.Extensions
 {
     /// <summary>
     /// Расширения, позволяющие обходить иерархию Transform'ов и применять функции к каждому объекту

@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using Scenario.Core.Model;
-using Scenario.Editor.Content.Fields.Base;
-using Scenario.Editor.Content.Fields.Types;
-using Scenario.Editor.Content.Fields.Types.Convertible;
-using Scenario.Editor.Content.Fields.Types.Custom;
-using Scenario.Editor.Content.Fields.Types.Unity;
-using Scenario.Utilities;
+using ScenarioToolkit.Editor.Content.Fields.Base;
+using ScenarioToolkit.Editor.Content.Fields.Types;
+using ScenarioToolkit.Editor.Content.Fields.Types.Convertible;
+using ScenarioToolkit.Editor.Content.Fields.Types.Custom;
+using ScenarioToolkit.Editor.Content.Fields.Types.Unity;
+using ScenarioToolkit.Shared;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
 
-namespace Scenario.Editor.Content.Fields
+namespace ScenarioToolkit.Editor.Content.Fields
 {
     /// <summary>
     /// Помощник по информации и в создании полей сценария

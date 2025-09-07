@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Shared.Extensions;
 
-namespace Scenario.Utilities
+namespace ScenarioToolkit.Shared
 {
     public static class ScenarioTypeParser
     {

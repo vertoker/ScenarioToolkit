@@ -1,4 +1,4 @@
-﻿namespace Scenario.Editor.SRF
+﻿namespace ScenarioToolkit.Editor.SRF
 {
     public struct SRFMetadata
     {

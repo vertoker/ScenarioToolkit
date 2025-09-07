@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
 using JetBrains.Annotations;
-using VRF.Identities.Models;
-using VRF.Players.Scriptables;
 using Zenject;
 
-namespace VRF.Identities.Core
+namespace ScenarioToolkit.Shared.VRF
 {
     /// <summary>
     /// Сервис идентификации, прокидывает все нужные данные

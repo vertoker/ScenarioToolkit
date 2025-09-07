@@ -1,7 +1,7 @@
-﻿using Scenario.Editor.Content.Fields.Base;
+﻿using ScenarioToolkit.Editor.Content.Fields.Base;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Types
+namespace ScenarioToolkit.Editor.Content.Fields.Types
 {
     public class StringFieldCreator : BaseFieldCreator<string, TextField>
     {

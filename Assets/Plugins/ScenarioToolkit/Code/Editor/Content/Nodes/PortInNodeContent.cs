@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
+using ScenarioToolkit.Core.Nodes;
 
-namespace Scenario.Editor.Content.Nodes
+namespace ScenarioToolkit.Editor.Content.Nodes
 {
     public class PortInNodeContent : IEditorNodeContent
     {

@@ -4,19 +4,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
-using Scenario.Core.Player;
 using Scenario.Editor.Model;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Nodes;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Utilities.Providers;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 using ZLinq;
 
-namespace Scenario.Editor.Windows.GraphEditor.GraphViews
+namespace ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews
 {
     public enum ScenarioGraphElementState
     {

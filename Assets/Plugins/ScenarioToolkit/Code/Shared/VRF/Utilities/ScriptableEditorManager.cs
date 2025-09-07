@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     /// <summary>
     /// Класс с методами поиска и создания ScriptableObject'ов

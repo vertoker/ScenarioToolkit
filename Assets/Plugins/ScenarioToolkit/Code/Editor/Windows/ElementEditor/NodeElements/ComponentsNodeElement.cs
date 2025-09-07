@@ -1,15 +1,15 @@
 ﻿using System;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.CustomVisualElements;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using Scenario.Editor.Windows.SearchLegacy;
+using ScenarioToolkit.Editor.CustomVisualElements;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Editor.Windows.SearchLegacy;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UIElements.Button;
 
-namespace Scenario.Editor.Windows.ElementEditor.NodeElements
+namespace ScenarioToolkit.Editor.Windows.ElementEditor.NodeElements
 {
     public class ComponentsNodeElement<TComponent> : BaseNodeElement
         where TComponent : IScenarioComponent

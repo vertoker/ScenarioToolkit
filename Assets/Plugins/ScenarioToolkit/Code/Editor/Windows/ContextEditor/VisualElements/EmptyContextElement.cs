@@ -1,6 +1,6 @@
-﻿using Scenario.Editor.Utilities.Providers;
+﻿using ScenarioToolkit.Editor.Utilities.Providers;
 
-namespace Scenario.Editor.Windows.ContextEditor.VisualElements
+namespace ScenarioToolkit.Editor.Windows.ContextEditor.VisualElements
 {
     public class EmptyContextElement : BaseContextElement
     {

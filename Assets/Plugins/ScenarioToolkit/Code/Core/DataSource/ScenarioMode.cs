@@ -1,4 +1,4 @@
-﻿namespace Scenario.Core.DataSource
+﻿namespace ScenarioToolkit.Core.DataSource
 {
     public enum ScenarioMode
     {

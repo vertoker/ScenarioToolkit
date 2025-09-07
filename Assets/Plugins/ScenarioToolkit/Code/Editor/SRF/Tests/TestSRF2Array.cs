@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Scenario.Editor.SRF.Tests
+namespace ScenarioToolkit.Editor.SRF.Tests
 {
     public class TestSRF2Array : IScenarioReflexFunction
     {

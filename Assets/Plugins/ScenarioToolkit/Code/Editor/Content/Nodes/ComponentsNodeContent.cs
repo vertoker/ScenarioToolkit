@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Nodes;
+using ScenarioToolkit.Shared;
 
-namespace Scenario.Editor.Content.Nodes
+namespace ScenarioToolkit.Editor.Content.Nodes
 {
     public abstract class ComponentsNodeContent : IEditorNodeContent
     {

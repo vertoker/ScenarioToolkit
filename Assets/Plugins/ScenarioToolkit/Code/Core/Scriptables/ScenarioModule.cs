@@ -1,13 +1,12 @@
-using System;
 using JetBrains.Annotations;
 using NaughtyAttributes;
 using Scenario.Core.DataSource;
-using Scenario.Utilities.Attributes;
+using ScenarioToolkit.Core.DataSource;
+using ScenarioToolkit.Shared.Attributes;
+using ScenarioToolkit.Shared.VRF;
 using UnityEngine;
-using UnityEngine.Serialization;
-using VRF.Players.Scriptables;
 
-namespace Scenario.Core.Scriptables
+namespace ScenarioToolkit.Core.Scriptables
 {
     [CreateAssetMenu(fileName = nameof(ScenarioModule), menuName = "Scenario/" + nameof(ScenarioModule))]
     public class ScenarioModule : ScriptableObject

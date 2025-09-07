@@ -1,11 +1,9 @@
 using System.Collections.Generic;
-using System.Linq;
 using AYellowpaper.SerializedCollections;
 using NaughtyAttributes;
-using Scenario.Core.Installers;
 using UnityEngine;
 
-namespace Scenario.Core.World
+namespace ScenarioToolkit.Core.World
 {
     /// <summary>
     /// Точка связи между ядром сценария и сценарными объектами на сцене unity

@@ -2,7 +2,7 @@
 using JetBrains.Annotations;
 using ZLinq;
 
-namespace Scenario.Utilities.Extensions
+namespace ScenarioToolkit.Shared.Extensions
 {
     public static class CollectionsExtensions
     {

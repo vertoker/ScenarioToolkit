@@ -1,9 +1,9 @@
-﻿using Scenario.Core.World;
-using Scenario.Editor.Windows.GraphEditor;
+﻿using ScenarioToolkit.Core.World;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scenario.Editor.CustomEditors
+namespace ScenarioToolkit.Editor.CustomEditors
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(ScenarioLauncherInstance))]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     /// <summary>
     /// Репрезентует разные типы путей, которые могут быть.

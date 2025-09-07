@@ -1,12 +1,11 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using NaughtyAttributes;
-using Scenario.Core.DataSource;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.DataSource;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 
-namespace Scenario.Core.Scriptables
+namespace ScenarioToolkit.Core.Scriptables
 {
     [CreateAssetMenu(fileName = nameof(ScenarioModules), menuName = "Scenario/" + nameof(ScenarioModules))]
     public class ScenarioModules : ScriptableObject

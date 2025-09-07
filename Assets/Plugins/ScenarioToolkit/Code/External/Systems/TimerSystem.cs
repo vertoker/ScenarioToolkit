@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using Scenario.Core;
-using Scenario.Core.Installers.Systems;
-using Scenario.Core.Systems;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Installers.Systems;
+using ScenarioToolkit.Core.Systems;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 using VRF.Scenario.Components.Actions;
 using VRF.Scenario.Components.Conditions;
 using Zenject;
 
-namespace VRF.Scenario.Systems
+namespace ScenarioToolkit.External.Systems
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]

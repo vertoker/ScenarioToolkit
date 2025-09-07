@@ -1,10 +1,10 @@
 ﻿using System;
 using JetBrains.Annotations;
 using Scenario.Core.Model;
-using Scenario.Editor.Content.Fields;
+using ScenarioToolkit.Editor.Content.Fields;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.CustomVisualElements
+namespace ScenarioToolkit.Editor.CustomVisualElements
 {
     /// <summary>
     /// Редактор для одной конкретной переменной

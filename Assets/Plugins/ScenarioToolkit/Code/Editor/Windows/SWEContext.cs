@@ -1,9 +1,9 @@
-﻿using Scenario.Editor.Utilities;
-using Scenario.Editor.Windows.ContextEditor;
-using Scenario.Editor.Windows.ElementEditor;
-using Scenario.Editor.Windows.GraphEditor;
+﻿using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Windows.ContextEditor;
+using ScenarioToolkit.Editor.Windows.ElementEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
 
-namespace Scenario.Editor.Windows
+namespace ScenarioToolkit.Editor.Windows
 {
     /// <summary>
     /// Scenario Window Editors Context - ссылки на все открытые сценарные окна (основные).

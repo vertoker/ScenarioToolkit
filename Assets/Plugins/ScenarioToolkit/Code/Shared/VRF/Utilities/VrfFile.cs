@@ -1,10 +1,11 @@
 ﻿using System.IO;
+
 #if UNITY_EDITOR
 #else
 using VRF.Utilities.Exceptions;
 #endif
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     /// <summary>
     /// Класс для работы с файлами и папками

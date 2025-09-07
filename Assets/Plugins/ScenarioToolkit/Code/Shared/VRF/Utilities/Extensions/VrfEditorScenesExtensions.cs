@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using UnityEngine.SceneManagement;
-
-#if UNITY_EDITOR
 using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+
 #else
 using VRF.Utilities.Exceptions;
 #endif
 
-namespace VRF.Utilities.Extensions
+namespace ScenarioToolkit.Shared.VRF.Utilities.Extensions
 {
     public static class VrfEditorScenesExtensions
     {

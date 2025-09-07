@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Threading;
-using Scenario.Core.Systems.States;
+using ScenarioToolkit.Core.Systems.States;
 using UnityEngine;
 
-namespace Scenario.States
+namespace ScenarioToolkit.Library.States
 {
     public class AudioPlayState : IState
     {

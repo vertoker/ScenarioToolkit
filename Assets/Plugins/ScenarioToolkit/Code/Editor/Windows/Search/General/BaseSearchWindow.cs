@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Scenario.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
 using UnityEditor.Searcher;
 
-namespace Scenario.Editor.Windows.Search.General
+namespace ScenarioToolkit.Editor.Windows.Search.General
 {
     public abstract class BaseSearchWindow
     {

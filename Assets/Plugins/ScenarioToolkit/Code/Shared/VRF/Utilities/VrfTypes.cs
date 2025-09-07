@@ -3,7 +3,7 @@ using UnityEngine;
 using UObject = UnityEngine.Object;
 using SObject = System.Object;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     /// <summary>
     /// Различные обёртки над часто используемыми типами (чтобы вместо typeof(T) можно было писать VrfTypes.T)

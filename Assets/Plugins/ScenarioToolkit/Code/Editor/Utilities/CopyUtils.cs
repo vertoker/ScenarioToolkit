@@ -2,12 +2,12 @@
 using System.Linq;
 using Scenario.Core.Model.Interfaces;
 using Scenario.Editor.Model;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
 using UnityEditor.Experimental.GraphView;
 using ZLinq;
 
-namespace Scenario.Editor.Utilities
+namespace ScenarioToolkit.Editor.Utilities
 {
     public static class CopyUtils
     {

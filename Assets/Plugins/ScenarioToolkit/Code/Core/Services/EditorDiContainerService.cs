@@ -1,7 +1,7 @@
 ﻿using System;
 using Zenject;
 
-namespace Scenario.Core.Services
+namespace ScenarioToolkit.Core.Services
 {
     /// <summary>
     /// Костыль для работы GraphEditor с текущим игровым контейнером

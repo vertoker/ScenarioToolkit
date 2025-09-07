@@ -1,10 +1,10 @@
 ﻿using JetBrains.Annotations;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player.Roles;
-using Scenario.Core.Serialization;
+using ScenarioToolkit.Core.Player.Roles;
+using ScenarioToolkit.Core.Serialization;
 using Zenject;
 
-namespace Scenario.Core.Player
+namespace ScenarioToolkit.Core.Player
 {
     /// <summary>
     /// Дополнительные данные для исполнения нод

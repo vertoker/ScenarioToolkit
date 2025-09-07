@@ -1,6 +1,7 @@
 ﻿using System;
+using Scenario.Core.DataSource;
 
-namespace Scenario.Core.DataSource
+namespace ScenarioToolkit.Core.DataSource
 {
     public class ScenarioLaunchModelCmdParser// : IModelCmdParser
     {

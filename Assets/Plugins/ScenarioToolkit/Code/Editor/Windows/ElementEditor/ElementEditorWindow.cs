@@ -1,12 +1,12 @@
 ﻿using System;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.Windows.ElementEditor.NodeElements;
-using Scenario.Editor.Windows.ElementEditor.NodeElements.Port;
-using Scenario.Editor.Windows.ElementEditor.VisualElements;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Editor.Windows.ElementEditor.NodeElements;
+using ScenarioToolkit.Editor.Windows.ElementEditor.NodeElements.Port;
+using ScenarioToolkit.Editor.Windows.ElementEditor.VisualElements;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
 
-namespace Scenario.Editor.Windows.ElementEditor
+namespace ScenarioToolkit.Editor.Windows.ElementEditor
 {
     public class ElementEditorWindow : BaseScenarioWindow
     {

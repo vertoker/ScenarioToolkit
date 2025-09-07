@@ -1,7 +1,7 @@
 ﻿using AYellowpaper.SerializedCollections;
 using UnityEngine;
 
-namespace Scenario.Core.Scriptables
+namespace ScenarioToolkit.Core.Scriptables
 {
     [CreateAssetMenu(fileName = nameof(ExamStep), menuName = "Scenario/" + nameof(ExamStep))]
     public class ExamStep : ScriptableObject

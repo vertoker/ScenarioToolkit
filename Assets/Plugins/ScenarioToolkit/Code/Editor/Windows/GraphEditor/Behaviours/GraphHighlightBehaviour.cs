@@ -1,9 +1,9 @@
 ﻿using JetBrains.Annotations;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
+using ScenarioToolkit.Core.Player;
 using UnityEngine;
 
-namespace Scenario.Editor.Windows.GraphEditor.Behaviours
+namespace ScenarioToolkit.Editor.Windows.GraphEditor.Behaviours
 {
     public class GraphHighlightBehaviour
     {

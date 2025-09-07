@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using JetBrains.Annotations;
 using Mirror;
-using Scenario.Core.Serialization;
-using VRF.Players.Scriptables;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Shared.VRF;
 using Zenject;
 
-namespace Scenario.Core.Systems.States
+namespace ScenarioToolkit.Core.Systems.States
 {
     public class ScenarioStateContainer : IInitializable, IDisposable
     {

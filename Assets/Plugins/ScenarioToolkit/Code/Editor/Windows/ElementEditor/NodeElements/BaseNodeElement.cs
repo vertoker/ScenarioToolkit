@@ -1,14 +1,14 @@
 ﻿using System;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Editor.Windows.ElementEditor.VisualElements;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using Scenario.Utilities;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Editor.Windows.ElementEditor.VisualElements;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Shared;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.ElementEditor.NodeElements
+namespace ScenarioToolkit.Editor.Windows.ElementEditor.NodeElements
 {
     public class BaseNodeElement : BaseScenarioElementEditor
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Mirror;
 
-namespace Scenario.Core.Network
+namespace ScenarioToolkit.Core.Network
 {
     // Scenario
     public struct ScenarioStartedMessage : NetworkMessage

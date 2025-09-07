@@ -1,5 +1,4 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
 using Scenario.Utilities;
 
 // Previous: ActionNode

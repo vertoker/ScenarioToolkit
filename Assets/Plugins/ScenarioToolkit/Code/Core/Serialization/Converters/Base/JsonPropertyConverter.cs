@@ -1,9 +1,8 @@
 ﻿using System;
 using Newtonsoft.Json;
-using Scenario.Utilities;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Shared.Extensions;
 
-namespace Scenario.Core.Serialization.Converters.Base
+namespace ScenarioToolkit.Core.Serialization.Converters.Base
 {
     // Inspired by https://github.com/applejag/Newtonsoft.Json-for-Unity.Converters/blob/master/Packages/Newtonsoft.Json-for-Unity.Converters/UnityConverters/Math/ColorConverter.cs
     

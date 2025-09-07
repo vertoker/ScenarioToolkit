@@ -1,6 +1,6 @@
 ﻿using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.UXML
+namespace ScenarioToolkit.Editor.Content.UXML
 {
     public struct SRFFieldUxml
     {

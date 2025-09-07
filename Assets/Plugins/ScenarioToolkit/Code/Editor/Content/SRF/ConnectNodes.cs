@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using Scenario.Core.Model;
-using Scenario.Editor.SRF;
-using Scenario.Editor.Windows;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using UnityEditor.Experimental.GraphView;
+using ScenarioToolkit.Editor.SRF;
+using ScenarioToolkit.Editor.Windows;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
 
-namespace Scenario.Editor.Content.SRF
+namespace ScenarioToolkit.Editor.Content.SRF
 {
     public class ConnectNodes : IScenarioReflexFunction
     {

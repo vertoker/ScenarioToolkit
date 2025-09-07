@@ -4,7 +4,6 @@ using NaughtyAttributes;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Serialization;
-using VRF.Players.Scriptables;
 
 // ReSharper disable once CheckNamespace
 namespace Scenario.Core.DataSource

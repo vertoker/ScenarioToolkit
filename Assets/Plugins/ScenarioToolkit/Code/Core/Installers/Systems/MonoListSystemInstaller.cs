@@ -1,7 +1,7 @@
-﻿using Scenario.Utilities.Extensions;
+﻿using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 
-namespace Scenario.Core.Installers.Systems
+namespace ScenarioToolkit.Core.Installers.Systems
 {
     public abstract class MonoListSystemInstaller<TSystem, TMonoBehaviour> : BaseSystemInstaller
         where TSystem : class where TMonoBehaviour : MonoBehaviour

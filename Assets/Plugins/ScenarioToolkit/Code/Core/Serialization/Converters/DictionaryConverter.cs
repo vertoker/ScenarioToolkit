@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using Scenario.Core.Serialization.Converters.Base;
+using ScenarioToolkit.Core.Serialization.Converters.Base;
 
-namespace Scenario.Core.Serialization.Converters
+namespace ScenarioToolkit.Core.Serialization.Converters
 {
     public class DictionaryConverter : BaseScenarioJsonConverter
     {

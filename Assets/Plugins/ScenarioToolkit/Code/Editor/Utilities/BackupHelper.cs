@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 
-namespace Scenario.Editor.Utilities
+namespace ScenarioToolkit.Editor.Utilities
 {
     public static class BackupHelper
     {

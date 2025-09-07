@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
 using UnityEngine;
 
 // Previous: SubgraphNode

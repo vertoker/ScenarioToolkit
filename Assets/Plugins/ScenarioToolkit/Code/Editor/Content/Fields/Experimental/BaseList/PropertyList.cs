@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 
-namespace Scenario.Editor.Content.Fields.Experimental.BaseList
+namespace ScenarioToolkit.Editor.Content.Fields.Experimental.BaseList
 {
     public class PropertyList : IList, IEnumerable<object>
     {

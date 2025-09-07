@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace Scenario.Core.Systems
+namespace ScenarioToolkit.Core.Systems
 {
     /// <summary>
     /// Основа для любой сценарной системы, в первую очередь нужен как маркер

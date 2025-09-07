@@ -1,12 +1,10 @@
 ﻿using System;
 using NaughtyAttributes;
 using Scenario.Core.DataSource;
+using ScenarioToolkit.Shared.VRF;
 using UnityEngine;
-using VRF.Identities;
-using VRF.Identities.Core;
-using VRF.Players.Scriptables;
 
-namespace Scenario.Core.Scriptables
+namespace ScenarioToolkit.Core.Scriptables
 {
     [CreateAssetMenu(fileName = nameof(ScenarioLaunchConfig), menuName = "Scenario/" + nameof(ScenarioLaunchConfig))]
     public class ScenarioLaunchConfig : ScriptableObject, IGetScenarioLaunch

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Utilities;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.CustomVisualElements
+namespace ScenarioToolkit.Editor.CustomVisualElements
 {
     /// <summary>
     /// Редактор для среды переменных, работает с любым IVariableEnvironment.

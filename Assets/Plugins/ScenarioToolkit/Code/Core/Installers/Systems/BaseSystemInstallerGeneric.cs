@@ -1,6 +1,6 @@
-﻿using Scenario.Utilities.Extensions;
+﻿using ScenarioToolkit.Shared.Extensions;
 
-namespace Scenario.Core.Installers.Systems
+namespace ScenarioToolkit.Core.Installers.Systems
 {
     public abstract class BaseSystemInstallerGeneric<TSystem> : BaseSystemInstaller
         where TSystem : class

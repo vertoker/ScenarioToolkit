@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq;
 using ModestTree;
-using Scenario.Core.Installers.Systems;
-using Scenario.Utilities;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Installers.Systems;
+using ScenarioToolkit.Shared;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scenario.Editor.CustomEditors
+namespace ScenarioToolkit.Editor.CustomEditors
 {
     /// <summary>
     /// Окно поиска для сценарных систем, отрисовывается в MonoBehaviour

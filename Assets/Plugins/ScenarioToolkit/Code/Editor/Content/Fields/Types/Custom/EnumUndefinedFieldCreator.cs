@@ -1,12 +1,12 @@
 ﻿using System;
 using ModestTree;
-using Scenario.Editor.Content.Fields.Base;
-using Scenario.Editor.Windows.SearchLegacy;
+using ScenarioToolkit.Editor.Content.Fields.Base;
+using ScenarioToolkit.Editor.Windows.SearchLegacy;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Types.Custom
+namespace ScenarioToolkit.Editor.Content.Fields.Types.Custom
 {
     /// <summary>
     /// Особенная реализация FieldCreator, которая работает с неизвестным enum.

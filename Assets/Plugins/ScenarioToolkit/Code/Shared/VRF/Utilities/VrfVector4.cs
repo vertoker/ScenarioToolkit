@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     /// <summary>
     /// Операции и расширения над Vector4

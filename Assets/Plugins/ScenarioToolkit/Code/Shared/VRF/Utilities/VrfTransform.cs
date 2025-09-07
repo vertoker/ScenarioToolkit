@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     public static class VrfTransform
     {

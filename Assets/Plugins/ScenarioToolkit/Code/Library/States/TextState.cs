@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Scenario.Core.Systems.States;
+﻿using System.Collections.Generic;
+using ScenarioToolkit.Core.Systems.States;
 using TMPro;
 
-namespace Scenario.States
+namespace ScenarioToolkit.Library.States
 {
     public class TextState : IState
     {

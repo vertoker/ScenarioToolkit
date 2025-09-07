@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace VRF.Utilities.Attributes
+namespace ScenarioToolkit.Shared.VRF.Utilities.Attributes
 {
     // v 1.1
     [CustomPropertyDrawer(typeof(SceneReferenceAttribute))]

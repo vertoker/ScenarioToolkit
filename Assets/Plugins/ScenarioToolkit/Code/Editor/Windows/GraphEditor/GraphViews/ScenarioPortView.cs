@@ -4,7 +4,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.GraphEditor.GraphViews
+namespace ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews
 {
     public class ScenarioPortView : Port, IScenarioGraphElement
     {

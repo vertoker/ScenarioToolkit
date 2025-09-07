@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Scenario.Utilities.Collections
+namespace ScenarioToolkit.Shared.Collections
 {
     /// <summary>
     ///     This is a dictionary guaranteed to have only one of each value and key.

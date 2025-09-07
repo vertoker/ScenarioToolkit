@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace Scenario.Utilities.Collections
+namespace ScenarioToolkit.Shared.Collections
 {
     public class BiListedDictionary<TKey, TListedValue>
     {

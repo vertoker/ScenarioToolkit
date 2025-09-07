@@ -1,7 +1,6 @@
-﻿using VRF.Identities;
-using VRF.Identities.Core;
+﻿using ScenarioToolkit.Shared.VRF;
 
-namespace Scenario.Core.Scriptables
+namespace ScenarioToolkit.Core.Scriptables
 {
     public interface IGetScenarioLaunch
     {

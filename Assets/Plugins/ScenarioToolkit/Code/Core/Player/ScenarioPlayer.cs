@@ -5,19 +5,18 @@ using System.Text;
 using Scenario.Core.DataSource;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player.Roles;
-using Scenario.Core.Serialization;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Player.Roles;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 using Zenject;
 using ZLinq;
 using ZLinq.Linq;
-
 #if ENABLE_IL2CPP
 using Unity.IL2CPP.CompilerServices;
 #endif
 
-namespace Scenario.Core.Player
+namespace ScenarioToolkit.Core.Player
 {
     using ActiveNodesType = ValueEnumerable<FromHashSet<IScenarioNodeFlow>, IScenarioNodeFlow>;
     using CompletedNodesType = ValueEnumerable<FromHashSet<IScenarioNodeFlow>, IScenarioNodeFlow>;

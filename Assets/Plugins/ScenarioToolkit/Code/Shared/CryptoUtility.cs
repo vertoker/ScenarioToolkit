@@ -2,7 +2,7 @@
 using Scenario.Core.Model.Interfaces;
 using Random = UnityEngine.Random;
 
-namespace Scenario.Utilities
+namespace ScenarioToolkit.Shared
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]

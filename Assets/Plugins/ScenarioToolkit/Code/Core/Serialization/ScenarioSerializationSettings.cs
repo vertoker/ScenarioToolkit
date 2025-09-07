@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Scenario.Core.Serialization
+namespace ScenarioToolkit.Core.Serialization
 {
     [Serializable]
     public class ScenarioSerializationSettings

@@ -2,10 +2,10 @@
 using System.IO;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
+using ScenarioToolkit.Shared.VRF.Utilities;
 using UnityEngine;
-using VRF.Utilities;
 
-namespace Scenario.Utilities.Extensions
+namespace ScenarioToolkit.Shared.Extensions
 {
     public static class SubgraphLoadUtility
     {

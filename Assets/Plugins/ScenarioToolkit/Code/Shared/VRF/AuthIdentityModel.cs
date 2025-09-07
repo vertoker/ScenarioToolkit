@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using UnityEngine;
 
-namespace VRF.Identities.Models
+namespace ScenarioToolkit.Shared.VRF
 {
     /// <summary>
     /// Режим идентификации игрока при авторизации

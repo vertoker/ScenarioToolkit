@@ -1,12 +1,12 @@
 ﻿using System.IO;
-using Scenario.Core.Serialization;
-using Scenario.Editor.Tools.Files.Update;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Utilities.Providers;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Editor.Tools.Files.Update;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Utilities.Providers;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scenario.Editor.Tools.Files
+namespace ScenarioToolkit.Editor.Tools.Files
 {
     public static class ScenarioInternalUpdate
     {

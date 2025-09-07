@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Scenario.Core;
-using Scenario.Core.World;
+using ScenarioToolkit.Core.World;
 using UnityEngine;
 
 #if UNITY_EDITOR

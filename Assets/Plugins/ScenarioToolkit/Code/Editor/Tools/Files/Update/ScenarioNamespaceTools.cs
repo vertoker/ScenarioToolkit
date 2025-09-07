@@ -1,13 +1,11 @@
 ﻿using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Utilities;
-using UnityEditor;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 
-namespace Scenario.Editor.Tools.Files.Update
+namespace ScenarioToolkit.Editor.Tools.Files.Update
 {
     public static class ScenarioNamespaceTools
     {

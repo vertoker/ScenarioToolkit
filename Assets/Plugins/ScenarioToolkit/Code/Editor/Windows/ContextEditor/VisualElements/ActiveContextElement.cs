@@ -1,14 +1,13 @@
-﻿using System.Linq;
-using Scenario.Core.Model;
+﻿using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.CustomVisualElements;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Utilities;
+using ScenarioToolkit.Editor.CustomVisualElements;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Shared;
 using UnityEngine.UIElements;
 using ZLinq;
 
-namespace Scenario.Editor.Windows.ContextEditor.VisualElements
+namespace ScenarioToolkit.Editor.Windows.ContextEditor.VisualElements
 {
     /// <summary>
     /// Редактор для контекста, администрирует дочерние классы для редактирования разных данных внутри Context

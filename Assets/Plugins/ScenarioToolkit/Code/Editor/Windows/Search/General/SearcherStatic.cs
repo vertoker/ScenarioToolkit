@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor.Searcher;
 
-namespace Scenario.Editor.Windows.Search.General
+namespace ScenarioToolkit.Editor.Windows.Search.General
 {
     public static class SearcherStatic
     {

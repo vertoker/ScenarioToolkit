@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Scenario.Base.Components.Actions;
-using Scenario.Core.Systems.States;
+using ScenarioToolkit.Core.Systems.States;
 
-namespace Scenario.States
+namespace ScenarioToolkit.Library.States
 {
     public class CallMethodState : IState
     {

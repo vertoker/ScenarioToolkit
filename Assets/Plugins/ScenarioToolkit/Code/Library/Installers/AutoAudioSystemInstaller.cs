@@ -1,9 +1,9 @@
-﻿using Scenario.Core.Installers.Systems;
-using Scenario.Systems;
-using Scenario.Utilities.Extensions;
+﻿using ScenarioToolkit.Core.Installers.Systems;
+using ScenarioToolkit.Library.Systems;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 
-namespace Scenario.Installers
+namespace ScenarioToolkit.Library.Installers
 {
     public class AutoAudioSystemInstaller : BaseSystemInstaller
     {

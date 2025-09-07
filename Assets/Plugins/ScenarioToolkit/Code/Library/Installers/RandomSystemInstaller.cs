@@ -1,7 +1,7 @@
-﻿using Scenario.Systems;
+﻿using ScenarioToolkit.Library.Systems;
 using Zenject;
 
-namespace Scenario.Installers
+namespace ScenarioToolkit.Library.Installers
 {
     public class RandomSystemInstaller : MonoInstaller
     {

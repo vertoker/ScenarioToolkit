@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
+using ScenarioToolkit.Shared;
 
-namespace Scenario.Editor.Windows.ElementEditor
+namespace ScenarioToolkit.Editor.Windows.ElementEditor
 {
     /// <summary>
     /// Контроллер данных для перезаписей полей в компонентах. Именно тут

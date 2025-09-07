@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Shared.Extensions;
 
-namespace Scenario.Utilities
+namespace ScenarioToolkit.Shared
 {
     public static class ScenarioGraphUtils
     {

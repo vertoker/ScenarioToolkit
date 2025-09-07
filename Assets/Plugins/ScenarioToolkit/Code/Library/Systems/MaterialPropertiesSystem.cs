@@ -1,13 +1,12 @@
-﻿using System;
-using Scenario.Base.Components.Actions;
-using Scenario.Core.Systems;
-using Scenario.Core.Systems.States;
-using Scenario.States;
-using Scenario.Utilities;
+﻿using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Core.Systems;
+using ScenarioToolkit.Core.Systems.States;
+using ScenarioToolkit.Library.States;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Systems
+namespace ScenarioToolkit.Library.Systems
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]

@@ -1,4 +1,4 @@
-﻿namespace Scenario.Core.Systems.States
+﻿namespace ScenarioToolkit.Core.Systems.States
 {
     public interface IState
     {

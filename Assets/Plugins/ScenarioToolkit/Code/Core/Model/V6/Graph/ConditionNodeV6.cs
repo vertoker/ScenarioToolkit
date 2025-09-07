@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Newtonsoft.Json;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
 using Scenario.Utilities;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Shared;
+using ScenarioToolkit.Shared.Extensions;
 using ZLinq;
 
 // Previous: ConditionNodeV1

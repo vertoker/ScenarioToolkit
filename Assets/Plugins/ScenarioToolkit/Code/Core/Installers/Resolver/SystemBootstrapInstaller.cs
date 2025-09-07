@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace Scenario.Core.Installers.Resolver
+namespace ScenarioToolkit.Core.Installers.Resolver
 {
     public class SystemBootstrapInstaller : MonoInstaller
     {

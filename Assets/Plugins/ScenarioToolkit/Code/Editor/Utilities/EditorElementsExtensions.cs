@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
 using UnityEngine;
 using ZLinq;
 
-namespace Scenario.Editor.Utilities
+namespace ScenarioToolkit.Editor.Utilities
 {
     public static class EditorElementsExtensions
     {

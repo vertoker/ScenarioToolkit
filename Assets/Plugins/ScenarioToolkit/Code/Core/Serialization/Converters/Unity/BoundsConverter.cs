@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
-using Scenario.Core.Serialization.Converters.Base;
+using ScenarioToolkit.Core.Serialization.Converters.Base;
 using UnityEngine;
 
-namespace Scenario.Core.Serialization.Converters.Unity
+namespace ScenarioToolkit.Core.Serialization.Converters.Unity
 {
     public class BoundsConverter : JsonPropertyConverter<Bounds>
     {

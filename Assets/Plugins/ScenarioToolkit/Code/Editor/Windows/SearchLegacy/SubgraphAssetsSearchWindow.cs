@@ -7,7 +7,7 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.SearchLegacy
+namespace ScenarioToolkit.Editor.Windows.SearchLegacy
 {
     /// <summary>
     /// Окно поиска, которое ищет все ассеты, но фильтрует по TextAsset и

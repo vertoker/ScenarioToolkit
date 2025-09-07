@@ -1,5 +1,5 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
+using ScenarioToolkit.Core.Player;
 
 // Previous: EndNodeV5
 //  Current: EndNodeV6

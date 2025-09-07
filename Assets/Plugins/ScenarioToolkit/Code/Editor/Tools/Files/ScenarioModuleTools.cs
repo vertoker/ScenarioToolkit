@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using Scenario.Core.DataSource;
-using Scenario.Core.Scriptables;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Utilities.Providers;
+using ScenarioToolkit.Core.DataSource;
+using ScenarioToolkit.Core.Scriptables;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Shared.VRF.Utilities;
 using UnityEditor;
 using UnityEngine;
-using VRF.Utilities;
 
-namespace Scenario.Editor.Tools.Files
+namespace ScenarioToolkit.Editor.Tools.Files
 {
     public static class ScenarioModuleTools
     {

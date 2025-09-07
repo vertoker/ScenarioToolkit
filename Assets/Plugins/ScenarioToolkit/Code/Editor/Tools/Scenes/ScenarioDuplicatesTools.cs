@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Scenario.Core;
-using Scenario.Core.World;
+using ScenarioToolkit.Core.World;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scenario.Editor.Tools.Scenes
+namespace ScenarioToolkit.Editor.Tools.Scenes
 {
     public class ScenarioDuplicatesTools
     {

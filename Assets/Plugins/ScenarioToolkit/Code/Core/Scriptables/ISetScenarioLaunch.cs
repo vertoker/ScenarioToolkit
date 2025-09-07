@@ -1,6 +1,6 @@
-﻿using VRF.Players.Scriptables;
+﻿using ScenarioToolkit.Shared.VRF;
 
-namespace Scenario.Core.Scriptables
+namespace ScenarioToolkit.Core.Scriptables
 {
     public interface ISetScenarioLaunch
     {

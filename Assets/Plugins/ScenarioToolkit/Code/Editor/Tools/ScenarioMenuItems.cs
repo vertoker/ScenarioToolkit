@@ -1,10 +1,10 @@
-﻿using Scenario.Core.World;
+﻿using ScenarioToolkit.Core.World;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Scenario.Editor.Tools
+namespace ScenarioToolkit.Editor.Tools
 {
     public static class ScenarioMenuItems
     {

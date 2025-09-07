@@ -1,13 +1,14 @@
-﻿using UnityEditor;
+﻿using ScenarioToolkit.Shared.VRF.Utilities.Extensions;
+using UnityEditor;
 using UnityEngine;
-using VRF.Utilities.Extensions;
+
 #if UNITY_EDITOR
 
 #else
 using VRF.Utilities.Exceptions;
 #endif
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
     /// <summary>
     /// Различные инструменты для создания, уничтожения объектов и валидации компонентов

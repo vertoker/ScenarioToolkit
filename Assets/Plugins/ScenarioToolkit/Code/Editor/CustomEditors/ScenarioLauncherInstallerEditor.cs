@@ -1,10 +1,10 @@
-﻿using Scenario.Core.Installers;
-using Scenario.Editor.Windows.GraphEditor;
+﻿using ScenarioToolkit.Core.Installers;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Shared.VRF.Utilities.VRF;
 using UnityEditor;
 using UnityEngine;
-using VRF.Utilities;
 
-namespace Scenario.Editor.CustomEditors
+namespace ScenarioToolkit.Editor.CustomEditors
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(ScenarioLauncherInstaller))]

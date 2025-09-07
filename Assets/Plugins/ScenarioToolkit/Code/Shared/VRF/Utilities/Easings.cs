@@ -4,7 +4,7 @@
 
 using UnityEngine;
 
-namespace SimpleUI.Extensions
+namespace ScenarioToolkit.Shared.VRF.Utilities
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]

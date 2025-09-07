@@ -1,6 +1,6 @@
 ﻿using Scenario.Core.Model.Interfaces;
 
-namespace Modules.Scenario.Components.Actions
+namespace ScenarioToolkit.External.Components.Actions.PathDrawer
 {
     public struct TogglePathTarget : IScenarioAction, IComponentDefaultValues
     {

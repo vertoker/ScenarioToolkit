@@ -1,9 +1,7 @@
-﻿using System;
-using Scenario.Core.Model.Interfaces;
-using UnityEngine;
+﻿using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Scenario.Utilities
+namespace ScenarioToolkit.Shared
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]

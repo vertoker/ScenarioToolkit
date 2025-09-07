@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Scenario.Core.Model.Interfaces;
-using UnityEngine;
 
-namespace Scenario.Utilities
+namespace ScenarioToolkit.Shared
 {
     public static class Reflection
     {

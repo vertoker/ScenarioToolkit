@@ -4,14 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Utilities;
-using Scenario.Core.Serialization.Converters;
-using Scenario.Core.Serialization.Converters.Base;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Serialization.Converters;
+using ScenarioToolkit.Core.Serialization.Converters.Base;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Core.Serialization
+namespace ScenarioToolkit.Core.Serialization
 {
     /// <summary>
     /// Основополагающий сервис для работы сериализации сценариев.

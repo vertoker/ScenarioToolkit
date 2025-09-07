@@ -1,6 +1,6 @@
 ﻿using Scenario.Base.Components.Conditions;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities.Attributes;
+using ScenarioToolkit.Shared.Attributes;
 using UnityEngine;
 
 // ReSharper disable once CheckNamespace

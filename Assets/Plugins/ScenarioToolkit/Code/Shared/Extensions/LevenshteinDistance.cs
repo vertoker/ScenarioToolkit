@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Scenario.Utilities.Extensions
+namespace ScenarioToolkit.Shared.Extensions
 {
     public static class StringLevenshteinDistanceExtension
     {

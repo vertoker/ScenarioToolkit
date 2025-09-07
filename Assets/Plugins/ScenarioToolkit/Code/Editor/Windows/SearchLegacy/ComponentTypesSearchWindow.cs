@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Scenario.Utilities;
+using ScenarioToolkit.Shared;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-namespace Scenario.Editor.Windows.SearchLegacy
+namespace ScenarioToolkit.Editor.Windows.SearchLegacy
 {
     /// <summary>
     /// Editor окно для поиска компонентов, фильтр по типу

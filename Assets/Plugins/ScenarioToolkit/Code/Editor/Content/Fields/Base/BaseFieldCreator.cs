@@ -1,8 +1,7 @@
 ﻿using System;
-using JetBrains.Annotations;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Base
+namespace ScenarioToolkit.Editor.Content.Fields.Base
 {
     /// <summary>
     /// Стандартный базовый конструктор, который администрирует поле и тип значения в нём

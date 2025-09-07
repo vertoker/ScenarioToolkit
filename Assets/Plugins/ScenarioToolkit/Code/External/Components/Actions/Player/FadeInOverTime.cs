@@ -1,6 +1,6 @@
 ﻿using Scenario.Core.Model.Interfaces;
 
-namespace VRF.Scenario.Systems
+namespace ScenarioToolkit.External.Components.Actions.Player
 {
     public struct FadeInOverTime : IScenarioAction
     {

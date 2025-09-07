@@ -1,10 +1,10 @@
-﻿using Scenario.Editor.Utilities;
+﻿using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Shared.VRF.Utilities;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
-using VRF.Utilities;
 
-namespace Scenario.Editor.Windows.GraphEditor.Behaviours
+namespace ScenarioToolkit.Editor.Windows.GraphEditor.Behaviours
 {
     public class GraphMenuBehaviour
     {

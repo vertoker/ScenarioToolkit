@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using JetBrains.Annotations;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Serialization;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Utilities.Providers;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Shared.VRF.Utilities;
 using UnityEditor;
 using UnityEngine;
-using VRF.Utilities;
 using ZLinq;
 
-namespace Scenario.Editor.Tools.Files
+namespace ScenarioToolkit.Editor.Tools.Files
 {
     public static class ScenarioRecursionTools
     {

@@ -1,8 +1,8 @@
 ﻿using Modules.Scenario.Components.Actions;
-using Scenario.Core.Systems;
+using ScenarioToolkit.Core.Systems;
 using Zenject;
 
-namespace Scenario.Systems
+namespace ScenarioToolkit.Library.Systems
 {
     public class ParentingObjectSystem : BaseScenarioSystem
     {

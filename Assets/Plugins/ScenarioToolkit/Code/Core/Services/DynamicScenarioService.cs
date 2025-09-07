@@ -2,15 +2,13 @@
 using System.IO;
 using System.Linq;
 using Scenario.Core.DataSource;
-using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
-using Scenario.Core.Serialization;
-using Scenario.Core.World;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Core.World;
+using ScenarioToolkit.Shared.VRF;
 using UnityEngine;
-using VRF.Identities.Core;
-using Zenject;
 
-namespace Scenario.Core.Services
+namespace ScenarioToolkit.Core.Services
 {
     /// <summary>
     /// Утилиты и методы для загрузки динамических сценариев любого формата (StreamingAssets/).

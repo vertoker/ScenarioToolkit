@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json;
-using Scenario.Core.Serialization.Converters.Base;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Serialization.Converters.Base;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 
-namespace Scenario.Core.Serialization.Converters.Unity
+namespace ScenarioToolkit.Core.Serialization.Converters.Unity
 {
     public class Hash128Converter : JsonPropertyConverter<Hash128>
     {

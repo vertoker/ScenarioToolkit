@@ -2,7 +2,7 @@
 using System.Text;
 using JetBrains.Annotations;
 
-namespace Scenario.Utilities.Attributes
+namespace ScenarioToolkit.Shared.Attributes
 {
     [AttributeUsage(AttributeTargets.Struct | AttributeTargets.Field)]
     public class ScenarioMetaAttribute : Attribute

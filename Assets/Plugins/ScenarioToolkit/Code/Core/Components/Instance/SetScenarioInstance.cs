@@ -1,10 +1,8 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Scriptables;
-using Scenario.Core.World;
-using Scenario.Utilities.Attributes;
-using VRF.Identities;
-using VRF.Identities.Core;
-using VRF.Players.Scriptables;
+using ScenarioToolkit.Core.Scriptables;
+using ScenarioToolkit.Core.World;
+using ScenarioToolkit.Shared.Attributes;
+using ScenarioToolkit.Shared.VRF;
 
 // ReSharper disable once CheckNamespace
 namespace Scenario.Core.Model

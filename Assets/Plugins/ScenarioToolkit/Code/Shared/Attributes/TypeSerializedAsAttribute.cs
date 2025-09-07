@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Scenario.Utilities.Attributes
+namespace ScenarioToolkit.Shared.Attributes
 {
     // TODO добавить поддержку этого аттрибута на все объекты, типы которых сериализуются через Converter
     [AttributeUsage(AttributeTargets.All, AllowMultiple = true)]

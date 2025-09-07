@@ -1,16 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Serialization;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEditor;
 using UnityEngine;
 using ZLinq;
 
-namespace Scenario.Editor.Tools.Files.Update
+namespace ScenarioToolkit.Editor.Tools.Files.Update
 {
     public static class ScenarioUpdateTools
     {

@@ -2,7 +2,7 @@
 using JetBrains.Annotations;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Base
+namespace ScenarioToolkit.Editor.Content.Fields.Base
 {
     /// <summary>
     /// Ответвление от обычного базового конструктора, которое работает с двумя типами значений

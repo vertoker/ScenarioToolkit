@@ -1,7 +1,7 @@
 using Scenario.Core.Model.Interfaces;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.ContextEditor
+namespace ScenarioToolkit.Editor.Windows.ContextEditor
 {
     public class StatisticsEditor
     {

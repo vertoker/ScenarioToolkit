@@ -1,8 +1,6 @@
-﻿using System;
-using Scenario.Utilities;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Scenario.Core.World
+namespace ScenarioToolkit.Core.World
 {
     /// <summary> Идентификатор для всех GameObject на сцене, нужен для связи сценария с миром Unity.
     /// Также от него можно унаследоваться и сделать свою сценарную логику на сцене </summary>

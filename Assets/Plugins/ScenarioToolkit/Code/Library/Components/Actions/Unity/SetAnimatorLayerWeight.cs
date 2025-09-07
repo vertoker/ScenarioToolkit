@@ -1,7 +1,7 @@
 ﻿using Scenario.Core.Model.Interfaces;
 using UnityEngine;
 
-namespace Scenario.Components.Actions.Unity
+namespace ScenarioToolkit.Library.Components.Actions.Unity
 {
     public struct SetAnimatorLayerWeight : IScenarioAction
     {

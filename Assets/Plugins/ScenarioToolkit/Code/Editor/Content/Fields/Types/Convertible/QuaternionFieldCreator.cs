@@ -1,8 +1,8 @@
-﻿using Scenario.Editor.Content.Fields.Base;
+﻿using ScenarioToolkit.Editor.Content.Fields.Base;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Types.Convertible
+namespace ScenarioToolkit.Editor.Content.Fields.Types.Convertible
 {
     public class QuaternionFieldCreator : BaseConvertibleFieldCreator<Quaternion, Vector4, Vector4Field>
     {

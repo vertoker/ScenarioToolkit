@@ -1,6 +1,6 @@
 ﻿using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.GraphEditor.Behaviours
+namespace ScenarioToolkit.Editor.Windows.GraphEditor.Behaviours
 {
     public class GraphEditorBehaviour
     {

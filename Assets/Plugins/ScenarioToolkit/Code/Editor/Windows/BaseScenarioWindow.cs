@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
-namespace Scenario.Editor.Windows
+namespace ScenarioToolkit.Editor.Windows
 {
     /// <summary>
     /// Базовое сценарное окно, от него обязаны наследуются все сценарно-ориентированные окна

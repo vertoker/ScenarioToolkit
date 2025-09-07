@@ -2,7 +2,7 @@
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-namespace Scenario.Editor.Windows.GraphEditor.GraphViews
+namespace ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews
 {
     // Edge = Link
     public class ScenarioLinkView : Edge, IScenarioGraphElement

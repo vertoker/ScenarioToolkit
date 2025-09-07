@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
 using Scenario.GraphEditor.Elements.Serialization;
-using Scenario.Utilities;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Core.Nodes;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 
-namespace Scenario.Core.Serialization
+namespace ScenarioToolkit.Core.Serialization
 {
     /// <summary>
     /// Сервис конвертации моделей сценариев до последней версии.

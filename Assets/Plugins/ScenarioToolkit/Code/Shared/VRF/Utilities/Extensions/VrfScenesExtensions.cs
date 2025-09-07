@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-namespace VRF.Utilities.Extensions
+namespace ScenarioToolkit.Shared.VRF.Utilities.Extensions
 {
     /// <summary>
     /// Расширения для поиска компонентов на сцене

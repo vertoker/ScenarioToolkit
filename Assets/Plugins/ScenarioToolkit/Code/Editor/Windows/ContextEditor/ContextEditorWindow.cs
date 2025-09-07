@@ -1,8 +1,8 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.Windows.ContextEditor.VisualElements;
-using Scenario.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.ContextEditor.VisualElements;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
 
-namespace Scenario.Editor.Windows.ContextEditor
+namespace ScenarioToolkit.Editor.Windows.ContextEditor
 {
     public class ContextEditorWindow : BaseScenarioWindow
     {

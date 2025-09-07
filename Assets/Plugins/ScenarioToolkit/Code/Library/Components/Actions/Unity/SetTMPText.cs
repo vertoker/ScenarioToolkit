@@ -1,5 +1,5 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities.Attributes;
+using ScenarioToolkit.Shared.Attributes;
 using TMPro;
 
 // ReSharper disable once CheckNamespace

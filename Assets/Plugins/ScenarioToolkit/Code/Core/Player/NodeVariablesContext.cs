@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Reflection;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Shared;
+using ScenarioToolkit.Shared.Extensions;
 using ZLinq;
 using ZLinq.Linq;
 
-namespace Scenario.Core.Player
+namespace ScenarioToolkit.Core.Player
 {
     /// <summary> Варианты переменных сред для операции над ними </summary>
     public enum VariableEnvironmentType

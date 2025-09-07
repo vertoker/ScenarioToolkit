@@ -1,7 +1,7 @@
 ﻿using NaughtyAttributes;
 using UnityEngine;
 
-namespace VRF.Utils.Identifying
+namespace ScenarioToolkit.Shared.VRF
 {
     /// <summary>
     /// Реализация IAssetIdentity для Scriptable объекта

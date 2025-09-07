@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Scenario.Editor.Utilities
+namespace ScenarioToolkit.Editor.Utilities
 {
     public static class EditorWindowUtils
     {

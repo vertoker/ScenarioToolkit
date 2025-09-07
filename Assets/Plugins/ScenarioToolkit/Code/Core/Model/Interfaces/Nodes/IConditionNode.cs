@@ -1,8 +1,7 @@
 ﻿using System;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
-using VRF.Players.Scriptables;
+using ScenarioToolkit.Core.Player;
 
 // ReSharper disable once CheckNamespace
 namespace Scenario.Core.Model.Interfaces

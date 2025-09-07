@@ -1,7 +1,7 @@
-﻿using Scenario.Utilities;
+﻿using ScenarioToolkit.Shared;
 using UnityEngine;
 
-namespace Scenario.Core.World
+namespace ScenarioToolkit.Core.World
 {
     public interface IScenarioWorldID
     {

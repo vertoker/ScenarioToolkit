@@ -1,13 +1,13 @@
 ﻿using Scenario.Core.DataSource;
-using Scenario.Core.Installers;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
-using Scenario.Core.Scriptables;
-using Scenario.Core.Serialization;
+using ScenarioToolkit.Core.Installers;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Core.Scriptables;
+using ScenarioToolkit.Core.Serialization;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Core.Services
+namespace ScenarioToolkit.Core.Services
 {
     /// <summary>
     /// Лаунчер плеера внутри контейнера, опционален

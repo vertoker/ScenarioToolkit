@@ -1,20 +1,14 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
-using Mirror;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Network;
+using ScenarioToolkit.Shared.VRF;
 using UnityEngine;
-using VRF.Players.Scriptables;
-using VRF.Utils.Pool;
-using Zenject;
 using ZLinq;
-
 #if ENABLE_IL2CPP
 using Unity.IL2CPP.CompilerServices;
 #endif
 
-namespace Scenario.Core.Player.Roles
+namespace ScenarioToolkit.Core.Player.Roles
 {
 #if ENABLE_IL2CPP
     [Il2CppSetOption (Option.NullChecks, false)]

@@ -1,9 +1,8 @@
-﻿using NaughtyAttributes;
-using Scenario.Core.Installers.Resolver;
+﻿using ScenarioToolkit.Core.Installers.Resolver;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Core.Installers.Systems
+namespace ScenarioToolkit.Core.Installers.Systems
 {
     public abstract class BaseSystemInstaller : MonoInstaller
     {

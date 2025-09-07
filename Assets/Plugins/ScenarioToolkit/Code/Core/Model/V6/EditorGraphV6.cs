@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEngine;
 using ZLinq;
 using ZLinq.Linq;

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VRF.Utilities.Attributes
+namespace ScenarioToolkit.Shared.VRF.Utilities.Attributes
 {
     /// <summary>
     /// Отражает степень воздействия метода на объекты

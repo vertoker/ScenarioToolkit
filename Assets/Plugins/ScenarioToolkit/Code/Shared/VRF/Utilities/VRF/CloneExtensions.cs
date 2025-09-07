@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities.VRF
 {
     /// <summary>
     /// Расширения для копирования классов

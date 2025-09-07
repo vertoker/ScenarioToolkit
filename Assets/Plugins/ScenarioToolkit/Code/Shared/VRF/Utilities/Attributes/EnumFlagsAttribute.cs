@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace VRF.Utilities.Attributes
+namespace ScenarioToolkit.Shared.VRF.Utilities.Attributes
 {
     public class EnumFlagsAttribute : PropertyAttribute
     {

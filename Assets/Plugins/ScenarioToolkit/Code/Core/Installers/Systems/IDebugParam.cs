@@ -1,4 +1,4 @@
-﻿namespace Scenario.Core.Installers.Systems
+﻿namespace ScenarioToolkit.Core.Installers.Systems
 {
     public interface IDebugParam
     {

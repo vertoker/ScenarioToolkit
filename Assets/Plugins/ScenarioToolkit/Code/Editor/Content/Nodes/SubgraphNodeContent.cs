@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
-using Scenario.Editor.Utilities;
+using ScenarioToolkit.Core.Nodes;
+using ScenarioToolkit.Editor.Utilities;
 
-namespace Scenario.Editor.Content.Nodes
+namespace ScenarioToolkit.Editor.Content.Nodes
 {
     public class SubgraphNodeContent : IEditorNodeContent
     {

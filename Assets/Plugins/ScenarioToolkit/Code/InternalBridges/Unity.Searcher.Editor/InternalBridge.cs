@@ -1,6 +1,6 @@
 using UnityEditor.Searcher;
 
-namespace Scenario.InternalBridges.Unity.Searcher.Editor
+namespace ScenarioToolkit.InternalBridges.Unity.Searcher.Editor
 {
     public static class InternalBridge
     {

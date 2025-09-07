@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Pool;
 
-namespace VRF.Utils.Pool
+namespace ScenarioToolkit.Shared.VRF
 {
     /// <summary>
     /// Пул для созданных классов, это просто абстракция для удобства работы пула, не имеет дополнительного

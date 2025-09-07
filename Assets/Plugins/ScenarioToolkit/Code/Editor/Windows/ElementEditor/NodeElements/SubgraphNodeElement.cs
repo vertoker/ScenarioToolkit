@@ -2,19 +2,19 @@
 using System.IO;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Editor.CustomVisualElements;
-using Scenario.Editor.Utilities.Providers;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using Scenario.Editor.Windows.SearchLegacy;
-using Scenario.Utilities.Extensions;
+using ScenarioToolkit.Editor.CustomVisualElements;
+using ScenarioToolkit.Editor.Utilities.Providers;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Editor.Windows.SearchLegacy;
+using ScenarioToolkit.Shared.Extensions;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
 
-namespace Scenario.Editor.Windows.ElementEditor.NodeElements
+namespace ScenarioToolkit.Editor.Windows.ElementEditor.NodeElements
 {
     public class SubgraphNodeElement : BaseNodeElement
     {

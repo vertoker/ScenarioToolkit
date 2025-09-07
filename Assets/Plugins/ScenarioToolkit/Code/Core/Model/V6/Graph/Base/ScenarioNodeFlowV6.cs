@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
+using ScenarioToolkit.Core.Player;
 
 // Previous: 
 //  Current: ScenarioFlowNodeV6

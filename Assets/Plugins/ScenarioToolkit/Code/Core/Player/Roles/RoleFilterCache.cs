@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Scenario.Core.Model.Interfaces;
-using VRF.Players.Scriptables;
+using ScenarioToolkit.Shared.VRF;
 
-namespace Scenario.Core.Player.Roles
+namespace ScenarioToolkit.Core.Player.Roles
 {
     public class RoleFilterCache
     {

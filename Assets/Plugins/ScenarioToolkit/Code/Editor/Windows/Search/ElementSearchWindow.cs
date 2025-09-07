@@ -1,17 +1,17 @@
 using System.Collections.Generic;
 using ModestTree;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
-using Scenario.Editor.Utilities;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using Scenario.Editor.Windows.Search.General;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Nodes;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
+using ScenarioToolkit.Editor.Windows.Search.General;
+using ScenarioToolkit.Shared;
 using UnityEditor;
 using UnityEditor.Searcher;
-using ElementSearchItem = Scenario.Editor.Windows.Search.General.SearchItem<Scenario.Editor.Windows.GraphEditor.GraphViews.IScenarioGraphElement>;
+using ElementSearchItem = ScenarioToolkit.Editor.Windows.Search.General.SearchItem<ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews.IScenarioGraphElement>;
 
-namespace Scenario.Editor.Windows.Search
+namespace ScenarioToolkit.Editor.Windows.Search
 {
     /// <summary>
     /// Поисковик элементов в сценарии, использует экспериментальный пакет Searcher

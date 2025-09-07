@@ -1,7 +1,6 @@
-﻿using UnityEngine;
-using Zenject;
+﻿using Zenject;
 
-namespace Scenario.Core.Installers.Resolver
+namespace ScenarioToolkit.Core.Installers.Resolver
 {
     public class SystemBootstrap : IInitializable
     {

@@ -1,12 +1,11 @@
 ﻿using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Nodes;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.GraphEditor.GraphViews;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Nodes;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor.GraphViews;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.ElementEditor.NodeElements.Port
+namespace ScenarioToolkit.Editor.Windows.ElementEditor.NodeElements.Port
 {
     public abstract class BasePortNodeElement<TPortNode, TOtherPortNode> : BaseNodeElement
         where TPortNode : IScenarioNode where TOtherPortNode : IScenarioNode

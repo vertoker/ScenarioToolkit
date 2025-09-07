@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scenario.Utilities.Attributes
+namespace ScenarioToolkit.Shared.Attributes
 {
     public class SceneReferenceAttribute : PropertyAttribute
     {

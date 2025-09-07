@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scenario.Editor.Tools.Scenes
+namespace ScenarioToolkit.Editor.Tools.Scenes
 {
     public class CommonComponentsOnly
     {

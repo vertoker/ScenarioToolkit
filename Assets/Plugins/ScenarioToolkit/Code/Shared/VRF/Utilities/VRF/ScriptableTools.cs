@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities.VRF
 {
     /// <summary>
     /// Утилиты для создания, копирования ScriptableObject'ов из редактора

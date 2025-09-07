@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace VRF.Utilities
+namespace ScenarioToolkit.Shared.VRF.Utilities.VRF
 {
     /// <summary>
     /// Расширения для DI контейнера

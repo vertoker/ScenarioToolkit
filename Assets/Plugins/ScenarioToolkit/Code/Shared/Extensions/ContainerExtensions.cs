@@ -1,8 +1,7 @@
-﻿using Scenario.Core.Installers.Resolver;
-using Scenario.Core.Installers.Systems;
+﻿using ScenarioToolkit.Core.Installers.Resolver;
 using Zenject;
 
-namespace Scenario.Utilities.Extensions
+namespace ScenarioToolkit.Shared.Extensions
 {
     public static class ContainerExtensions
     {

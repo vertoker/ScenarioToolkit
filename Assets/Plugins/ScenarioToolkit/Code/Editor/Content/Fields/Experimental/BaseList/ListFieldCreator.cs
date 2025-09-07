@@ -2,13 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Scenario.Editor.Content.Fields.Experimental.Lists;
-using Scenario.Utilities;
+using ScenarioToolkit.Editor.Content.Fields.Experimental.Lists;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
 
-namespace Scenario.Editor.Content.Fields.Experimental.BaseList
+namespace ScenarioToolkit.Editor.Content.Fields.Experimental.BaseList
 {
     /// <summary>
     /// Незаконченная система для отрисовки массива полей

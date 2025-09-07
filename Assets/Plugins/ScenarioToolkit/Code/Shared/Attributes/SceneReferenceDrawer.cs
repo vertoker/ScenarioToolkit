@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scenario.Utilities.Attributes
+namespace ScenarioToolkit.Shared.Attributes
 {
     // Taken from CreativeMode
     

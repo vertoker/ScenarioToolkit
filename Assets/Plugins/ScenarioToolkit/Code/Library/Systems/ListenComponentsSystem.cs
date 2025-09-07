@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
-using Scenario.Core.Systems;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Core.Systems;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Systems
+namespace ScenarioToolkit.Library.Systems
 {
     public class ListenComponentsSystem : BaseScenarioSystem
     {

@@ -1,8 +1,8 @@
 ﻿using Scenario.Base.Components.Actions;
-using Scenario.Core.Systems;
+using ScenarioToolkit.Core.Systems;
 using Zenject;
 
-namespace Scenario.Systems
+namespace ScenarioToolkit.Library.Systems
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]

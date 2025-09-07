@@ -1,8 +1,7 @@
 ﻿using System;
-using Scenario.Editor.Utilities.Providers;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Windows.ContextEditor.VisualElements
+namespace ScenarioToolkit.Editor.Windows.ContextEditor.VisualElements
 {
     public abstract class BaseContextElement : VisualElement
     {

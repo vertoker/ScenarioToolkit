@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Utilities.Providers
+namespace ScenarioToolkit.Editor.Utilities.Providers
 {
     /// <summary>
     /// Удобный shortcut для загрузки файлов разметки. Имеет predefined пути для папок с ними,

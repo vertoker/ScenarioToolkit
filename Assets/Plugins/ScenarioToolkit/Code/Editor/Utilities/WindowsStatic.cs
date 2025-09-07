@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
-using Scenario.Editor.Windows.ContextEditor;
-using Scenario.Editor.Windows.ElementEditor;
-using Scenario.Editor.Windows.GraphEditor;
-using Scenario.Editor.Windows.Other;
+using ScenarioToolkit.Editor.Windows.ContextEditor;
+using ScenarioToolkit.Editor.Windows.ElementEditor;
+using ScenarioToolkit.Editor.Windows.GraphEditor;
+using ScenarioToolkit.Editor.Windows.Other;
 using UnityEditor;
 
-namespace Scenario.Editor.Utilities
+namespace ScenarioToolkit.Editor.Utilities
 {
     public static class WindowsStatic
     {

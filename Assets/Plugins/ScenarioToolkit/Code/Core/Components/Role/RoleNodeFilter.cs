@@ -1,8 +1,8 @@
 ﻿using JetBrains.Annotations;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player.Roles;
-using Scenario.Utilities.Attributes;
-using VRF.Players.Scriptables;
+using ScenarioToolkit.Core.Player.Roles;
+using ScenarioToolkit.Shared.Attributes;
+using ScenarioToolkit.Shared.VRF;
 
 // ReSharper disable once CheckNamespace
 namespace Scenario.Core.Model

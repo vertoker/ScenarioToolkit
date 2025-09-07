@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Scenario.Editor.Content.Fields;
-using Scenario.Editor.Content.UXML;
+using ScenarioToolkit.Editor.Content.Fields;
+using ScenarioToolkit.Editor.Content.UXML;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.SRF
+namespace ScenarioToolkit.Editor.SRF
 {
     /// <summary>
     /// Контекст для работы SRF, используется как главный проводник с пользовательскими классами

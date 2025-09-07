@@ -1,8 +1,8 @@
 using System.Collections.Generic;
+using ScenarioToolkit.Shared.VRF.Utilities.Extensions;
 using UnityEditor.Searcher;
-using VRF.Utilities.Extensions;
 
-namespace Scenario.Editor.Windows.Search.General
+namespace ScenarioToolkit.Editor.Windows.Search.General
 {
     public class SearchDatabase : SearcherDatabase
     {

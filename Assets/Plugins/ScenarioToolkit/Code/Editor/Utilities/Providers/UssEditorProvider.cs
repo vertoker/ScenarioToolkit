@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Utilities.Providers
+namespace ScenarioToolkit.Editor.Utilities.Providers
 {
     [CreateAssetMenu(fileName = nameof(UssEditorProvider), 
         menuName = "Scenario Toolkit/Editor/" + nameof(UssEditorProvider))]

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
-using Scenario.Core.Serialization;
-using Scenario.Core.World;
-using Scenario.Editor.Utilities;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Core.World;
+using ScenarioToolkit.Editor.Utilities;
+using ScenarioToolkit.Shared.VRF.Utilities;
 using UnityEditor;
 using UnityEngine;
-using VRF.Utilities;
 
 // ReSharper disable once CheckNamespace
 namespace Scenario.Editor.Model

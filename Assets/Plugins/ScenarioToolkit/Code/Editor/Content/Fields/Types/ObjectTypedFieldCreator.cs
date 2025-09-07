@@ -1,11 +1,10 @@
 ﻿using System;
-using JetBrains.Annotations;
 using Scenario.Core.Model;
-using Scenario.Editor.Content.Fields.Base;
-using Scenario.Editor.Utilities.Providers;
+using ScenarioToolkit.Editor.Content.Fields.Base;
+using ScenarioToolkit.Editor.Utilities.Providers;
 using UnityEngine.UIElements;
 
-namespace Scenario.Editor.Content.Fields.Types
+namespace ScenarioToolkit.Editor.Content.Fields.Types
 {
     public class ObjectTypedFieldCreator : ITypeFieldCreator
     {

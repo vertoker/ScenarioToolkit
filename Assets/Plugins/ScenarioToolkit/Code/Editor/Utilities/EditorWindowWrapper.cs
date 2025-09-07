@@ -9,7 +9,7 @@ using UnityEngine;
 // Сделать InternalBridge нельзя, так как AssemblyDefinitionReference требует расширения именно UnityEditor.CoreModule
 // Но для доступа к нему нужен AssemblyDefinition, которого в Unity просто нет
 
-namespace Scenario.Editor.Utilities
+namespace ScenarioToolkit.Editor.Utilities
 { 
     // ReSharper disable once CheckNamespace
     // ReSharper disable once InconsistentNaming

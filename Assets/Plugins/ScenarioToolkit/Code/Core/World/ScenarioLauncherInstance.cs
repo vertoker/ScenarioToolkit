@@ -1,16 +1,15 @@
 ﻿using Mirror;
 using Scenario.Core.DataSource;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Core.Player;
-using Scenario.Core.Player.Roles;
-using Scenario.Core.Scriptables;
-using Scenario.Core.Serialization;
+using ScenarioToolkit.Core.Player;
+using ScenarioToolkit.Core.Player.Roles;
+using ScenarioToolkit.Core.Scriptables;
+using ScenarioToolkit.Core.Serialization;
+using ScenarioToolkit.Shared.VRF;
 using UnityEngine;
-using VRF.Identities.Core;
-using VRF.Players.Scriptables;
 using Zenject;
 
-namespace Scenario.Core.World
+namespace ScenarioToolkit.Core.World
 {
     /// <summary>
     /// Instance в мире Unity для запуска сценария не через Container. Полностью независим от других Instance,

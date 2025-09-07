@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Scenario.Core.Model.Interfaces;
-using Scenario.Utilities;
+using ScenarioToolkit.Shared;
 
-namespace Scenario.Core.Nodes
+namespace ScenarioToolkit.Core.Nodes
 {
     public static class NodesContent
     {

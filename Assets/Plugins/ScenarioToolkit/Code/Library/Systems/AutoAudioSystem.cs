@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using Scenario.Base.Components.Actions;
-using Scenario.Core.Systems;
-using Scenario.States;
-using Scenario.Utilities;
+using ScenarioToolkit.Core.Systems;
+using ScenarioToolkit.Shared;
 using UnityEngine;
 using Zenject;
 
-namespace Scenario.Systems
+namespace ScenarioToolkit.Library.Systems
 {
 #if ENABLE_IL2CPP
     [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks,        false)]
