@@ -29,8 +29,8 @@ namespace Scenario.Editor.CustomVisualElements
         {
             this.data = data;
             
-            variableAsset = UIProvider.GetUxmlTree("Fields/VariableField");
-            var variableGroup = UIProvider.GetUxmlTree("Lists/Variables").Instantiate();
+            variableAsset = UxmlEditorProvider.instance.FieldsVariable;
+            var variableGroup = UxmlEditorProvider.instance.ListsVariables.Instantiate();
             root.Add(variableGroup);
             
             variablesView = variableGroup.Q<ScrollView>("variables");

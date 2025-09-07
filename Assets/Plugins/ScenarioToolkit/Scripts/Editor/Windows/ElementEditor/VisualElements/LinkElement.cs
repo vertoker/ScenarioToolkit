@@ -20,7 +20,7 @@ namespace Scenario.Editor.Windows.ElementEditor.VisualElements
             LinkView = linkView;
             this.graphEditor = graphEditor;
 
-            Root = UIProvider.GetUxmlTree("ElementEditor/LinkEditor").Instantiate();
+            Root = UxmlEditorProvider.instance.ElementLinkEditor.Instantiate();
             Add(Root);
             
             nodeHashText = Root.Q<TextField>("hash");

@@ -21,7 +21,7 @@ namespace Scenario.Editor.Windows.ElementEditor.VisualElements
             this.groupView = groupView;
             this.graphEditor = graphEditor;
 
-            var root = UIProvider.GetUxmlTree("ElementEditor/GroupEditor").Instantiate();
+            var root = UxmlEditorProvider.instance.ElementGroupEditor.Instantiate();
             Add(root);
             
             nodeName = root.Q<TextField>("name");

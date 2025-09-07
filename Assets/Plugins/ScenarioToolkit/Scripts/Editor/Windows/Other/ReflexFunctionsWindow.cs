@@ -14,12 +14,12 @@ namespace Scenario.Editor.Windows.Other
         
         private void Construct()
         {
-            var asset = UIProvider.GetUxmlTree("SRF/Window");
+            var asset = UxmlEditorProvider.instance.SrfWindow;
             windowUxml = new SRFWindowUxml(asset);
             rootVisualElement.Add(windowUxml.RootContainer);
             
-            foldoutAsset = UIProvider.GetUxmlTree("SRF/Func");
-            fieldAsset = UIProvider.GetUxmlTree("SRF/Field");
+            foldoutAsset = UxmlEditorProvider.instance.SrfFunc;
+            fieldAsset = UxmlEditorProvider.instance.SrfField;
         }
         private void OnEnable()
         {

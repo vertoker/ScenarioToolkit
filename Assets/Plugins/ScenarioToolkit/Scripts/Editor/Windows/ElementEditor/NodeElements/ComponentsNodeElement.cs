@@ -31,9 +31,9 @@ namespace Scenario.Editor.Windows.ElementEditor.NodeElements
             var enumField = CreateActivationTypeEnum(componentsNode);
             Root.Add(enumField);
 
-            componentAsset = UIProvider.GetUxmlTree("Nodes/Component");
-            fieldAsset = UIProvider.GetUxmlTree("Nodes/Field");
-            Root.Add(UIProvider.GetUxmlTree("Lists/Components").Instantiate());
+            componentAsset = UxmlEditorProvider.instance.NodesComponent;
+            fieldAsset = UxmlEditorProvider.instance.NodesField;
+            Root.Add(UxmlEditorProvider.instance.ListsComponents.Instantiate());
             
             componentsView = Root.Q<ScrollView>("components");
             addComponent = Root.Q<Button>("add-component");

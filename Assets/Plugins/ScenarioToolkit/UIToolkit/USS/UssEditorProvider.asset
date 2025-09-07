@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7251c3b8ac49de8227d8f66afc2f35, type: 3}
+  m_Name: UssEditorProvider
+  m_EditorClassIdentifier: ScenarioToolkit.Editor::Scenario.Editor.Utilities.Providers.UssEditorProvider
+  <ContextEditor>k__BackingField: {fileID: 7433441132597879392, guid: f7680ec39644fc949a815a697e2bfe5f, type: 3}
+  <GraphEditor>k__BackingField: {fileID: 7433441132597879392, guid: 7c38f151eed57124d9ce9c4165ca84ea, type: 3}
+  <NodeEditor>k__BackingField: {fileID: 7433441132597879392, guid: 4df8c5ace42e83e4d969009b89e6dd5f, type: 3}
+  <ReflexFunctions>k__BackingField: {fileID: 7433441132597879392, guid: 4ed18ddf69f726f4d91bd25a4d0e4666, type: 3}

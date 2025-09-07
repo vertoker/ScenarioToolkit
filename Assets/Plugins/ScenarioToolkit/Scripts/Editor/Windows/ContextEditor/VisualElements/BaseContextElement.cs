@@ -10,16 +10,13 @@ namespace Scenario.Editor.Windows.ContextEditor.VisualElements
         
         public TemplateContainer Root { get; private set; }
         
-        protected BaseContextElement()
+        protected BaseContextElement(VisualTreeAsset uxmlAsset, StyleSheet ussAsset)
         {
-            Root = UIProvider.GetUxmlTree(UxmlAssetName).Instantiate();
-            Root.styleSheets.Add(UIProvider.GetUssSheet(StylesAssetName));
+            Root = uxmlAsset.Instantiate();
+            Root.styleSheets.Add(ussAsset);
             Add(Root);
         }
         
-        protected abstract string UxmlAssetName { get; }
-        protected abstract string StylesAssetName { get; }
-
         public virtual void Reset()
         {
             

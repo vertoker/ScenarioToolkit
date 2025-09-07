@@ -197,7 +197,7 @@ namespace Scenario.Editor.Windows.GraphEditor.GraphViews
 
         private void AddStyles()
         {
-            styleSheets.Add(UIProvider.GetUssSheet("GraphEditor"));
+            styleSheets.Add(UssEditorProvider.instance.GraphEditor);
         }
 
         private void AddManipulators()

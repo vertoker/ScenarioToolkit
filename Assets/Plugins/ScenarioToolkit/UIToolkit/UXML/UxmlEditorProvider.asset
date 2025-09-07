@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2351054594a54f39a2f7237e88c40522, type: 3}
+  m_Name: UxmlEditorProvider
+  m_EditorClassIdentifier: ScenarioToolkit.Editor::Scenario.Editor.Utilities.Providers.UxmlEditorProvider
+  <ContextActiveEditor>k__BackingField: {fileID: 9197481963319205126, guid: 70a6f5d5abdf06b4182bc04b9256c44b, type: 3}
+  <ContextEmptyEditor>k__BackingField: {fileID: 9197481963319205126, guid: b4846265c1122d446b2cb5c658467427, type: 3}
+  <ElementGroupEditor>k__BackingField: {fileID: 9197481963319205126, guid: aeaf049e79e970645af43022e71da0eb, type: 3}
+  <ElementLinkEditor>k__BackingField: {fileID: 9197481963319205126, guid: 82e4c7a956c912141a21faaa35a019c3, type: 3}
+  <ElementNodeEditor>k__BackingField: {fileID: 9197481963319205126, guid: 11b2f626b50233240b0f1ee792e584bd, type: 3}
+  <FieldsObjectTyped>k__BackingField: {fileID: 9197481963319205126, guid: fc5a8593c3adc8440a273a6fee528cc5, type: 3}
+  <FieldsVariable>k__BackingField: {fileID: 9197481963319205126, guid: a2acfacb6372fa1419383c3e2ab4c126, type: 3}
+  <ListsComponents>k__BackingField: {fileID: 9197481963319205126, guid: c6ff39fc40ccc464c86b6f68e015bdb8, type: 3}
+  <ListsVariables>k__BackingField: {fileID: 9197481963319205126, guid: 0bc4d8add6f1c7d4b89760fe789d617b, type: 3}
+  <NodesComponent>k__BackingField: {fileID: 9197481963319205126, guid: 64757ade618db6248a75da3625f4fb14, type: 3}
+  <NodesField>k__BackingField: {fileID: 9197481963319205126, guid: 1a2f3fc910da83441ad67a9f8c8ea820, type: 3}
+  <NodesSubgraph>k__BackingField: {fileID: 9197481963319205126, guid: d8814bce45b89724abbb3d51e1b494c9, type: 3}
+  <SrfField>k__BackingField: {fileID: 9197481963319205126, guid: 84a4850c27b53f84f836cdf9d6bfdc72, type: 3}
+  <SrfFunc>k__BackingField: {fileID: 9197481963319205126, guid: 68a24b2a56445234ca5ce1b174ea1134, type: 3}
+  <SrfWindow>k__BackingField: {fileID: 9197481963319205126, guid: d65767f1e64d038439f9105d3ea795a1, type: 3}
+  <GraphEditor>k__BackingField: {fileID: 9197481963319205126, guid: cf1dc403c437de349af372289c21ab36, type: 3}
+  <SearchField>k__BackingField: {fileID: 9197481963319205126, guid: 329a29189d4f6a4498ebfc882adbc62a, type: 3}

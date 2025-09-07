@@ -47,9 +47,9 @@ namespace Scenario.Editor.Windows.ElementEditor.NodeElements
             streamingPathField.RegisterValueChangedCallback(StreamingPathChanged);
             absolutePathField.RegisterValueChangedCallback(AbsolutePathChanged);
             
-            environmentEditor = new VariableEnvironmentEditor(Root, this.subgraphNode);
+            environmentEditor = new VariableEnvironmentEditor(Root, subgraphNode);
             
-            var assetButtons = UIProvider.GetUxmlTree("Nodes/SubgraphAsset").Instantiate();
+            var assetButtons = UxmlEditorProvider.instance.NodesSubgraph.Instantiate();
             Root.Add(assetButtons);
             
             addButton = assetButtons.Q<Button>("find-add");

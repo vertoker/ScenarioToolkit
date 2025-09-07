@@ -10,7 +10,7 @@ namespace Scenario.Editor.Content.Fields.Types
     public class ObjectTypedFieldCreator : ITypeFieldCreator
     {
         private readonly VisualTreeAsset variableAsset
-            = UIProvider.GetUxmlTree("Fields/ObjectTypedField"); // VariableField
+            = UxmlEditorProvider.instance.FieldsObjectTyped; // VariableField
 
         public bool CanCreate(Type type) => typeof(ObjectTyped) == type;
         public object GetDefaultValue() => ObjectTyped.Empty;

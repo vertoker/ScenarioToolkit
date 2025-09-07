@@ -2,6 +2,7 @@
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
 using Scenario.Editor.CustomVisualElements;
+using Scenario.Editor.Utilities.Providers;
 using Scenario.Editor.Windows.GraphEditor;
 using Scenario.Utilities;
 using UnityEngine.UIElements;
@@ -16,11 +17,9 @@ namespace Scenario.Editor.Windows.ContextEditor.VisualElements
     {
         private readonly IScenarioModel model;
         private readonly VariableEnvironmentEditor environmentEditor;
-
-        protected override string UxmlAssetName => "ContextEditor/EditorActive";
-        protected override string StylesAssetName => "ContextEditor";
         
-        public ActiveContextElement(IScenarioModel model, GraphEditorWindow graphEditor)
+        public ActiveContextElement(IScenarioModel model, GraphEditorWindow graphEditor) 
+            : base(UxmlEditorProvider.instance.ContextActiveEditor, UssEditorProvider.instance.ContextEditor)
         {
             this.model = model;
             //var rootData = Root.Q("root-data"); // TODO сюда добавить новые данные

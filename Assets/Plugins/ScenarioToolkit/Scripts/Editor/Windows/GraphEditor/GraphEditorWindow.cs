@@ -189,7 +189,7 @@ namespace Scenario.Editor.Windows.GraphEditor
         
         private void CreateRootUI()
         {
-            root = UIProvider.GetUxmlTree("GraphEditor").Instantiate();
+            root = UxmlEditorProvider.instance.GraphEditor.Instantiate();
             rootVisualElement.Add(root);
         }
         private void CreateWindows()

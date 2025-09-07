@@ -24,7 +24,7 @@ namespace Scenario.Editor.Windows.ElementEditor.NodeElements
             NodeView = nodeView;
             GraphEditor = graphEditor;
 
-            Root = UIProvider.GetUxmlTree("ElementEditor/NodeEditor").Instantiate();
+            Root = UxmlEditorProvider.instance.ElementNodeEditor.Instantiate();
             Add(Root);
             
             nodeName = Root.Q<TextField>("name");
