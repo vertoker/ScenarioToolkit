@@ -26,6 +26,11 @@ namespace ScenarioToolkit.Bus.Interfaces
         public void Unsubscribe<TSignal>(Action<TSignal> callback);
         public void Unsubscribe(Type signalType, Action callback);
         public void Unsubscribe(Type signalType, Action<object> callback);
+        
+        public bool TryUnsubscribe<TSignal>(Action callback);
+        public bool TryUnsubscribe<TSignal>(Action<TSignal> callback);
+        public bool TryUnsubscribe(Type signalType, Action callback);
+        public bool TryUnsubscribe(Type signalType, Action<object> callback);
 
         public void DeclareSignal<T>();
         public void DeclareSignal(Type signalType);

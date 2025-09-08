@@ -1,13 +1,25 @@
 using System;
 using System.Collections.Generic;
 using ScenarioToolkit.Bus.Interfaces;
+using ScenarioToolkit.Shared.Exceptions;
+using UnityEngine.Pool;
 
 namespace ScenarioToolkit.Bus
 {
     public class ScenarioSignalBus : IScenarioSignalBus
     {
-        private readonly Dictionary<SignalSubscriptionId, ScenarioSignalDeclaration> declarationMap = new();
+        private readonly Dictionary<Type, SignalDeclaration> declarationMap = new();
+        private readonly Dictionary<SignalSubscriptionId, SignalSubscription> subscriptionMap = new();
         
+        private readonly ObjectPool<SignalDeclaration> declarationPool;
+        private readonly ObjectPool<SignalSubscription> subscriptionPool;
+
+        public ScenarioSignalBus(int declarationCapacity = 100, int subscriptionCapacity = 200, bool poolCheck = true)
+        {
+            declarationPool = SignalFactory.CreateDeclarationPool(poolCheck, declarationCapacity);
+            subscriptionPool = SignalFactory.CreateSubscriptionPool(poolCheck, subscriptionCapacity);
+        }
+
         public void Fire<TSignal>(TSignal signal)
         {
             InternalFire(typeof(TSignal), signal, true);
@@ -50,25 +62,6 @@ namespace ScenarioToolkit.Bus
         {
             return InternalFire(signalType, null, true);
         }
-
-        private bool InternalFire(Type signalType, object signal, bool requireDeclaration)
-        {
-            var declaration = GetDeclaration(signalType);
-
-            if (declaration == null)
-            {
-                if (requireDeclaration)
-                {
-                    throw Assert.CreateException("Fired undeclared signal '{0}'!", signalType);
-                }
-                return false;
-            }
-
-            signal ??= Activator.CreateInstance(signalType);
-            declaration.Fire(signal);
-            
-            return true;
-        }
         
         public void Subscribe<TSignal>(Action callback)
         {
@@ -93,74 +86,110 @@ namespace ScenarioToolkit.Bus
             InternalSubscribe(new SignalSubscriptionId(signalType, callback), callback);
         }
 
+        public void Unsubscribe<TSignal>(Action callback)
+        {
+            InternalUnsubscribe(new SignalSubscriptionId(typeof(TSignal), callback), true);
+        }
+        public void Unsubscribe<TSignal>(Action<TSignal> callback)
+        {
+            InternalUnsubscribe(new SignalSubscriptionId(typeof(TSignal), callback), true);
+        }
+        public void Unsubscribe(Type signalType, Action callback)
+        {
+            InternalUnsubscribe(new SignalSubscriptionId(signalType, callback), true);
+        }
+        public void Unsubscribe(Type signalType, Action<object> callback)
+        {
+            InternalUnsubscribe(new SignalSubscriptionId(signalType, callback), true);
+        }
+        
+        public bool TryUnsubscribe<TSignal>(Action callback)
+        {
+            return InternalUnsubscribe(new SignalSubscriptionId(typeof(TSignal), callback), false);
+        }
+        public bool TryUnsubscribe<TSignal>(Action<TSignal> callback)
+        {
+            return InternalUnsubscribe(new SignalSubscriptionId(typeof(TSignal), callback), false);
+        }
+        public bool TryUnsubscribe(Type signalType, Action callback)
+        {
+            return InternalUnsubscribe(new SignalSubscriptionId(signalType, callback), false);
+        }
+        public bool TryUnsubscribe(Type signalType, Action<object> callback)
+        {
+            return InternalUnsubscribe(new SignalSubscriptionId(signalType, callback), false);
+        }
+        public void DeclareSignal<T>()
+        {
+            DeclareSignal(typeof(T));
+        }
+        public void DeclareSignal(Type signalType)
+        {
+            var declaration = declarationPool.Get();
+            
+            declarationMap.Add(signalType, declaration);
+        }
+        
+        private bool InternalFire(Type signalType, object signal, bool requireDeclaration)
+        {
+            var declaration = GetDeclaration(signalType);
+
+            if (declaration == null)
+            {
+                if (requireDeclaration)
+                {
+                    throw Assert.CreateException($"Fired undeclared signal '{signalType}'!");
+                }
+                return false;
+            }
+
+            signal ??= Activator.CreateInstance(signalType);
+            declaration.Fire(signal);
+            
+            return true;
+        }
+        
         private void InternalSubscribe(SignalSubscriptionId id, Action<object> callback)
         {
-            Assert.That(!declarationMap.ContainsKey(id),
+            Assert.That(!declarationMap.ContainsKey(id.SignalType),
                 "Tried subscribing to the same signal with the same callback on Zenject.SignalBus");
             
             var declaration = GetDeclaration(id.SignalType);
             
             if (declaration == null)
             {
-                throw Assert.CreateException("Tried subscribing to undeclared signal '{0}'!", id.SignalType);
+                throw Assert.CreateException($"Tried subscribing to undeclared signal '{id.SignalType}'!");
             }
+            
+            var subscription = subscriptionPool.Get();
+            subscription.Callback = callback;
+            subscription.Declaration = declaration;
             
             declaration.Add(callback);
-            declarationMap.Add(id, declaration);
-        }
-
-        public void Unsubscribe<TSignal>(Action callback)
-        {
-            
-        }
-        public void Unsubscribe<TSignal>(Action<TSignal> callback)
-        {
-            
-        }
-        public void Unsubscribe(Type signalType, Action callback)
-        {
-            
-        }
-        public void Unsubscribe(Type signalType, Action<object> callback)
-        {
-            
+            subscriptionMap.Add(id, subscription);
         }
         
-        // TODO закончить и сделать свой аналог из Zenject ScenarioException и Assert с возможностью LogError
-
-        private void InternalUnsubscribe(SignalSubscriptionId id)
+        private bool InternalUnsubscribe(SignalSubscriptionId id, bool throwIfMissing)
         {
-            if (declarationMap.Remove(id, out var subscription))
+            if (subscriptionMap.Remove(id, out var subscription))
             {
-                subscription.Remove(id.Token);
+                subscription.Dispose();
+                subscriptionPool.Release(subscription);
+                return true;
             }
-            else
+            
+            if (throwIfMissing)
             {
-                throw Assert.CreateException(
-                    "Called unsubscribe for signal '{0}' but could not find corresponding subscribe.  " +
-                    "If this is intentional, call TryUnsubscribe instead.", id.SignalType);
+                throw Assert.CreateException($"Called unsubscribe for signal '{id.SignalType}' " +
+                                             $"but could not find corresponding subscribe.  " +
+                                             "If this is intentional, call TryUnsubscribe instead.");
             }
-        }
-        
-        public void DeclareSignal<T>()
-        {
-            throw new NotImplementedException();
-        }
-        public void DeclareSignal(Type signalType)
-        {
-            throw new NotImplementedException();
+            return false;
         }
 
-        private ScenarioSignalDeclaration GetDeclaration(Type signalType)
+        private SignalDeclaration GetDeclaration(Type signalType)
         {
-            ScenarioSignalDeclaration handler;
-
-            if (declarationMap.TryGetValue(signalType, out handler))
-            {
-                return handler;
-            }
-
-            return null;
+            return declarationMap.GetValueOrDefault(signalType);
         }
     }
 }

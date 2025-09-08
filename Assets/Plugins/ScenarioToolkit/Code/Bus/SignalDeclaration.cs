@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace ScenarioToolkit.Bus
 {
-    public class ScenarioSignalDeclaration
+    internal class SignalDeclaration
     {
         private readonly List<Action<object>> callbacks;
 
-        public ScenarioSignalDeclaration(int capacity = 0)
+        public SignalDeclaration(int capacity = 0)
         {
             callbacks = new List<Action<object>>(capacity);
         }
