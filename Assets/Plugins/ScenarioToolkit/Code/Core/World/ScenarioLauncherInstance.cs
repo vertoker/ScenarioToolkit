@@ -1,6 +1,7 @@
 ﻿using Mirror;
 using Scenario.Core.DataSource;
 using Scenario.Core.Model.Interfaces;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Player;
 using ScenarioToolkit.Core.Player.Roles;
 using ScenarioToolkit.Core.Scriptables;
@@ -59,7 +60,7 @@ namespace ScenarioToolkit.Core.World
         public bool CanStop => IsConstructed && IsInitialized;
 
         [Inject]
-        public void Construct(SignalBus bus, ScenarioLoadService loadService, 
+        public void Construct(ScenarioComponentBus bus, ScenarioLoadService loadService, 
             RoleFilterService filterService, IdentityService identityService)
         {
             if (IsConstructed)

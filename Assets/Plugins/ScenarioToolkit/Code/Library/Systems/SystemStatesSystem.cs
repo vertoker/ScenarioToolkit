@@ -1,4 +1,5 @@
 ﻿using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using Zenject;
 
@@ -10,7 +11,7 @@ namespace ScenarioToolkit.Library.Systems
 #endif
     public class SystemStatesSystem : BaseScenarioSystem
     {
-        public SystemStatesSystem(SignalBus bus) : base(bus)
+        public SystemStatesSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<ClearSystemStates>(ResetSystemStates);
         }

@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared.VRF.Utilities;
 using UnityEngine;
@@ -14,7 +15,7 @@ namespace ScenarioToolkit.External.Systems
 #endif
     public class MovingSystem : BaseScenarioSystem
     {
-        public MovingSystem(SignalBus bus) : base(bus)
+        public MovingSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<Move>(Move);
             bus.Subscribe<AnimateTransform>(AnimateTransform);

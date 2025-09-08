@@ -2,7 +2,7 @@ using System;
 
 namespace ScenarioToolkit.Bus.Interfaces
 {
-    public interface IScenarioSignalBus
+    public interface IScenarioComponentBus
     {
         public void Fire<TSignal>(TSignal signal);
         public void Fire<TSignal>();

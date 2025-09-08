@@ -56,11 +56,11 @@ namespace ScenarioToolkit.Editor.Windows.GraphEditor.Behaviours
             
             if (graphHighlightBehaviour.Player == null)
             {
-                if (EditorDiContainerService.Container == null)
-                {
-                    Debug.LogWarning($"Unresolved container in {nameof(EditorDiContainerService)}");
-                    return;
-                }
+                // if (EditorDiContainerService.Container == null)
+                // {
+                //     Debug.LogWarning($"Unresolved container in {nameof(EditorDiContainerService)}");
+                //     return;
+                // }
                 
                 editorWindow.ResolveGraph();
                 

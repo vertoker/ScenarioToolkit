@@ -1,5 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 using Modules.Scenario.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using UnityEngine;
 using Zenject;
@@ -8,7 +9,7 @@ namespace ScenarioToolkit.Library.Systems
 {
     public class RandomSystem : BaseScenarioSystem
     {
-        public RandomSystem(SignalBus bus) : base(bus)
+        public RandomSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<SendRandomNumber>(SendRandomNumber);
         }

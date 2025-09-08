@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using ModestTree;
 using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using UnityEngine;
@@ -17,7 +18,7 @@ namespace ScenarioToolkit.Library.Systems
     {
         private readonly Dictionary<string, Type> types; 
         
-        public CallMethodSystem(SignalBus bus) : base(bus)
+        public CallMethodSystem(ScenarioComponentBus bus) : base(bus)
         {
             types = new Dictionary<string, Type>(Reflection.AllTypes.Length);
             foreach (var type in Reflection.AllTypes)

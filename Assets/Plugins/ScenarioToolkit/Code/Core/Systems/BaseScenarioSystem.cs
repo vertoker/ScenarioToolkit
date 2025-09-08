@@ -1,4 +1,4 @@
-﻿using Zenject;
+﻿using ScenarioToolkit.Bus;
 
 namespace ScenarioToolkit.Core.Systems
 {
@@ -7,9 +7,9 @@ namespace ScenarioToolkit.Core.Systems
     /// </summary>
     public abstract class BaseScenarioSystem
     {
-        protected readonly SignalBus Bus;
+        protected readonly ScenarioComponentBus Bus;
 
-        protected BaseScenarioSystem(SignalBus bus)
+        protected BaseScenarioSystem(ScenarioComponentBus bus)
         {
             Bus = bus;
         }

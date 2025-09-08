@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Scenario.Components.Conditions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Library.Components.Actions.Unity;
 using UnityEngine;
@@ -13,7 +14,7 @@ namespace ScenarioToolkit.Library.Systems
     {
         private CancellationTokenSource cancellationTokenSource;
         
-        public AgentMovementSystem(SignalBus bus) : base(bus)
+        public AgentMovementSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<SetAgentDestination>(SetAgentDestination);
         }

@@ -101,8 +101,8 @@ namespace ScenarioToolkit.Editor.Windows.GraphEditor
             base.OnEnable();
             
             EditorApplication.playModeStateChanged += OnPlayModeChanged;
-            EditorDiContainerService.ContainerUpdated += ResolveGraph;
-            EditorDiContainerService.ContainerRemoved += UnResolveGraph;
+            // EditorDiContainerService.ContainerUpdated += ResolveGraph;
+            // EditorDiContainerService.ContainerRemoved += UnResolveGraph;
 
             SWEContext.SetGraph(this);
             Construct();
@@ -116,8 +116,8 @@ namespace ScenarioToolkit.Editor.Windows.GraphEditor
             base.OnDisable();
             
             EditorApplication.playModeStateChanged -= OnPlayModeChanged;
-            EditorDiContainerService.ContainerUpdated -= ResolveGraph;
-            EditorDiContainerService.ContainerRemoved -= UnResolveGraph;
+            // EditorDiContainerService.ContainerUpdated -= ResolveGraph;
+            // EditorDiContainerService.ContainerRemoved -= UnResolveGraph;
             
             Backup();
             
@@ -172,8 +172,7 @@ namespace ScenarioToolkit.Editor.Windows.GraphEditor
             FunctionsMenu = new FunctionsMenuBehaviour(this, root);
             KeyInput = new KeyInputGraphBehaviour(GraphView, rootVisualElement);
             
-            if (EditorDiContainerService.Container != null)
-                ResolveGraph();
+            // if (EditorDiContainerService.Container != null) ResolveGraph();
         }
         private void OnInitializedGraph()
         {
@@ -235,10 +234,10 @@ namespace ScenarioToolkit.Editor.Windows.GraphEditor
         }
         public void ResolveGraph()
         {
-            Modules = EditorDiContainerService.Container.TryResolve<ScenarioModules>();
-            ContainerPlayer = EditorDiContainerService.Container.TryResolve<ScenarioPlayer>();
-            IdentityService = EditorDiContainerService.Container.TryResolve<IdentityService>();
-            Bus = EditorDiContainerService.Container.TryResolve<SignalBus>();
+            // Modules = EditorDiContainerService.Container.TryResolve<ScenarioModules>();
+            // ContainerPlayer = EditorDiContainerService.Container.TryResolve<ScenarioPlayer>();
+            // IdentityService = EditorDiContainerService.Container.TryResolve<IdentityService>();
+            // Bus = EditorDiContainerService.Container.TryResolve<SignalBus>();
         }
         public void UnResolveGraph()
         {

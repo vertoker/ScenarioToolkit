@@ -1,5 +1,6 @@
 ﻿using JetBrains.Annotations;
 using Scenario.Core.Model.Interfaces;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Player.Roles;
 using ScenarioToolkit.Core.Serialization;
 using Zenject;
@@ -13,7 +14,7 @@ namespace ScenarioToolkit.Core.Player
     {
         // Root
         public int IdentityHash;
-        public SignalBus Bus;
+        public ScenarioComponentBus Bus;
         public NodeVariablesContext Variables;
         public ScenarioLoadService LoadService;
         public RoleFilterService RoleFilter;
@@ -28,7 +29,7 @@ namespace ScenarioToolkit.Core.Player
         
         // Root - это корень всего дерева контекстов, от которого наследуются уже все остальные.
         // Сам по себе он никогда не используется и служит только как нулевой родитель для первого настоящего контекста
-        public static NodeExecutionContext CreateRoot(SignalBus bus, ScenarioLoadService loadService, 
+        public static NodeExecutionContext CreateRoot(ScenarioComponentBus bus, ScenarioLoadService loadService, 
             RoleFilterService filterService)
         {
             return new NodeExecutionContext(null)

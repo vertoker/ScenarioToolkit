@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using UnityEngine;
@@ -19,7 +20,7 @@ namespace ScenarioToolkit.Library.Systems
         private readonly HashSet<AudioSource> actives;
         private int counter = 1;
         
-        public AutoAudioSystem(int reservedSources, Transform parent, AudioSystem audioSystem, SignalBus bus) : base(bus)
+        public AutoAudioSystem(int reservedSources, Transform parent, AudioSystem audioSystem, ScenarioComponentBus bus) : base(bus)
         {
             this.parent = parent;
             this.audioSystem = audioSystem;

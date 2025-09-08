@@ -1,4 +1,5 @@
 ﻿using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using UnityEngine;
@@ -12,7 +13,7 @@ namespace ScenarioToolkit.Library.Systems
 #endif
     public class MaterialPropertiesSystem : BaseScenarioSystem
     {
-        public MaterialPropertiesSystem(SignalBus bus) : base(bus)
+        public MaterialPropertiesSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<SetRendererMaterialColorProperty>(SetRendererMaterialColorProperty);
             bus.Subscribe<SetRendererMaterialFloatProperty>(SetRendererMaterialFloatProperty);

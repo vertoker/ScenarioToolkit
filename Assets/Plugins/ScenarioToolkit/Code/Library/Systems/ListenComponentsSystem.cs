@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Player;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
@@ -17,7 +18,7 @@ namespace ScenarioToolkit.Library.Systems
 
         private readonly Dictionary<ScenarioPlayer, Entry> entries = new();
 
-        public ListenComponentsSystem(SignalBus bus) : base(bus)
+        public ListenComponentsSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<StartListenComponentsContext>(StartListenComponentsContext);
             bus.Subscribe<StopListenComponentsContext>(StopListenComponentsContext);

@@ -1,4 +1,5 @@
-﻿using ScenarioToolkit.Core.Systems;
+﻿using ScenarioToolkit.Bus;
+using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.External.Components.Actions.Player;
 using VRF.Scenario.Components.Actions;
 using Zenject;
@@ -11,12 +12,12 @@ namespace ScenarioToolkit.External.Systems
 #endif
     public class FadingSystem : BaseScenarioSystem
     {
-        public FadingSystem(SignalBus listener) : base(listener)
+        public FadingSystem(ScenarioComponentBus bus) : base(bus)
         {
-            listener.Subscribe<FadeIn>(FadeIn);
-            listener.Subscribe<FadeOut>(FadeOut);
-            listener.Subscribe<FadeInOverTime>(FadeInOverTime);
-            listener.Subscribe<FadeOutOverTime>(FadeOutOverTime);
+            bus.Subscribe<FadeIn>(FadeIn);
+            bus.Subscribe<FadeOut>(FadeOut);
+            bus.Subscribe<FadeInOverTime>(FadeInOverTime);
+            bus.Subscribe<FadeOutOverTime>(FadeOutOverTime);
         }
 
         private void FadeOutOverTime(FadeOutOverTime obj)

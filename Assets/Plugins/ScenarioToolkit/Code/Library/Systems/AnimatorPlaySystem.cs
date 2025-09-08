@@ -2,6 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using Scenario.Base.Components.Actions;
 using Scenario.Base.Components.Conditions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Library.Components.Actions.Unity;
 using ScenarioToolkit.Shared;
@@ -19,7 +20,7 @@ namespace ScenarioToolkit.Library.Systems
     /// </summary>
     public class AnimatorPlaySystem : BaseScenarioSystem
     {
-        public AnimatorPlaySystem(SignalBus listener) : base(listener)
+        public AnimatorPlaySystem(ScenarioComponentBus listener) : base(listener)
         {
             listener.Subscribe<PlayAnimation>(PlayAnimation);
             listener.Subscribe<StopAnimation>(StopAnimation);

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using JetBrains.Annotations;
-using ModestTree;
 using Scenario.Core.Model.Interfaces;
+using ScenarioToolkit.Shared.Extensions;
 
 namespace ScenarioToolkit.Shared
 {

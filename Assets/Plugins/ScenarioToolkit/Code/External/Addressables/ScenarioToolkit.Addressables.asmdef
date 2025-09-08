@@ -1,11 +1,8 @@
 {
-    "name": "ScenarioToolkit.Core",
+    "name": "ScenarioToolkit.Addressables",
     "rootNamespace": "",
     "references": [
-        "GUID:70127caa4a5b26848b7d63c03f81d2aa",
-        "GUID:f51ebe6a0ceec4240a699833d6309b23",
-        "GUID:d525ad6bd40672747bde77962f1c401e",
-        "GUID:5fd65c35a9daa764e97d6b80148128e3"
+        "GUID:95e0f19842590464eabf4f3822dfe38f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

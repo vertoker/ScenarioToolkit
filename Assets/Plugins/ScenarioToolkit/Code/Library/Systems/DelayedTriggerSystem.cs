@@ -1,6 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using Scenario.Base.Components.Actions;
 using Scenario.Base.Components.Conditions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using Zenject;
@@ -16,7 +17,7 @@ namespace ScenarioToolkit.Library.Systems
     /// </summary>
     public class DelayedTriggerSystem : BaseScenarioSystem
     {
-        public DelayedTriggerSystem(SignalBus listener) : base(listener)
+        public DelayedTriggerSystem(ScenarioComponentBus listener) : base(listener)
         {
             listener.Subscribe<StartDelayTrigger>(StartDelayTrigger);
         }

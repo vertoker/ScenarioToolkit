@@ -6,7 +6,7 @@ using UnityEngine.Pool;
 
 namespace ScenarioToolkit.Bus
 {
-    public class ScenarioSignalBus : IScenarioSignalBus
+    public class ScenarioComponentBus : IScenarioComponentBus
     {
         private readonly Dictionary<Type, SignalDeclaration> declarationMap = new();
         private readonly Dictionary<SignalSubscriptionId, SignalSubscription> subscriptionMap = new();
@@ -14,7 +14,7 @@ namespace ScenarioToolkit.Bus
         private readonly ObjectPool<SignalDeclaration> declarationPool;
         private readonly ObjectPool<SignalSubscription> subscriptionPool;
 
-        public ScenarioSignalBus(int declarationCapacity = 100, int subscriptionCapacity = 200, bool poolCheck = true)
+        public ScenarioComponentBus(int declarationCapacity = 100, int subscriptionCapacity = 200, bool poolCheck = true)
         {
             declarationPool = SignalFactory.CreateDeclarationPool(poolCheck, declarationCapacity);
             subscriptionPool = SignalFactory.CreateSubscriptionPool(poolCheck, subscriptionCapacity);

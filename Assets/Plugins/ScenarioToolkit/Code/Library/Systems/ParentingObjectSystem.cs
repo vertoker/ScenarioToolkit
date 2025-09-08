@@ -1,4 +1,5 @@
 ﻿using Modules.Scenario.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using Zenject;
 
@@ -6,7 +7,7 @@ namespace ScenarioToolkit.Library.Systems
 {
     public class ParentingObjectSystem : BaseScenarioSystem
     {
-        public ParentingObjectSystem(SignalBus bus) : base(bus)
+        public ParentingObjectSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<UnparentObject>(UnparentObject);
             bus.Subscribe<ParentObject>(ParentObject);

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using ScenarioToolkit.Core.Installers.Systems;
 using ScenarioToolkit.Shared;
 using ScenarioToolkit.Shared.Extensions;
 using ScenarioToolkit.Shared.VRF.Utilities;
@@ -12,7 +11,7 @@ namespace ScenarioToolkit.Editor.CustomEditors
     /// <summary>
     /// Окно поиска для сценарных систем, отрисовывается в MonoBehaviour
     /// </summary>
-    [CustomEditor(typeof(ScenarioSystemsSearch))]
+    // [CustomEditor(typeof(ScenarioSystemsSearch))]
     public class ScenarioSystemsSearchEditor : UnityEditor.Editor
     {
         // Step 1
@@ -21,7 +20,7 @@ namespace ScenarioToolkit.Editor.CustomEditors
         [UnityEditor.Callbacks.DidReloadScripts]
         private static void OnScriptsReloading()
         {
-            InstallerTypes = Reflection.GetImplementations<BaseSystemInstaller>().ToArray();
+            // InstallerTypes = Reflection.GetImplementations<BaseSystemInstaller>().ToArray();
         }
 
         private string search = string.Empty;
@@ -31,7 +30,7 @@ namespace ScenarioToolkit.Editor.CustomEditors
         
         public override void OnInspectorGUI()
         {
-            var instance = (ScenarioSystemsSearch)target;
+            /*var instance = (ScenarioSystemsSearch)target;
 
             GUILayout.Label("Search required system installer here", GUILayout.ExpandWidth(true));
             
@@ -68,7 +67,7 @@ namespace ScenarioToolkit.Editor.CustomEditors
                 var systemName = GetSystemName(type);
                 var order = systemName.LevenshteinDistance(searchPadding, Threshold);
                 return new Tuple<int, string, Type>(order, systemName, type);
-            }
+            }*/
         }
     }
 }

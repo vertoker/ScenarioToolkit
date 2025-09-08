@@ -1,5 +1,6 @@
 ﻿using Scenario.Base.Components.Actions;
 using Scenario.Base.Components.Conditions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using Zenject;
@@ -12,7 +13,7 @@ namespace ScenarioToolkit.Library.Systems
 #endif
     public class StringTriggerSystem : BaseScenarioSystem
     {
-        public StringTriggerSystem(SignalBus bus) : base(bus)
+        public StringTriggerSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<TriggerString>(CallStringTriggered);
         }

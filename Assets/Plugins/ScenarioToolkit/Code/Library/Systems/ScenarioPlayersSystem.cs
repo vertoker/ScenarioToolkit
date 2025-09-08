@@ -1,5 +1,6 @@
 ﻿using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using Zenject;
@@ -13,7 +14,7 @@ namespace ScenarioToolkit.Library.Systems
 #endif
     public class ScenarioPlayersSystem : BaseScenarioSystem
     {
-        public ScenarioPlayersSystem(SignalBus bus) : base(bus)
+        public ScenarioPlayersSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<ListenNodesContext>(ListenNodesContext);
             bus.Subscribe<SetNodeActivityContext>(SetNodeActivityContext);

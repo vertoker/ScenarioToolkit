@@ -1,6 +1,5 @@
 ﻿using Scenario.Core.DataSource;
 using Scenario.Core.Model.Interfaces;
-using ScenarioToolkit.Core.Installers;
 using ScenarioToolkit.Core.Player;
 using ScenarioToolkit.Core.Scriptables;
 using ScenarioToolkit.Core.Serialization;
@@ -73,13 +72,13 @@ namespace ScenarioToolkit.Core.Services
             
             if (modules == null)
             {
-                Debug.LogWarning($"Forget to add modules config to {nameof(ScenarioInstaller)}");
+                Debug.LogWarning($"Forget to add modules config to ScenarioInstaller");
             }
 
             ScenarioModule module = null;
             
             if (modules) module = modules.FirstOrDefault(parameters.Scenario);
-            else Debug.LogWarning($"Forget to add modules config to {nameof(ScenarioInstaller)}");
+            else Debug.LogWarning($"Forget to add modules config to ScenarioInstaller");
 
             if (module != null)
             {

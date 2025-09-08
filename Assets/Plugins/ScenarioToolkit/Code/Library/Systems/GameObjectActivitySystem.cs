@@ -1,4 +1,5 @@
 ﻿using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using Zenject;
@@ -14,7 +15,7 @@ namespace ScenarioToolkit.Library.Systems
     /// </summary>
     public class GameObjectActivitySystem : BaseScenarioSystem
     {
-        public GameObjectActivitySystem(SignalBus bus) : base(bus)
+        public GameObjectActivitySystem(ScenarioComponentBus bus) : base(bus)
         {
             Bus.Subscribe<SetGameObjectActivity>(SetGameObjectActivity);
         }

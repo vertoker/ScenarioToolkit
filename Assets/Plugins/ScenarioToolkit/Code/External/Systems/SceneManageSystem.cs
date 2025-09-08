@@ -1,4 +1,5 @@
-﻿using ScenarioToolkit.Core.Systems;
+﻿using ScenarioToolkit.Bus;
+using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using UnityEngine.SceneManagement;
 using VRF.Scenario.Components.Actions;
@@ -12,7 +13,7 @@ namespace ScenarioToolkit.External.Systems
 #endif
     public class SceneManageSystem : BaseScenarioSystem
     {
-        public SceneManageSystem(SignalBus listener) : base(listener)
+        public SceneManageSystem(ScenarioComponentBus listener) : base(listener)
         {
             Bus.Subscribe<LoadScene>(LoadScene);
         }

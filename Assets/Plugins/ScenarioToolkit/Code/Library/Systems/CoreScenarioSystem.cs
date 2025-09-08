@@ -1,4 +1,5 @@
 ﻿using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using Zenject;
 
@@ -10,7 +11,7 @@ namespace ScenarioToolkit.Library.Systems
 #endif
     public class CoreScenarioSystem : BaseScenarioSystem
     {
-        public CoreScenarioSystem(SignalBus bus) : base(bus)
+        public CoreScenarioSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<StopScenarioContext>(StopScenarioContext);
         }

@@ -1,4 +1,5 @@
 ﻿using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using ScenarioToolkit.Shared.Extensions;
@@ -13,7 +14,7 @@ namespace ScenarioToolkit.Library.Systems
 #endif
     public class SetTransformSystem : BaseScenarioSystem
     {
-        public SetTransformSystem(SignalBus bus) : base(bus)
+        public SetTransformSystem(ScenarioComponentBus bus) : base(bus)
         {
             Bus.Subscribe<SetTransform>(SetTransform);
             Bus.Subscribe<SetPosition>(SetPosition);

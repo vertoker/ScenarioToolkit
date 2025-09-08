@@ -1,11 +1,10 @@
 {
-    "name": "ScenarioToolkit.External",
+    "name": "ScenarioToolkit.Zenject",
     "rootNamespace": "",
     "references": [
         "GUID:70127caa4a5b26848b7d63c03f81d2aa",
         "GUID:95e0f19842590464eabf4f3822dfe38f",
-        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
-        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

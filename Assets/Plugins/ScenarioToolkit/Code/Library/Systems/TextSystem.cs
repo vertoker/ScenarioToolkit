@@ -1,4 +1,5 @@
 ﻿using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using Zenject;
@@ -11,7 +12,7 @@ namespace ScenarioToolkit.Library.Systems
 #endif
     public class TextSystem : BaseScenarioSystem
     {
-        public TextSystem(SignalBus listener) : base(listener)
+        public TextSystem(ScenarioComponentBus listener) : base(listener)
         {
             Bus.Subscribe<SetTMPText>(TextChanged);
         }

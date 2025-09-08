@@ -1,4 +1,5 @@
-﻿using ScenarioToolkit.Core.Systems;
+﻿using ScenarioToolkit.Bus;
+using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using VRF.Scenario.Components.Actions;
 using Zenject;
@@ -14,7 +15,7 @@ namespace ScenarioToolkit.Library.Systems
     /// </summary>
     public class MonoBehaviourActivitySystem : BaseScenarioSystem
     {
-        public MonoBehaviourActivitySystem(SignalBus listener) : base(listener)
+        public MonoBehaviourActivitySystem(ScenarioComponentBus listener) : base(listener)
         {
             Bus.Subscribe<SetMonoBehaviourActivity>(SetMonoBehaviourActivity);
         }

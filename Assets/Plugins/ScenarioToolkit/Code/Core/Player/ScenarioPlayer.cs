@@ -5,6 +5,7 @@ using System.Text;
 using Scenario.Core.DataSource;
 using Scenario.Core.Model;
 using Scenario.Core.Model.Interfaces;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Player.Roles;
 using ScenarioToolkit.Core.Serialization;
 using ScenarioToolkit.Shared.Extensions;
@@ -88,7 +89,7 @@ namespace ScenarioToolkit.Core.Player
         
         
         [Inject]
-        public ScenarioPlayer(SignalBus bus, ScenarioLoadService loadService, RoleFilterService filterService)
+        public ScenarioPlayer(ScenarioComponentBus bus, ScenarioLoadService loadService, RoleFilterService filterService)
         {
             ExecutionContext = NodeExecutionContext.CreateRoot(bus, loadService, filterService);
             // Контекст в root плеере является subContext от Root контекста

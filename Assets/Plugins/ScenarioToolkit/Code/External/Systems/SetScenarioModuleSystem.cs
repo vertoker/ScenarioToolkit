@@ -1,4 +1,5 @@
-﻿using ScenarioToolkit.Core.Systems;
+﻿using ScenarioToolkit.Bus;
+using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using VRF.Scenario.Components.Actions;
 using Zenject;
@@ -13,7 +14,7 @@ namespace ScenarioToolkit.External.Systems
     {
         // private readonly ScenarioModuleLoader moduleLoader;
 
-        public SetScenarioModuleSystem(SignalBus listener) : base(listener)
+        public SetScenarioModuleSystem(ScenarioComponentBus listener) : base(listener)
         {
             listener.Subscribe<LoadModule>(LoadModule);
         }

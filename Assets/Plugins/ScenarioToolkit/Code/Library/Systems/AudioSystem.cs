@@ -3,6 +3,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using Scenario.Base.Components.Actions;
 using Scenario.Base.Components.Conditions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using UnityEngine;
@@ -21,7 +22,7 @@ namespace ScenarioToolkit.Library.Systems
     {
         private readonly Dictionary<AudioSource, CancellationTokenSource> tokenSources = new();
         
-        public AudioSystem(SignalBus bus) : base(bus)
+        public AudioSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<PlayAudio>(PlayAudio);
             bus.Subscribe<PlayAudioSource>(PlayAudioSource);

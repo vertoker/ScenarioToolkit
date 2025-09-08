@@ -1,5 +1,6 @@
 ﻿using System;
 using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using UnityEngine;
 using Zenject;
@@ -13,7 +14,7 @@ namespace ScenarioToolkit.Library.Systems
 #endif
     public class LogSystem : BaseScenarioSystem
     {
-        public LogSystem(SignalBus bus) : base(bus)
+        public LogSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<LogAction>(LogAction);
         }

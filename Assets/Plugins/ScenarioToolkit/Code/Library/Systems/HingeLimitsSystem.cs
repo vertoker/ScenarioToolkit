@@ -1,4 +1,5 @@
 ﻿using Scenario.Base.Components.Actions;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using UnityEngine;
@@ -15,7 +16,7 @@ namespace ScenarioToolkit.Library.Systems
     /// </summary>
     public class HingeLimitsSystem : BaseScenarioSystem
     {
-        public HingeLimitsSystem(SignalBus bus) : base(bus)
+        public HingeLimitsSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<SetHingeLimits>(SetHingeLimits);
         }

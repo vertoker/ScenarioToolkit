@@ -2,6 +2,7 @@
 using Scenario.Base.Components.Actions;
 using Scenario.Base.Components.Conditions;
 using Scenario.Core.Model;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using UnityEngine;
@@ -22,7 +23,7 @@ namespace ScenarioToolkit.Library.Systems
         private static string VariableNotFound(string variableName) 
             => $"Variable {variableName} is not founded in variables";
         
-        public VariablesReflectionSystem(SignalBus bus) : base(bus)
+        public VariablesReflectionSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<RequestVariableEquals>(RequestVariableEquals);
             bus.Subscribe<VariableInsertContext>(VariableInsertContext);

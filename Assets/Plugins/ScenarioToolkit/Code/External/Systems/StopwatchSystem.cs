@@ -1,6 +1,6 @@
 using System;
 using System.Diagnostics;
-using ScenarioToolkit.Core.Installers.Systems;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using VRF.Scenario.Components.Actions;
 using Zenject;
@@ -14,14 +14,12 @@ namespace ScenarioToolkit.External.Systems
 #endif
     public class StopwatchSystem : BaseScenarioSystem
     {
-        private readonly IDebugParam param;
         private readonly Stopwatch stopwatch;
         
         public event Action<TimeSpan> OnStopwatchStopped;
         
-        public StopwatchSystem(SignalBus bus, IDebugParam param) : base(bus)
+        public StopwatchSystem(ScenarioComponentBus bus) : base(bus)
         {
-            this.param = param;
             bus.Subscribe<StartStopwatch>(StartStopwatch);
             bus.Subscribe<StopStopwatch>(StopStopwatch);
 
@@ -42,7 +40,7 @@ namespace ScenarioToolkit.External.Systems
             stopwatch.Stop();
             
             OnStopwatchStopped?.Invoke(stopwatch.Elapsed);
-            if (param.Debug)
+            // if (param.Debug)
                 Debug.Log($"<b>Stopwatch</b>: time elapsed={stopwatch.Elapsed}");
         }
     }

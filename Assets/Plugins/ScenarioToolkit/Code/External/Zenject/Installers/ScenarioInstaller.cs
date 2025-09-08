@@ -32,11 +32,11 @@ namespace ScenarioToolkit.Core.Installers
             Container.Bind<ScenarioPlayer>().AsSingle();
             
             // Editor Reflection
-            EditorDiContainerService.OnUpdateContainer(Container);
+            // EditorDiContainerService.OnUpdateContainer(Container);
         }
         private void OnDestroy()
         {
-            EditorDiContainerService.OnRemoveContainer();
+            // EditorDiContainerService.OnRemoveContainer();
         }
     }
 }

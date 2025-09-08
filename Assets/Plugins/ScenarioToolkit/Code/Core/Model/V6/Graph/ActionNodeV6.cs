@@ -1,5 +1,6 @@
 ﻿using System;
 using Scenario.Core.Model.Interfaces;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Player;
 using ScenarioToolkit.Shared;
 using Zenject;
@@ -56,7 +57,7 @@ namespace Scenario.Core.Model
             }
         }
 
-        private void Fire(SignalBus bus, IScenarioAction action, int counter)
+        private void Fire(ScenarioComponentBus bus, IScenarioAction action, int counter)
         {
             ActionBeforeFire?.Invoke(action, counter);
             bus.Fire((object)action);

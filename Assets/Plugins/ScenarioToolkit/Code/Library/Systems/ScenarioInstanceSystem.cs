@@ -1,4 +1,5 @@
 ﻿using Scenario.Core.Model;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using Zenject;
@@ -13,7 +14,7 @@ namespace ScenarioToolkit.Library.Systems
     // уже самостоятельно отвечает за их синхронизацию
     public class ScenarioInstanceSystem : BaseScenarioSystem
     {
-        public ScenarioInstanceSystem(SignalBus bus) : base(bus)
+        public ScenarioInstanceSystem(ScenarioComponentBus bus) : base(bus)
         {
             bus.Subscribe<SetScenarioInstance>(SetScenarioInstance);
             bus.Subscribe<StartScenarioInstance>(StartScenarioInstance);

@@ -1,4 +1,4 @@
-﻿using ScenarioToolkit.Core.Installers;
+﻿// using ScenarioToolkit.Core.Installers;
 using ScenarioToolkit.Editor.Windows.GraphEditor;
 using ScenarioToolkit.Shared.VRF.Utilities.VRF;
 using UnityEditor;
@@ -7,14 +7,14 @@ using UnityEngine;
 namespace ScenarioToolkit.Editor.CustomEditors
 {
     [CanEditMultipleObjects]
-    [CustomEditor(typeof(ScenarioLauncherInstaller))]
+    // [CustomEditor(typeof(ScenarioLauncherInstaller))]
     public class ScenarioLauncherInstallerEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
             
-            var installer = (ScenarioLauncherInstaller)target;
+            /*var installer = (ScenarioLauncherInstaller)target;
 
             var config = installer.LaunchConfig;
             if (!config)
@@ -30,7 +30,7 @@ namespace ScenarioToolkit.Editor.CustomEditors
                 var module = config.GetModule();
                 if (module && module.ScenarioAsset && GUILayout.Button("Open In Editor"))
                     GraphEditorWindow.OpenWindow(module.ScenarioAsset, installer);
-            }
+            }*/
         }
     }
 }

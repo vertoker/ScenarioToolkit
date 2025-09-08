@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using ScenarioToolkit.Core.Installers.Systems;
+using ScenarioToolkit.Bus;
 using ScenarioToolkit.Core.Systems;
 using ScenarioToolkit.Shared;
 using UnityEngine;
@@ -18,7 +18,6 @@ namespace ScenarioToolkit.External.Systems
 #endif
     public class TimerSystem : BaseScenarioSystem
     {
-        private readonly IDebugParam source;
         private readonly Dictionary<string, Entry> entries = new();
 
         private struct Entry
@@ -33,9 +32,8 @@ namespace ScenarioToolkit.External.Systems
             }
         }
 
-        public TimerSystem(SignalBus listener, IDebugParam source) : base(listener)
+        public TimerSystem(ScenarioComponentBus listener) : base(listener)
         {
-            this.source = source;
             Bus.DeclareSignal<TimerUpdate>();
             Bus.Subscribe<StartTimer>(StartTimerBus);
             Bus.Subscribe<StopTimer>(StopTimerBus);
@@ -130,7 +128,7 @@ namespace ScenarioToolkit.External.Systems
             entry.Timer.Start();
             Bus.Fire(new TimerStarted { ID = entry.Component.ID });
             
-            if (source.Debug)
+            // if (source.Debug)
                 Debug.Log($"Timer {component.ID} <b>started</b>. " +
                           $"Time: {component.InGameTime}, " +
                           $"RealTime: {component.RealTime}");
@@ -169,7 +167,7 @@ namespace ScenarioToolkit.External.Systems
             
             entries.Remove(entry.Component.ID);
             
-            if (source.Debug)
+            // if (source.Debug)
                 Debug.Log($"Timer {entry.Component.ID} " +
                           $"<b>{(cancelled ? "cancelled" : "ended")}</b> " +
                           $"at time <b>{entry.Timer.GameTime}</b>. " +
@@ -195,7 +193,7 @@ namespace ScenarioToolkit.External.Systems
             
             entry.Timer.Pause();
             
-            if (source.Debug)
+            // if (source.Debug)
                 Debug.Log($"Timer {id} <b>paused</b> " +
                           $"at time <b>{entry.Timer.GameTime}</b>. " +
                           $"Time: {entry.Component.InGameTime}, " +
@@ -215,7 +213,7 @@ namespace ScenarioToolkit.External.Systems
             
             entry.Timer.Resume();
             
-            if (source.Debug)
+            // if (source.Debug)
                 Debug.Log($"Timer {id} <b>resumed</b> " +
                           $"at time <b>{entry.Timer.GameTime}</b>. " +
                           $"Time: {entry.Component.InGameTime}, " +
@@ -237,7 +235,7 @@ namespace ScenarioToolkit.External.Systems
 
             entry.Timer.TimeScale = timeScale;
             
-            if (source.Debug)
+            // if (source.Debug)
                 Debug.Log($"Timer {id} <b>resumed</b> " +
                           $"at time <b>{entry.Timer.GameTime}</b>. " +
                           $"Time: {entry.Component.InGameTime}, " +
